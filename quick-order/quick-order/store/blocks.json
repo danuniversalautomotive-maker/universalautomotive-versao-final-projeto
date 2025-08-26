@@ -1,0 +1,380 @@
+{
+  "store.quickorder": {
+    "blocks": [
+      "responsive-layout.desktop#quickOrder",
+      "responsive-layout.mobile#quickOrder"
+    ]
+  },
+
+  "responsive-layout.desktop#quickOrder": {
+    "children": [
+      "flex-layout.row#quickorder-breadcrumb",
+      "flex-layout.row#title",
+      "flex-layout.row#select-methods-disclosure-wrapper"
+    ]
+  },
+  "responsive-layout.mobile#quickOrder": {
+    "children": [
+      "flex-layout.row#quickorder-breadcrumb",
+      "flex-layout.row#title",
+      "flex-layout.row#select-methods-disclosure-wrapper"
+    ]
+  },
+
+  "flex-layout.row#select-methods-disclosure-wrapper": {
+    "children": ["flex-layout.col#select-methods-disclosure-wrapper"],
+    "props": {
+      "blockClass": ["select-methods-disclosure-wrapper"]
+    }
+  },
+
+  "flex-layout.col#select-methods-disclosure-wrapper": {
+    "children": ["disclosure-layout-group#select-methods"],
+    "props": {
+      "blockClass": ["select-methods-disclosure-wrapper"]
+    }
+  },
+
+  "flex-layout.row#quickorder-breadcrumb": {
+    "children": ["rich-text#quickorder-breadcrumb"],
+    "props": {
+      "blockClass": ["quickorder-breadcrumb-wrapper"]
+    }
+  },
+
+  "rich-text#quickorder-breadcrumb": {
+    "props": {
+      "blockClass": ["quickorder-breadcrumb"],
+      "text": "[Início](/) > [**Ordem rápida**](/quickorder)"
+    }
+  },
+
+  "disclosure-layout-group#select-methods": {
+    "children": [
+      "disclosure-layout#quickorder-upload",
+      "disclosure-layout#quickorder-quickCategories",
+      "disclosure-layout#quickorder-autocomplete",
+      "disclosure-layout#quickorder-textarea"
+    ]
+  },
+
+  "disclosure-layout#quickorder-textarea": {
+    "children": ["flex-layout.row#disclosure-textarea"]
+  },
+
+  "flex-layout.row#disclosure-textarea": {
+    "children": ["flex-layout.col#disclosure-textarea"],
+    "props": {
+      "blockClass": "disclosure-textarea-wrapper"
+    }
+  },
+
+  "flex-layout.col#disclosure-textarea": {
+    "children": [
+      "disclosure-trigger#quickorder-textarea",
+      "disclosure-content#quickorder-textarea"
+    ],
+    "props": {
+      "blockClass": "disclosure-textarea-wrapper"
+    }
+  },
+
+  "disclosure-layout#quickorder-upload": {
+    "children": ["flex-layout.row#disclosure-upload"],
+    "props": {
+      "blockClass": "disclosure-trigger-description-quickorder",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.row#disclosure-upload": {
+    "children": ["flex-layout.col#disclosure-upload"],
+    "props": {
+      "blockClass": "disclosure-upload-wrapper"
+    }
+  },
+
+  "flex-layout.col#disclosure-upload": {
+    "children": [
+      "disclosure-trigger#quickorder-upload",
+      "disclosure-content#quickorder-upload"
+    ],
+    "props": {
+      "blockClass": "disclosure-upload-wrapper"
+    }
+  },
+
+  "disclosure-layout#quickorder-autocomplete": {
+    "children": ["flex-layout.row#disclosure-autocomplete"]
+  },
+
+  "flex-layout.row#disclosure-autocomplete": {
+    "children": ["flex-layout.col#disclosure-autocomplete"],
+    "props": {
+      "blockClass": "disclosure-autocomplete-wrapper"
+    }
+  },
+
+  "flex-layout.col#disclosure-autocomplete": {
+    "children": [
+      "disclosure-trigger#quickorder-autocomplete",
+      "disclosure-content#quickorder-autocomplete"
+    ],
+    "props": {
+      "blockClass": "disclosure-autocomplete-wrapper"
+    }
+  },
+
+  "disclosure-layout#quickorder-quickCategories": {
+    "children": ["flex-layout.row#disclosure-quickCategories"]
+  },
+
+  "flex-layout.row#disclosure-quickCategories": {
+    "children": ["flex-layout.col#disclosure-quickCategories"],
+    "props": {
+      "blockClass": "disclosure-quickCategories-wrapper"
+    }
+  },
+
+  "flex-layout.col#disclosure-quickCategories": {
+    "children": [
+      "disclosure-trigger#quickorder-quickCategories",
+      "disclosure-content#quickorder-quickCategories"
+    ],
+    "props": {
+      "blockClass": "disclosure-quickCategories-wrapper"
+    }
+  },
+
+  "disclosure-trigger#quickorder-textarea": {
+    "children": ["flex-layout.row#disclosure-trigger-textarea"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "disclosure-trigger#quickorder-upload": {
+    "children": ["flex-layout.row#disclosure-trigger-upload"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "disclosure-trigger#quickorder-autocomplete": {
+    "children": ["flex-layout.row#disclosure-trigger-autocomplete"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "disclosure-trigger#quickorder-quickCategories": {
+    "children": ["flex-layout.row#disclosure-trigger-quickCategories"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-textarea": {
+    "children": [
+      "rich-text#textarea-disclosure-trigger-heading",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": [
+        "disclosure-trigger-description-quickorder",
+        "last-disclosure-trigger-description-quickorder"
+      ],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#textarea-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "## Copiar/colar SKUs \n Copie e cole o código SKU [Código SKU],[Quantidade]"
+    }
+  },
+
+  "disclosure-content#quickorder-textarea": {
+    "children": ["flex-layout.row#textarea"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-upload": {
+    "children": [
+      "rich-text#upload-disclosure-trigger-heading",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-description-quickorder"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#upload-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "## Envie uma planilha \n Carregue planilha com duas colunas (SKU, quantidade) para pedidos em massa."
+    }
+  },
+
+  "disclosure-content#quickorder-upload": {
+    "children": ["flex-layout.row#upload"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-autocomplete": {
+    "children": [
+      "rich-text#autocomplete-disclosure-trigger-heading",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-description-quickorder"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#autocomplete-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "## Um por um \n Insira o nome do produto, selecione-o, insira a quantidade e adicione ao carrinho."
+    }
+  },
+
+  "disclosure-content#quickorder-autocomplete": {
+    "children": ["flex-layout.row#autocomplete"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-quickCategories": {
+    "children": [
+      "rich-text#quickCategories-disclosure-trigger-heading",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-description-quickorder"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#quickCategories-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "## Categorias \n Adicione produtos diretamente de suas categorias.",
+      "font": "t-heading-4"
+    }
+  },
+
+  "disclosure-content#quickorder-quickCategories": {
+    "children": ["flex-layout.row#quickCategories"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+
+  "flex-layout.row#title": {
+    "children": ["flex-layout.col#title"],
+    "props": {
+      "blockClass": "quickOrderHeaderRow",
+      "marginBottom": 8
+    }
+  },
+
+  "flex-layout.col#title": {
+    "children": ["rich-text#title", "rich-text#subtitle-quickorder"],
+    "props": {
+      "blockClass": "titleQuickorder",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title": {
+    "props": {
+      "text": "# Ordem rápida",
+      "blockClass": "titleQuickorder"
+    }
+  },
+  "rich-text#subtitle-quickorder": {
+    "props": {
+      "text": "Escolha **um** método de entrada para solicitar seus itens pré-selecionados com mais rapidez e economizar tempo.",
+      "blockClass": "subtitleQuickorder"
+    }
+  },
+
+  "flex-layout.row#textarea": {
+    "children": ["flex-layout.col#textarea"]
+  },
+  "flex-layout.col#textarea": {
+    "children": ["quickorder-textarea"]
+  },
+  "quickorder-textarea": {
+    "props": {
+      "componentOnly": false,
+      "description": "[Código SKU],[Quantidade]"
+    }
+  },
+
+  "flex-layout.row#upload": {
+    "children": ["flex-layout.col#upload"]
+  },
+  "flex-layout.col#upload": {
+    "children": ["quickorder-upload"]
+  },
+  "quickorder-upload": {
+    "props": {
+      "componentOnly": false,
+      "description": "Carregar planilha com duas colunas (SKU, quantidade) para pedido em massa",
+      "downloadText": "Clique aqui para baixar um modelo de planilha"
+    }
+  },
+
+  "flex-layout.row#autocomplete": {
+    "children": ["flex-layout.col#autocomplete"]
+  },
+  "flex-layout.col#autocomplete": {
+    "children": ["quickorder-autocomplete"]
+  },
+  "quickorder-autocomplete": {
+    "props": {
+      "componentOnly": false,
+      "description": "Insira o nome do produto, selecione-o, insira a quantidade e adicione ao carrinho"
+    }
+  },
+
+  "flex-layout.row#quickCategories": {
+    "children": ["flex-layout.col#categories"],
+    "props": {
+      "paddingBottom": 9
+    }
+  },
+  "flex-layout.col#categories": {
+    "children": ["quickorder-categories"]
+  },
+  "quickorder-categories": {
+    "props": {
+      "componentOnly": false,
+      "description": "Adicione produtos diretamente de suas categorias"
+    }
+  }
+}

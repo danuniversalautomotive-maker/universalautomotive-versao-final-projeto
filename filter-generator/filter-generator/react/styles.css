@@ -1,0 +1,193 @@
+.filterStickyWrapper {
+  padding-top: 49px;
+  padding-bottom: 32px;
+}
+
+.filterGeneratorContainer {
+  border-radius: 8px;
+  background-color: #f9f9fa;
+  display: flex;
+  height: fit-content;
+  padding: 24px 32px;
+  justify-content: center;
+  margin: auto;
+  max-width: 1366px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  align-items: center;
+}
+
+.filterGeneratorContainer span,
+.filterGeneratorContainer p,
+.filterGeneratorContainer button,
+.filterGeneratorContainer a,
+.filterGeneratorContainer div {
+  font-family: 'Fabriga', sans-serif;
+}
+
+.filterGeneratorButton:disabled {
+  cursor: not-allowed;
+}
+
+.filterGeneratorButton {
+  background: #142032;
+  border: #142032;
+  border-radius: 8px;
+  color: #f9f9fa;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20.5px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 203px;
+  min-width: 203px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filterGeneratorButton .iconArrow {
+  transform: rotate(270deg);
+}
+
+.filterGeneratorButton .iconArrow path {
+  fill: #f9f9fa;
+}
+
+.filterSelector p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.54px;
+  text-align: left;
+  color: #3c4043;
+  margin-bottom: 16px;
+}
+
+.filterSelector:hover .selectTooltip,
+.filterSelector:active .selectTooltip,
+.filterSelector:focus .selectTooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.selectTooltip {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 15%);
+  padding: 10px 22px;
+  margin-left: -300px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 120%;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  z-index: 9;
+}
+.selectTooltip::after {
+  border-color: transparent transparent #ffffff transparent;
+  border-style: solid;
+  border-width: 8px;
+  bottom: 100%;
+  content: ' ';
+  left: 80%;
+  margin-left: 13px;
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .filterStickyWrapper {
+    padding: 16px;
+  }
+
+  .filterGeneratorContainer {
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 32px 16px 57px 16px;
+    transform: translateY(0);
+  }
+
+  .filterGeneratorContainer::before {
+    border-radius: 6px 6px 0px 0px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 16px;
+  }
+
+  .filterSelector {
+    margin: 0 auto;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .filterGeneratorButton {
+    margin: 0 auto;
+    max-width: unset;
+    min-height: 44px;
+    width: 100%;
+  }
+
+  .filterGeneratorButton {
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .filterSelector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filterSelector p {
+    margin-bottom: 0;
+  }
+
+  .ContainerSelect {
+    width: calc(100% - 102px);
+  }
+
+  .filterGeneratorButton {
+    margin-top: 8px;
+  }
+}
+
+.filterStickyWrapper .loadingCcontainer {
+  position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterStickyWrapper .loading {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #142032;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  top: -12px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingCcontainer p {
+  padding-top: 45px;
+  color: #142032;
+  margin: 0;
+}

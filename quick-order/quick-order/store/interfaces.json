@@ -1,0 +1,15 @@
+{
+  "quickorder-upload": {
+    "component": "UploadBlock"
+  },
+  "quickorder-categories": {
+    "component": "CategoryBlock"
+  },
+  "quickorder-autocomplete": {
+    "component": "AutocompleteBlock"
+  },
+  "quickorder-textarea": {
+    "component": "TextAreaBlock"
+  },
+  "store.quickorder": {}
+}

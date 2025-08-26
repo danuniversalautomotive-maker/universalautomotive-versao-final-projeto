@@ -1,0 +1,41 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "eslint.workingDirectories": [
+    {
+      "directory": "react",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "node",
+      "changeProcessCWD": true
+    }
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#ffffff",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.inactiveForeground": "#ffffff",
+    "activityBarBadge.background": "#117314",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.foreground": "#cfcfcf",
+    "statusBarItem.hoverBackground": "#117314",
+    "titleBar.activeBackground": "#077d03",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#077d03",
+    "titleBar.inactiveForeground": "#cfcfcf",
+    "statusBar.debuggingBackground": "#67b04f",
+    "statusBar.debuggingBorder": "#4fb059",
+    "statusBar.debuggingForeground": "#e7e7e7",
+    "titleBar.border": "#077d03"
+  }
+}

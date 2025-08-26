@@ -1,0 +1,9 @@
+query fieldValues($page: Int, $pageSize: Int) {
+  rootCategories(page: $page, pageSize: $pageSize)
+    @context(provider: "vtex.catalog-graphql") {
+    items {
+      name
+      id
+    }
+  }
+}

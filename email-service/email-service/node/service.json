@@ -1,0 +1,28 @@
+{
+  "stack": "nodejs",
+  "memory": 1024,
+  "ttl": 60,
+  "timeout": 10,
+  "minReplicas": 40,
+  "maxReplicas": 100,
+  "cpu": {
+    "type": "shared",
+    "value": 75,
+    "scalingPercentage": 95
+  },
+  "workers": 4,
+  "routes": {
+    "sendEmail": {
+      "path": "/_v1/send-email",
+      "public": true,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "POST"
+          ]
+        }
+      ]
+    }
+  }
+}

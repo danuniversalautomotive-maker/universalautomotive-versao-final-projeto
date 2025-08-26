@@ -1,0 +1,141 @@
+.ContainerSelect {
+  position: relative;
+}
+
+.ContainerSelect .iconCheck {
+  position: absolute;
+  right: 7px;
+  top: 28%;
+}
+
+.filterSelectContainer {
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #dee7ef;
+  height: fit-content;
+  padding: 13.5px 8px;
+  position: relative;
+  margin-right: 40px;
+}
+
+.filterSelectContainer--loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+  user-select: none;
+  pointer-events: none;
+}
+
+.filterSelector {
+  position: relative;
+  max-width: 344px;
+  width: 100%;
+}
+
+.itemSelect {
+  align-items: center;
+  color: #4b545e;
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.86px;
+}
+
+.optionsSelectWrapper {
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #dee7ef;
+  color: #3c4043;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 4px;
+  left: 0;
+  padding: 6px 6px;
+  position: absolute;
+  top: calc(100% - -4px);
+  width: 100%;
+  z-index: 999;
+}
+
+.optionsSelect {
+  line-height: 25px;
+  max-height: 270px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.OptionsDropdonw {
+  line-height: 150%;
+}
+
+.optionsNotSelect {
+  cursor: pointer;
+  color: #4b545e;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 6px 7px;
+}
+
+.optionsNotSelect:hover {
+  background: #f5f5f5;
+}
+
+/* width */
+.filterSelector ::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+/* Track */
+.filterSelector ::-webkit-scrollbar-track,
+.filterSelector ::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+}
+
+.filterSelector ::-webkit-scrollbar-track {
+  background: #f9f9fa;
+  border-radius: 100px;
+}
+
+.filterSelector ::-webkit-scrollbar-thumb {
+  background-color: #142032;
+  border-radius: 100px;
+}
+
+@media (max-width: 1024px) {
+  .itemSelect,
+  .optionsNotSelect {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .optionsNotSelect {
+    padding: 5px 8px 6px;
+  }
+
+  .filterSelectContainer {
+    padding: 13px 10px;
+    margin-right: 24px;
+  }
+
+  .filterSelectContainer svg {
+    height: 16px;
+    width: 16px;
+  }
+
+  .optionsSelect {
+    max-height: 99px;
+  }
+
+  .ContainerSelect .iconCheck {
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 32%;
+  }
+}

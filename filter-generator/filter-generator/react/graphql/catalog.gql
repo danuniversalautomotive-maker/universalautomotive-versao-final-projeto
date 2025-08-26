@@ -1,0 +1,10 @@
+query catalogQuery {
+ catalog(categoryLevels: 3) {
+    id
+    name
+    children {
+      id
+      name
+    }
+  }
+}

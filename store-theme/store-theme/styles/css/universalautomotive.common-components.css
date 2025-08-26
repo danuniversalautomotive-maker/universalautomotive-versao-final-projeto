@@ -1,0 +1,15 @@
+:global(.vtex-product-summary-2-x-element) .CustomPriceClusters_PriceInfo {
+	display: none;
+}
+
+/* :global(.vtex-product-summary-2-x-element) .CustomPriceClusters_Container .CustomPriceClusters_PriceInfo:last-child {
+	display: block !important;
+} */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-price-box) .CustomPriceClusters_PriceInfo {
+	display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-price-box) .CustomPriceClusters_PriceInfo:nth-child(n+3) {
+	display: block;
+}

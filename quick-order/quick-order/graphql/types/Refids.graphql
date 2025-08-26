@@ -1,0 +1,16 @@
+type Refids {
+  items: [ItemsRefId]
+}
+type ItemsRefId {
+  sku: String
+  refid: String
+  sellers: [ItemsSeller]
+}
+
+type ItemsSeller {
+  id: String
+  name: String
+  availability: String
+  unitMultiplier: Float
+  availableQuantity: Int
+}

@@ -1,0 +1,30 @@
+{
+  "memory": 256,
+  "ttl": 60,
+  "timeout": 30,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "status": {
+      "path": "/_v/checkout_middleware/status/:code",
+      "public": true
+    },
+    "getUserGroup": {
+      "path": "/_v/checkout_middleware/getUserGroup",
+      "public": true
+    },
+    "getCCOptions": {
+      "path": "/_v/checkout_middleware/getCCOptions",
+      "public": true
+    },
+    "getCPOptions": {
+      "path": "/_v/checkout_middleware/getCPOptions",
+      "public": true
+    },
+    "changeInterests": {
+      "path": "/_v/checkout_middleware/changeInterests",
+      "public": true
+    }
+  }
+}

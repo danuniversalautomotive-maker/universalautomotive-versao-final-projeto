@@ -1,0 +1,48 @@
+type CategoriesResponse {
+  id: Int
+  name: String
+  children: [Category]
+}
+
+type Category {
+  id: Int
+  name: String
+  url: String
+}
+
+type CategoryName {
+ id: Int
+ name: String
+}
+
+type FacetsResponse {
+facets:[Facet]
+sampling: Boolean
+breadcrumb: [Breadcrumb]
+}
+
+type Breadcrumb {
+  name: String
+  href: String
+}
+
+type Facet {
+  values: [FacetValue]
+  type: String
+  name: String
+  hidden: Boolean
+  key: String
+  quantity: Int
+}
+type FacetValue {
+  id: String
+  name: String
+  quantity: Int
+  key: String
+  value: String
+  selected: Boolean
+  href: String
+}
+
+
+

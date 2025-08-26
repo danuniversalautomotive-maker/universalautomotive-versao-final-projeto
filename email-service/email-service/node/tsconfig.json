@@ -1,0 +1,14 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "lib": ["es2021"],
+    "target": "es2021",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts", "middlewares/cardRequest/sendCardRequest.ts"],
+  "exclude": ["node_modules"]
+}

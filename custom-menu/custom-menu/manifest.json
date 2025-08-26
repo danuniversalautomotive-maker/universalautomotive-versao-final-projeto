@@ -1,0 +1,21 @@
+{
+  "vendor": "universalautomotive",
+  "name": "custom-menu",
+  "version": "0.0.2",
+  "title": "Menu Customizado",
+  "description": "Menu customizado para facilitar cadastro de menu item",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.render-runtime": "7.x",
+    "vtex.device-detector": "0.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.css-handles": "1.x",
+    "vtex.store-image": "0.x"
+  },
+  "registries": ["smartcheckout"],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

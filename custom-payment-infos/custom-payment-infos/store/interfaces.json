@@ -1,0 +1,12 @@
+{
+  "custom-order-payment": {
+    "component": "CustomOrderPayment"
+  },
+  "header-helmet-custom": {
+    "render": "client",
+    "component": "Helmet"
+  },
+  "clean-cart-cache": {
+    "component": "CleanCartCache"
+  }
+}

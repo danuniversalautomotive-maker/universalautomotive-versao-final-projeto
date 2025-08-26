@@ -1,0 +1,22 @@
+{
+  "memory": 256,
+  "ttl": 50,
+  "timeout": 10,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "checkStateTax": {
+      "path": "/_v/check-state-tax/",
+      "public": true
+    },
+    "getStockByWarehouse": {
+      "path": "/_v/get-sku-stock-by-warehouse/",
+      "public": true
+    },
+    "getClientDiscountCluster": {
+      "path": "/_v/get-client-discount-cluster/",
+      "public": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.cleanCacheButtonWrapper {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cleanCacheButtonWrapper :global(.vtex-button):hover {
+	background-color: #142032;
+	border-color: #142032;
+}
+
+@media (max-width: 690px) {
+	.cleanCacheButtonWrapper {
+		margin-top: 1rem;
+	}
+}

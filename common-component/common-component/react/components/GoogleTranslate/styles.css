@@ -1,0 +1,40 @@
+.google_translate_element {
+  display: none;
+}
+
+.ChooseLanguageWrapper {
+  width: 100%;
+  max-width: 1376px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 0;
+  gap: 8px;
+}
+
+.ChooseLanguageWrapper button {
+  width: 43px;
+  height: 32px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.ChooseLanguageWrapper button:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ChooseLanguageWrapper button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+@media (max-width: 1410px) {
+  .ChooseLanguageWrapper {
+    padding: 8px;
+  }
+}

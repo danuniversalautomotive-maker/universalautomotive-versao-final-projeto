@@ -1,0 +1,48 @@
+{
+  "name": "quickorder",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,js,json}\"",
+    "test": "cd ./node && yarn test",
+    "lint:locales": "intl-equalizer",
+    "locales:fix": "intl-equalizer --fix",
+    "verify": "yarn lint && yarn lint:locales && yarn test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn lint:locales && yarn locales:fix"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "12.12.21",
+    "@vtex/intl-equalizer": "^2.5.0",
+    "@vtex/prettier-config": "0.1.4",
+    "eslint": "7.12.1",
+    "eslint-config-vtex": "^14.1.1",
+    "eslint-config-vtex-react": "^6.8.3",
+    "husky": "4.2.3",
+    "lint-staged": "10.1.1",
+    "prettier": "2.0.2",
+    "jest": "^27.3.1",
+    "typescript": "3.8.3"
+  },
+  "version": "0.5.7",
+  "intl-equalizer": {
+    "referenceLocale": "en",
+    "localeDirectory": "messages"
+  }
+}

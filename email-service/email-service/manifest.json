@@ -1,0 +1,87 @@
+{
+  "name": "email-service",
+  "vendor": "universalautomotive",
+  "version": "0.0.1",
+  "title": "email-service",
+  "description": "email-service",
+  "categories": [],
+  "dependencies": {
+    "vtex.b2b-organizations-graphql": "0.x"
+  },
+  "builders": {
+    "node": "6.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "LogisticsAdmin"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/dataentities/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/sessions/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/segments/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "vtexid.vtex.com.br",
+        "path": "api/"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "api/checkout/pub/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/mail-service/pvt/*"
+      }
+    },
+    {
+      "name": "send-message"
+    },
+    {
+      "name": "template-criar"
+    },
+    {
+      "name": "template-editar"
+    },
+    {
+      "name": "read-workspace-apps-assets"
+    },
+    {
+      "name": "update-app-settings"
+    },
+    {
+      "name": "install-apps"
+    },
+    {
+      "name": "Get_Account_By_Identifier"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

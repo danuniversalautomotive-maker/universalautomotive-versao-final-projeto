@@ -1,0 +1,29 @@
+{
+  "top-bar": {
+    "component": "TopBar"
+  },
+  "google-translate": {
+    "component": "GoogleTranslater"
+  },
+  "application-table": {
+    "component": "ApplicationTable"
+  },
+  "personification": {
+    "component": "Personification"
+  },
+  "custom-sku-selector-cadastra": {
+    "component": "CustomSkuSelector"
+  },
+  "custom-price-clusters": {
+    "component": "CustomPriceClusters"
+  },
+  "custom-sku-quantity-by-warehouse-cadastra": {
+    "component": "CustomSkuQuantity"
+  },
+  "custom-sku-price-cadastra": {
+    "component": "CustomSkuPrice"
+  },
+  "flag": {
+    "component": "Flag"
+  }
+}

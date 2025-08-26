@@ -1,0 +1,33 @@
+.personificationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.personificationContainer p {
+  color: #fff;
+}
+
+.personificationContainer button {
+  background: red;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.personificationContainer button div {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .personificationContainer {
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,44 @@
+query GetOrganizationRequest($id: ID!) {
+  getOrganizationRequestById(id: $id)
+    @context(provider: "vtex.b2b-organizations-graphql") {
+    name
+    tradeName
+    b2bCustomerAdmin {
+      email
+    }
+    status
+    created
+    defaultCostCenter {
+      name
+      address {
+        addressId
+        addressType
+        addressQuery
+        postalCode
+        country
+        receiverName
+        city
+        state
+        street
+        number
+        complement
+        neighborhood
+        geoCoordinates
+        reference
+      }
+      phoneNumber
+      businessDocument
+      stateRegistration
+    }
+    customFields {
+      name
+      type
+      value
+      dropdownValues {
+        value
+        label
+      }
+      useOnRegistration
+    }
+  }
+}

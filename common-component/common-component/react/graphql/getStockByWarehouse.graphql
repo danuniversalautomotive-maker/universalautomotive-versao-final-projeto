@@ -1,0 +1,10 @@
+query getStockByWarehouse($skuIDs: [ID!]) {
+  inventoryProducts(page: 1, perPage: 10, filter: { skus: $skuIDs }) @context(provider: "vtex.inventory-graphql") {
+    products {
+      quantity
+      warehouseName
+      warehouseId
+      availableQuantity
+    }
+  }
+}

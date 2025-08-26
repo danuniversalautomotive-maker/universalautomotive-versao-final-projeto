@@ -1,0 +1,15 @@
+type Query {
+  skuFromRefIds(
+    refids: [String]
+    orderFormId: String
+    refIdSellerMap: RefIdSellerMap
+    refIdQuantityMap: RefIdQuantityMap
+  ): Refids @cacheControl(scope: SEGMENT, maxAge: MEDIUM) @withSegment
+  sellers: SellersType
+    @cacheControl(scope: SEGMENT, maxAge: MEDIUM)
+    @withSegment
+}
+
+scalar RefIdSellerMap
+
+scalar RefIdQuantityMap

@@ -1,0 +1,9 @@
+query getProduct ($productId: ID!) {
+  product(identifier: {field: id, value: $productId}) @context(provider: "vtex.search-graphql") {
+    productName
+    productClusters {
+      id,
+      name
+    },
+  }
+}

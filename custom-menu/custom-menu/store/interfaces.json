@@ -1,0 +1,20 @@
+{
+  "menu-custom-index": {
+    "component": "MenuIndex"
+  },
+  "menu-custom-desktop": {
+    "component": "MenuHeader"
+  },
+  "menu-custom-mobile": {
+    "component": "MenuHeaderM"
+  },
+  "menu-custom-header": {
+    "component": "MenuHeaderDesktop"
+  },
+  "menu-custom-header-mobile": {
+    "component": "MenuHeaderMobile"
+  },
+  "menu-custom-header-items-bottom": {
+    "component": "MenuItemBottomMobile"
+  }
+}

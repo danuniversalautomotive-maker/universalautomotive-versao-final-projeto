@@ -1,0 +1,6 @@
+{
+  "extends": "vtex-react/io",
+  "rules": {
+    "no-console": "warn"
+  }
+}

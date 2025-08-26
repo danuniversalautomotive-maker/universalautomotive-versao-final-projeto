@@ -1,0 +1,13 @@
+type Query {
+  catalog(categoryLevels: Int): [CategoriesResponse]
+
+  Allfacets(
+    CategoryName: String
+    Key: String
+    Name: String
+    Key2: String
+    Name2: String
+    Key3: String
+    Name3: String
+  ): FacetsResponse
+}

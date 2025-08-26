@@ -1,0 +1,21 @@
+{
+  "section": "accountSettings",
+  "path": "/admin/b2b-organizations/organizations",
+  "icon": "extensions-ic",
+  "titleId": "admin/b2b-organizations.b2b-organizations.navigation.label",
+  "searchKeyWordsHelpers": "admin/b2b-organizations.organization-requests.navigation.keywords",
+  "subSectionItems": [
+    {
+      "labelId": "admin/b2b-organizations.organizations.navigation.label",
+      "path": "/admin/b2b-organizations/organizations#/organizations"
+    },
+    {
+      "labelId": "admin/b2b-organizations.organization-requests.navigation.label",
+      "path": "/admin/b2b-organizations/organizations#/requests"
+    },
+    {
+      "labelId": "admin/b2b-organizations.organization-settings.navigation.label",
+      "path": "/admin/b2b-organizations/organizations#/settings"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+    "paymentConfiguration": {
+        "requiresAuthenticationForPreAuthorizedPaymentOption": true,
+        "allowInstallmentsMerge": null,
+        "blockPaymentSession": null,
+        "paymentSystemToCheckFirstInstallment": null,
+        "defaultPaymentSystemToApplyOnUserOrderForm": null
+    },
+    "taxConfiguration": null,
+    "minimumQuantityAccumulatedForItems": 1,
+    "decimalDigitsPrecision": 2,
+    "minimumValueAccumulated": 100,
+    "apps": [
+        {
+            "fields": [
+                "quoteId"
+            ],
+            "id": "b2b-quotes-graphql",
+            "major": 1
+        },
+        {
+            "fields": [
+                "purchaseOrderNumber"
+            ],
+            "id": "b2b-checkout-settings",
+            "major": 1
+        },
+        {
+            "fields": [
+                "quantity",
+                "deadlines_1",
+                "deadlines_2",
+                "deadlines_3",
+                "deadlines_4",
+                "deadlines_5",
+                "deadlines_6",
+                "deadlines_7",
+                "deadlines_8",
+                "deadlines_9",
+                "deadlines_10",
+                "deadlines_11",
+                "deadlines_12",
+                "interestRate"
+            ],
+            "id": "customer-credit",
+            "major": 1
+        }
+    ],
+    "allowMultipleDeliveries": false,
+    "allowManualPrice": true,
+    "savePersonalDataAsOptIn": false,
+    "maxNumberOfWhiteLabelSellers": null,
+    "recaptchaValidation": null,
+    "recaptchaMinScore": null,
+    "recaptchaKeys": null,
+    "maskStateOnAddress": null,
+    "useOwnershipCookie": null,
+    "ignoreProfileData": null,
+    "useIndividualShippingEstimates": false
+}

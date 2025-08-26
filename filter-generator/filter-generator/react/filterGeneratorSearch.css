@@ -1,0 +1,308 @@
+.filterStickyWrapperSearch {
+  position: relative;
+}
+
+.filterGeneratorContainerSearch {
+  background-color: transparent;
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1366px;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  bottom: 58px;
+  padding: 0 24px;
+}
+
+.filterGeneratorContainer span,
+.filterGeneratorContainer p,
+.filterGeneratorContainer button,
+.filterGeneratorContainer a,
+.filterGeneratorContainer div {
+  font-family: 'Fabriga', sans-serif;
+}
+
+.filterGeneratorButton:disabled {
+  cursor: not-allowed;
+}
+
+.filterGeneratorButton {
+  background: #142032;
+  border: #142032;
+  border-radius: 8px;
+  color: #f9f9fa;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20.5px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 203px;
+  min-width: 203px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filterGeneratorButton .iconArrow {
+  transform: rotate(270deg);
+}
+
+.filterGeneratorButton .iconArrow path {
+  fill: #f9f9fa;
+}
+
+.filterGeneratorContainerSearch .filterSelector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filterGeneratorContainerSearch .filterSelector p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.54px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.filterGeneratorContainerSearch .filterSelector:hover .selectTooltip,
+.filterGeneratorContainerSearch .filterSelector:active .selectTooltip,
+.filterGeneratorContainerSearch .filterSelector:focus .selectTooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.filterGeneratorContainerSearch .filterSelectContainer {
+  border: 1px solid #dee7ef;
+  background: #fff;
+  width: 208px;
+}
+
+.filterGeneratorContainerSearch .filterSelectContainer .itemSelect {
+  color: #667382;
+  text-transform: capitalize;
+}
+
+.filterGeneratorContainerSearch .filterSelectContainer .itemSelect svg path {
+  fill: #667382;
+}
+
+.selectTooltip {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 15%);
+  padding: 10px 22px;
+  margin-left: -300px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 120%;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  z-index: 9;
+}
+.selectTooltip::after {
+  border-color: transparent transparent #ffffff transparent;
+  border-style: solid;
+  border-width: 8px;
+  bottom: 100%;
+  content: ' ';
+  left: 24%;
+  margin-left: 13px;
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .filterStickyWrapper {
+    padding: 16px;
+  }
+
+  .filterGeneratorContainer {
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 32px 16px 57px 16px;
+    transform: translateY(0);
+  }
+
+  .filterGeneratorContainer::before {
+    border-radius: 6px 6px 0px 0px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 16px;
+  }
+
+  .filterSelector {
+    margin: 0 auto;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .filterGeneratorButton {
+    margin: 0 auto;
+    max-width: unset;
+    min-height: 44px;
+    width: 100%;
+  }
+
+  .filterSelector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filterGeneratorContainerSearch .filterSelector p {
+    margin-bottom: 0;
+    color: #3c4043;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.98px;
+    text-align: left;
+  }
+
+  .ContainerSelect {
+    width: calc(100% - 102px);
+  }
+
+  .filterGeneratorButton {
+    margin-top: 8px;
+  }
+
+  .filterGeneratorContainerSearch {
+    flex-direction: column;
+    background: #f9f9fa;
+    padding: 32px 16px 51px 16px;
+    border-radius: 8px;
+    position: initial;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .filterStickyWrapperSearchMobile {
+    flex-direction: column !important;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+  }
+
+  .filterStickyWrapperSearchMobile > button {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.41px;
+  }
+
+  .filterStickyWrapperSearchMobile > button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .filterStickyWrapperSearchMobile > button div svg path {
+    fill: #fff;
+  }
+
+  .filterStickyWrapperSearchMobile .closeIcon div svg {
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+
+  .filterStickyWrapperSearchMobile button div svg {
+    transform: rotate(180deg);
+  }
+
+  .filterGeneratorContainerSearch .filterSelectContainer {
+    width: calc(100% - 26px);
+    margin-right: 0;
+  }
+
+  .filterGeneratorContainerSearch .filterSelectContainer .itemSelect {
+    font-size: 12px;
+    line-height: 14.45px;
+  }
+
+  .filterMobileFormContent {
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 10px;
+  }
+
+  .selectTooltip {
+    right: 26px;
+  }
+}
+
+.wrapperIsOpen {
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  max-height: 360px;
+}
+
+.wrapperIsCloses {
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+  pointer-events: none;
+}
+
+.filterMobileFormContentIsClose {
+  padding: 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .filterGeneratorContainerSearch .filterSelector .iconCheck path {
+    fill: #ffffff;
+  }
+
+  .filterGeneratorContainerSearch .filterSelector .iconCheckComplete path {
+    fill: #63ad50;
+  }
+
+  .filterGeneratorContainerSearch .filterSelector .iconCheck {
+    right: -10px;
+  }
+}
+
+.filterStickyWrapperSearch .loadingCcontainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.filterStickyWrapperSearch .loading {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  top: -12px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.filterStickyWrapperSearch .loadingCcontainer p {
+  padding-top: 45px;
+  color: #fff;
+  margin: 0;
+}

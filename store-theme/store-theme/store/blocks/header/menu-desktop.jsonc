@@ -1,0 +1,509 @@
+{
+	"menu-custom-desktop#v-01": {
+		"title": "Menu Customizado Desktop",
+		"props": {
+			"menuFirstLevel": [
+				{
+					"hasLevel": true,
+					"hasLevelBanners": true,
+					"__editorItemTitle": "Departamentos",
+					"icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/fdf55b3c-0d4c-403a-b25d-fc031db9cff8___958ab3a2b251797810d873e21f225740.svg",
+					"menuLevel": [
+						{
+							"__editorItemTitle": "Ferragens Automotivas",
+							"botaoVerTodos": "/",
+							"href": "https://universalautomotive.myvtex.com/universal?map=ft",
+							"hasLevel": true,
+							"icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/10fff110-a492-4cfe-ae99-a684020973a6___4aa19fa9e7fc1f284f4ab6f5beb136ca.jpg",
+							"hasLevelBanners": true,
+							"banner": "https://s3-alpha-sig.figma.com/img/660b/8202/0855bac2305ad8ae8d6ca3c35ec82410?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fZC6J~Gd~1DleMw53iOXDKy6GvvrHPjm64saovxxnzq6xjnd0uJk9k9VpiS9NPXGnCmDbexvkhig0oxi91~G1gGqXmK4KbbZ84pdnKVW2m9pnAE1SVSWRLK7cxPgyeo9e2BknYsRxEatLB-HADfy4oT726-5WvQgPhhsBbgy4mVqNlymHzPg3U9XTiiXMLYyoEOIzRfcZRCh8jgq6TWkNWKCGyZTCt7sq28mWMox89qC2w2FZASXhn3UFjfQxNiiiuB6Lil-W50EpPSXGpXG5zONJU2jWicyVdAKqD5W0SorloPThoKCc1M6QWM4LL1gUx~qSTbjkhr9yI5KNKKtwA__",
+							"menuLevel": [
+								{
+									"__editorItemTitle": " Acessórios",
+									"href": "https://universalautomotive.myvtex.com/acessorios/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Cabos/Pinos/Hastes",
+									"href": "https://universalautomotive.myvtex.com/cabos-pinos-hastes/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Maçanetas Externas",
+									"href": "https://universalautomotive.myvtex.com/macanetas-externas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Maçanetas Internas",
+									"href": "https://universalautomotive.myvtex.com/macanetas-internas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Fechadura Interna da Porta",
+									"href": "https://universalautomotive.myvtex.com/fechadura-interna-da-porta/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Cilindros e Miolos",
+									"href": "https://universalautomotive.myvtex.com/cilindros-e-miolos/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Dobradiças/Guias",
+									"href": "https://universalautomotive.myvtex.com/dobradicas-guias/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Fechadura do Capô",
+									"href": "https://universalautomotive.myvtex.com/fechadura-do-capo/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Batente Porta/Porta-Malas/Baú",
+									"href": "https://universalautomotive.myvtex.com/ferragens/batente-porta-porta-malas-bau/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-1,category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Capa/Aplique",
+									"href": "https://universalautomotive.myvtex.com/ferragens/capa-aplique/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-1,category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": " Diversos",
+									"href": "https://universalautomotive.myvtex.com/diversos/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Trincos, Aros e Quebra Vento",
+									"href": "https://universalautomotive.myvtex.com/trincos-aros-e-quebra-vento/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Manivelas",
+									"href": "https://universalautomotive.myvtex.com/manivelas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Comutador Ignição",
+									"href": "https://universalautomotive.myvtex.com/comutador-ignicao/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Fechadura Interna do Porta-Mala",
+									"href": "https://universalautomotive.myvtex.com/fechadura-interna-do-porta-mala/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Limitador da Porta/Porta-Malas",
+									"href": "https://universalautomotive.myvtex.com/limitador-da-porta-porta-malas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": " Espelhos e Molduras",
+									"href": "https://universalautomotive.myvtex.com/espelhos-e-molduras/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Chave/Capa/Telecomando",
+									"href": "https://universalautomotive.myvtex.com/chave-capa-telecomando/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Jogo de Cilindros e Maçanetas",
+									"href": "https://universalautomotive.myvtex.com/jogo-de-cilindros-e-macanetas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": " Travas de Direção",
+									"href": "https://universalautomotive.myvtex.com/travas-de-direcao/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Apoio Braço/Alça",
+									"href": "https://universalautomotive.myvtex.com/apoio-braco-alca/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Manoplas",
+									"href": "https://universalautomotive.myvtex.com/manoplas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Botão Elétrico do Porta-Malas",
+									"href": "https://universalautomotive.myvtex.com/botao-eletrico-do-porta-malas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Trava Elétrica",
+									"href": "https://universalautomotive.myvtex.com/trava-eletrica/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Portinholas/ Presilha",
+									"href": "https://universalautomotive.myvtex.com/portinholas--presilha/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Conjunto macaneta",
+									"href": "https://universalautomotive.myvtex.com/conjunto-macaneta/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Buchas",
+									"href": "https://universalautomotive.myvtex.com/buchas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"href": "https://universalautomotive.myvtex.com/kit-coifa/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and",
+									"__editorItemTitle": "Kit Coifa"
+								},
+								{
+									"__editorItemTitle": "Rebite fixação",
+									"href": "https://universalautomotive.myvtex.com/rebite-fixacao/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Kit reparo trambulador",
+									"href": "https://universalautomotive.myvtex.com/kit-reparo-trambulador/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Componente de Fixação",
+									"href": "https://universalautomotive.myvtex.com/componente-de-fixacao/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Calços",
+									"href": "https://universalautomotive.myvtex.com/calcos/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Barra Estabilizadora",
+									"href": "https://universalautomotive.myvtex.com/barra-estabilizadora/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Bandejas",
+									"href": "https://universalautomotive.myvtex.com/bandejas/universal/universal?fuzzy=0&initialMap=ft&initialQuery=universal&map=category-2,brand,ft&operator=and"
+								}
+							]
+						},
+						{
+							"__editorItemTitle": "Máquinas e Componentes do Vidro",
+							"botaoVerTodos": "/",
+							"href": "/",
+							"hasLevel": true,
+							"icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/30928988-ec07-473a-a982-ab41ccdec509___db91bc59bd7e0a23417723dec4ee7d90.jpg",
+							"hasLevelBanners": true,
+							"banner": "https://s3-alpha-sig.figma.com/img/660b/8202/0855bac2305ad8ae8d6ca3c35ec82410?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fZC6J~Gd~1DleMw53iOXDKy6GvvrHPjm64saovxxnzq6xjnd0uJk9k9VpiS9NPXGnCmDbexvkhig0oxi91~G1gGqXmK4KbbZ84pdnKVW2m9pnAE1SVSWRLK7cxPgyeo9e2BknYsRxEatLB-HADfy4oT726-5WvQgPhhsBbgy4mVqNlymHzPg3U9XTiiXMLYyoEOIzRfcZRCh8jgq6TWkNWKCGyZTCt7sq28mWMox89qC2w2FZASXhn3UFjfQxNiiiuB6Lil-W50EpPSXGpXG5zONJU2jWicyVdAKqD5W0SorloPThoKCc1M6QWM4LL1gUx~qSTbjkhr9yI5KNKKtwA__",
+							"menuLevel": [
+								{
+									"__editorItemTitle": "Máquina do Vidro Elétrica",
+									"href": "https://universalautomotive.myvtex.com/maquina-do-vidro-eletrica/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Máquina do Vidro Manual",
+									"href": "https://universalautomotive.myvtex.com/maquina-do-vidro-manual/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Teclas",
+									"href": "https://universalautomotive.myvtex.com/teclas/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Palhetas",
+									"href": "https://universalautomotive.myvtex.com/palhetas/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Motores",
+									"href": "https://universalautomotive.myvtex.com/motores/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Molduras",
+									"href": "https://universalautomotive.myvtex.com/molduras/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Kit Micro",
+									"href": "https://universalautomotive.myvtex.com/kit-micro/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Suporte maquina do vidro",
+									"href": "https://universalautomotive.myvtex.com/suporte-maquina-do-vidro/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Promoção Micro",
+									"href": "https://universalautomotive.myvtex.com/promocao-micro/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Acessórios",
+									"href": "https://universalautomotive.myvtex.com/acessorios/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Chave/Capa/Telecomando",
+									"href": "https://universalautomotive.myvtex.com/chave-capa-telecomando/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Trava Elétrica",
+									"href": "https://universalautomotive.myvtex.com/trava-eletrica/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Eixo Estriado",
+									"href": "https://universalautomotive.myvtex.com/eixo-estriado/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Capa/Aplique",
+									"href": "https://universalautomotive.myvtex.com/capa-aplique/micro/micro?_q=micro&fuzzy=0&initialMap=ft&initialQuery=micro&map=category-2,brand,ft&operator=and"
+								}
+							]
+						},
+						{
+							"__editorItemTitle": "Suspensão, Direção, Câmbio e Amortecedores",
+							"botaoVerTodos": "/",
+							"href": "/",
+							"hasLevel": true,
+							"icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/53826284-4961-4492-81b1-34dd6bd727e6___93cef288984dc797358b05f467e6559f.jpg",
+							"hasLevelBanners": false,
+							"menuLevel": [
+								{
+									"__editorItemTitle": "Promoção Amortex",
+									"href": "https://universalautomotive.myvtex.com/promocao-amortex/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Bandejas",
+									"href": "https://universalautomotive.myvtex.com/bandejas/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Bieletas",
+									"href": "https://universalautomotive.myvtex.com/bieletas/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": " Kits Reparo",
+									"href": "https://universalautomotive.myvtex.com/kits-reparo/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Kit Coifa",
+									"href": "https://universalautomotive.myvtex.com/kit-coifa/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Coxins",
+									"href": "https://universalautomotive.myvtex.com/coxins/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": "Kits Amortecedor",
+									"href": "https://universalautomotive.myvtex.com/kits-amortecedor/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"hasLevel": false
+								},
+								{
+									"__editorItemTitle": " Kits batente",
+									"href": "https://universalautomotive.myvtex.com/kits-batente/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Amortecedor de Suspensão Gás",
+									"href": "https://universalautomotive.myvtex.com/amortecedor-de-suspensao-gas/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Kit reparo trambulador",
+									"href": "https://universalautomotive.myvtex.com/kit-reparo-trambulador/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Kit de Junta Homocinética",
+									"href": "https://universalautomotive.myvtex.com/kit-de-junta-homocinetica/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Barra Estabilizadora",
+									"href": "https://universalautomotive.myvtex.com/barra-estabilizadora/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Braco Oscilante",
+									"href": "https://universalautomotive.myvtex.com/braco-oscilante/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Kit Barra Estabilizadora",
+									"href": "https://universalautomotive.myvtex.com/kit-barra-estabilizadora/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Kit completo",
+									"href": "https://universalautomotive.myvtex.com/kit-completo/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Axiais",
+									"href": "https://universalautomotive.myvtex.com/axiais/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Mola a gas especiais",
+									"href": "https://universalautomotive.myvtex.com/mola-a-gas-especiais/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Terminal de Direção",
+									"href": "https://universalautomotive.myvtex.com/terminal-de-direcao/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Mola a gas geral",
+									"href": "https://universalautomotive.myvtex.com/mola-a-gas-geral/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"href": "https://universalautomotive.myvtex.com/pivo/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and",
+									"__editorItemTitle": "Pivô"
+								},
+								{
+									"__editorItemTitle": "Buchas",
+									"href": "https://universalautomotive.myvtex.com/buchas/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Diversos",
+									"href": "https://universalautomotive.myvtex.com/diversos/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Amortecedor de Suspensão Ôleo",
+									"href": "https://universalautomotive.myvtex.com/amortecedor-de-suspensao-oleo/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Suporte Coxim",
+									"href": "https://universalautomotive.myvtex.com/suporte-coxim/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Prato de mola do amortecedor",
+									"href": "https://universalautomotive.myvtex.com/prato-de-mola-do-amortecedor/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Trambulador",
+									"href": "https://universalautomotive.myvtex.com/trambulador/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Mola a Gas para Banco",
+									"href": "https://universalautomotive.myvtex.com/mola-a-gas-para-banco/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Mola a Gas para Cabine",
+									"href": "https://universalautomotive.myvtex.com/mola-a-gas-para-cabine/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Braço Pitman e Auxiliar",
+									"href": "https://universalautomotive.myvtex.com/braco-pitman-e-auxiliar/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Kit Barra Lateral",
+									"href": "https://universalautomotive.myvtex.com/kit-barra-lateral/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Garfo da embreagem",
+									"href": "https://universalautomotive.myvtex.com/garfo-da-embreagem/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Barra Direção",
+									"href": "https://universalautomotive.myvtex.com/barra-direcao/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Semi Eixo",
+									"href": "https://universalautomotive.myvtex.com/semi-eixo/amortex/amortex?_q=amortex&fuzzy=0&initialMap=ft&initialQuery=amortex&map=category-2,brand,ft&operator=and"
+								}
+							]
+						},
+						{
+							"__editorItemTitle": "Tampas Automotivas",
+							"botaoVerTodos": "/",
+							"href": "/",
+							"hasLevel": true,
+							"icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/ed185b2a-699c-41e4-be24-6c79ef82bfc8___6da0a601fce0fbbb96e610e165b55989.jpg",
+							"hasLevelBanners": true,
+							"menuLevel": [
+								{
+									"__editorItemTitle": "Tampas do Radiador/Arrefecimento/Óleo",
+									"href": "https://universalautomotive.myvtex.com/tampas-do-radiador-arrefecimento-oleo/unick/unick?_q=unick&fuzzy=0&initialMap=ft&initialQuery=unick&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Vareta Medidora de Óleo",
+									"href": "https://universalautomotive.myvtex.com/vareta-medidora-de-oleo/unick/unick?_q=unick&fuzzy=0&initialMap=ft&initialQuery=unick&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Tampas de Combustível",
+									"href": "https://universalautomotive.myvtex.com/tampas-de-combustivel/unick/unick?_q=unick&fuzzy=0&initialMap=ft&initialQuery=unick&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Tampa do Reservatório",
+									"href": "https://universalautomotive.myvtex.com/tampa-do-reservatorio/unick/unick?_q=unick&fuzzy=0&initialMap=ft&initialQuery=unick&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Acessórios",
+									"href": "https://universalautomotive.myvtex.com/acessorios/unick/unick?_q=unick&fuzzy=0&initialMap=ft&initialQuery=unick&map=category-2,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Válvula Anti-Chama",
+									"href": "https://universalautomotive.myvtex.com/valvula-anti-chama/unick/unick?_q=unick&fuzzy=0&initialMap=ft&initialQuery=unick&map=category-2,brand,ft&operator=and"
+								}
+							],
+							"banner": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/d80e2695-521c-4266-9284-7b5a61c3c78d___44c8b8bbdb611b49938dba9624ffb3ff.png"
+						},
+						{
+							"__editorItemTitle": "Lâmpadas Automotivas",
+							"botaoVerTodos": "/",
+							"href": "/",
+							"hasLevel": true,
+							"icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/d6e7fae9-20f2-4b85-b509-06c089f3d497___d614c235a7f3430c01708af408c2b2c0.jpg",
+							"hasLevelBanners": false,
+							"menuLevel": [
+								{
+									"__editorItemTitle": "Leds",
+									"href": "https://universalautomotive.myvtex.com/leds/carto/carto?_q=carto&fuzzy=0&initialMap=ft&initialQuery=carto&map=category-1,brand,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": " Lâmpada Standard",
+									"href": "https://universalautomotive.myvtex.com/lampada-standard/carto?_q=carto&fuzzy=0&initialMap=ft&initialQuery=carto&map=category-2,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Super Branca",
+									"href": "https://universalautomotive.myvtex.com/super-branca/carto?_q=carto&fuzzy=0&initialMap=ft&initialQuery=carto&map=category-2,ft&operator=and"
+								},
+								{
+									"__editorItemTitle": "Lâmpada Led Mini",
+									"href": "https://universalautomotive.myvtex.com/lampada-led-mini/carto?_q=carto&fuzzy=0&initialMap=ft&initialQuery=carto&map=category-2,ft&operator=and"
+								}
+							]
+						},
+						{
+							"__editorItemTitle": "Químicos Automotivas",
+							"botaoVerTodos": "/",
+							"href": "/",
+							"hasLevel": true,
+							"icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/5146da24-229b-4ac7-840d-8203942ed983___f062fedd0614de3733abd041405edc6d.jpg",
+							"hasLevelBanners": true,
+							"banner": null,
+							"menuLevel": [
+								{
+									"__editorItemTitle": "Silicone",
+									"href": "https://universalautomotive.myvtex.com/quimicos/silicone?initialMap=c&initialQuery=quimicos&map=category-1,category-2"
+								},
+								{
+									"__editorItemTitle": "Descarbonizante",
+									"href": "https://universalautomotive.myvtex.com/quimicos/descarbonizante?initialMap=c&initialQuery=quimicos&map=category-1,category-2"
+								},
+								{
+									"__editorItemTitle": "Limpa Contato Elétrico",
+									"href": "https://universalautomotive.myvtex.com/quimicos/limpa-contato-eletrico?initialMap=c&initialQuery=quimicos&map=category-1,category-2"
+								},
+								{
+									"__editorItemTitle": " Graxa Líquida",
+									"href": "https://universalautomotive.myvtex.com/quimicos/graxa-liquida?initialMap=c&initialQuery=quimicos&map=category-1,category-2"
+								},
+								{
+									"__editorItemTitle": "Desengripante",
+									"href": "https://universalautomotive.myvtex.com/quimicos/desengripante?initialMap=c&initialQuery=quimicos&map=category-1,category-2"
+								}
+							]
+						}
+					]
+				}
+			],
+			"isFullModeStyle": false,
+			"textMode": "html",
+			"headline": "",
+			"subhead": "",
+			"bodyText": "",
+			"callToActionMode": "button",
+			"callToActionText": "",
+			"callToActionUrl": "",
+			"callToActionLinkTarget": "_self",
+			"imageUrl": "",
+			"mobileImageUrl": "",
+			"imageActionUrl": "",
+			"textPosition": "left",
+			"textAlignment": "left",
+			"height": 420
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.productHighlightWrapper--compreeleve {
+    width: fit-content !important;
+    padding: 6px 8px;
+    border-radius: 999px;
+    background-color: #C91A1A;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #fff;
+}
+
+.productHighlightWrapper--maispormenos {
+    width: fit-content !important;
+    padding: 6px 8px;
+    border-radius: 999px;
+    border: 1px solid #142032;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #142032;
+}

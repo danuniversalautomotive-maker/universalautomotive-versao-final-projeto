@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "editorconfig.editorconfig",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "kisstkondoros.vscode-gutter-preview",
+    "esbenp.prettier-vscode",
+    "cipchk.cssrem",
+    "stylelint.vscode-stylelint",
+    "agenciae-plus.vtexio-intellisense",
+    "usernamehw.errorlens",
+    "milaniromulo.vtex-whoami"
+  ]
+}

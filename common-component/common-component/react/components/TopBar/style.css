@@ -1,0 +1,16 @@
+.container {
+    background-color: #000;
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem;
+    margin: auto;
+    width: 1260px;    
+}

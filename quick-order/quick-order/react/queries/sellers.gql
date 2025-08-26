@@ -1,0 +1,8 @@
+query getSellers {
+  sellers {
+    items {
+      id
+      name
+    }
+  }
+}

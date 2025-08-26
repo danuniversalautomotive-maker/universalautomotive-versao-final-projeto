@@ -1,0 +1,342 @@
+{
+	"store.custom#catalogo": {
+		"blocks": [
+			"flex-layout.row#breadcrumb-catalog",
+			"flex-layout.row#page-title",
+			"flex-layout.row#vantagens",
+			"flex-layout.row#second-title",
+			"flex-layout.row#catalogo-juntos",
+			"flex-layout.row#catalogo-juntos-download",
+			"flex-layout.row#catalogo-juntos-info",
+			"flex-layout.row#catalogo-individuais",
+			"flex-layout.row#catalogo-individuais-download",
+			"flex-layout.row#newsletter"
+		],
+		"props": {
+			"blockClass": "pagina-catalogo"
+		}
+	},
+	"flex-layout.row#breadcrumb-catalog": {
+		"title": "Seção Breadcrumb",
+		"children": [
+			"rich-text#breadcrumb"
+		]
+	},
+	"rich-text#breadcrumb": {
+		"title": "Titulo Breadcrumb",
+		"props": {
+			"blockClass": "catalog-breadcrumb",
+			"text": "[Início](/) > **Catálogos Grupo Universal**"
+		}
+	},
+	//Título Principal
+	"flex-layout.row#page-title": {
+		"title": "Título da Página",
+		"children": [
+			"rich-text#catalogo-title"
+		]
+	},
+	"rich-text#catalogo-title": {
+		"title": "Título Catálogo",
+		"props": {
+			"text": "Descomplique o seu dia a dia",
+			"blockClass": "catalogo-title"
+		}
+	},
+	//Bloco de Vantagens
+	"flex-layout.row#vantagens": {
+		"title": "Vantagens Catálogo",
+		"children": [
+			"rich-text#vantagens"
+		]
+	},
+	"rich-text#vantagens": {
+		"title": "Texto - Vantagens do Catálogo Digital",
+		"props": {
+			"text": "Conheça as vantagens do Catálogo Digital. \n * Acesso às **08 linhas** de produtos do Grupo Universal Soluções Automotivas \n * Agilidade na busca de nossos produtos com mais de 27.000 itens \n * Seleção de produtos com montagem de carrinho para solicitação de orçamento \n * Leitor de código de barra dos nossos produtos para acessar características e aplicações (versão mobile)",
+			"blockClass": "catalogo-vantagens"
+		}
+	},
+	//Segundo Título
+	"flex-layout.row#second-title": {
+		"title": "Formas Obter Catálogo Título",
+		"children": [
+			"rich-text#second-title"
+		]
+	},
+	"rich-text#second-title": {
+		"title": "Texto - Escolha a melhor forma de obter o catálogo",
+		"props": {
+			"text": "Escolha a melhor forma de obter o seu catálogo:",
+			"blockClass": "catalogo-second-title"
+		}
+	},
+	//Catálogo Juntos
+	"flex-layout.row#catalogo-juntos": {
+		"title": "Catálogos Juntos Título",
+		"children": [
+			"rich-text#catalogo-juntos"
+		]
+	},
+	"rich-text#catalogo-juntos": {
+		"title": "Texto - Catálogos Juntos",
+		"props": {
+			"text": "# Catálogos juntos \n Faça o **download** do catálogo digital no seu dispositivo, e tenha **acesso às 08 linhas de produtos.**",
+			"blockClass": "catalogo-juntos"
+		}
+	},
+	"flex-layout.row#catalogo-juntos-download": {
+		"title": "Catálogos Juntos",
+		"children": [
+			"info-card#download-desktop",
+			"info-card#download-android",
+			"info-card#download-ios"
+		],
+		"props": {
+			"blockClass": "catalogo-juntos-download"
+		}
+	},
+	"info-card#download-desktop": {
+		"title": "Download Desktop",
+		"props": {
+			"id": "info-card-download",
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/icons/desktop.png",
+			"subhead": "Desktop",
+			"callToActionText": "Download",
+			"callToActionUrl": "https://www.ideia2001.com.br/CatExp/AHAAE/InstalarCatalogoUniversalAutomotive.exe",
+			"blockClass": "info-card-download",
+			"textAlignment": "center",
+			"fetchpriority": "auto",
+			"preload": true
+		}
+	},
+	"info-card#download-android": {
+		"title": "Download Android",
+		"props": {
+			"id": "info-card-download",
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/icons/android.png",
+			"subhead": "Android",
+			"callToActionText": "Download",
+			"callToActionUrl": "https://play.google.com/store/apps/details?id=br.com.ideia2001.CatalogoUniversalAutomotive&pli=1",
+			"blockClass": "info-card-download",
+			"textAlignment": "center",
+			"fetchpriority": "auto",
+			"preload": true
+		}
+	},
+	"info-card#download-ios": {
+		"title": "Download iOS",
+		"props": {
+			"id": "info-card-download",
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/icons/ios.png",
+			"subhead": "iOS",
+			"callToActionText": "Download",
+			"callToActionUrl": "https://apps.apple.com/us/app/universal-solu%C3%A7%C3%B5es-automotivas/id6447769723",
+			"blockClass": "info-card-download",
+			"textAlignment": "center",
+			"fetchpriority": "auto",
+			"preload": true
+		}
+	},
+	"flex-layout.row#catalogo-juntos-info": {
+		"title": "Download Catálogo Juntos Informação",
+		"children": [
+			"rich-text#catalogo-juntos-info"
+		]
+	},
+	"rich-text#catalogo-juntos-info": {
+		"title": "Texto - Informação Download Catálogo Juntos",
+		"props": {
+			"text": "*Após o clique, seu download será iniciado automaticamente.",
+			"blockClass": [
+				"catalogo-juntos-info"
+			]
+		}
+	},
+	//Catálogo Individuais
+	"flex-layout.row#catalogo-individuais": {
+		"title": "Catálogos Individuais Título",
+		"children": [
+			"rich-text#catalogo-individuais"
+		]
+	},
+	"rich-text#catalogo-individuais": {
+		"title": "Texto - Catálogos Individuais",
+		"props": {
+			"text": "# Catálogos individuais \n Escolha o catálogo digital de forma individual e faça o seu **download.**",
+			"blockClass": [
+				"catalogo-juntos",
+				"catalogo-individuais"
+			]
+		}
+	},
+	"flex-layout.row#catalogo-individuais-download": {
+		"title": "Catálogos Individuais",
+		"children": [
+			"list-context.info-card-list#lista-catalogo-individuais"
+		],
+		"props": {
+			"blockClass": "catalogo-individuais-download"
+		}
+	},
+	"list-context.info-card-list#lista-catalogo-individuais": {
+		"title": "Lista de Catálogos Individuais",
+		"children": [
+			"list-context-renderer#renderer-catalogo-individuais"
+		],
+		"props": {
+			"blockClass": [],
+			"infoCards": [
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_uniflex_mangueiras.png",
+					"subhead": "Mangueiras Uniflex",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "http://www.uasys.com.br/Catalogos/18-Catalogo_UNIFLEX_Mangueiras_2021.pdf",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link",
+					"linkTarget": "_blank"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_eletric_life.png",
+					"subhead": "Eletric Life",
+					"bodyText": "(2022)",
+					"callToActionText": "Download",
+					"callToActionUrl": "http://www.uasys.com.br/Catalogos/16-Catalogo_ElectricLife_LED_Halogenas_2021.pdf",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link",
+					"linkTarget": "_blank"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_quimicos.png",
+					"subhead": "Uni1000",
+					"bodyText": "(2022)",
+					"callToActionText": "Download",
+					"callToActionUrl": "http://www.uasys.com.br/Catalogos/17-Catalogo_UNI1000_Quimicos_Automotivos_2021.pdf",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link",
+					"linkTarget": "_blank"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "http://www.uasys.com.br/Catalogos/4-Catalogo_Universal_Cabos_de_Acionamento.pdf",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link",
+					"linkTarget": "_blank"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				},
+				{
+					"textPosition": "center",
+					"imageUrl": "assets/icons/catalogo_cabos.png",
+					"subhead": "Universal Cabos de Acionamento",
+					"bodyText": "(2021)",
+					"callToActionText": "Download",
+					"callToActionUrl": "/",
+					"blockClass": "catalogo-download",
+					"textAlignment": "center",
+					"callToActionMode": "link"
+				}
+			]
+		}
+	},
+	"list-context-renderer#renderer-catalogo-individuais": {
+		"props": {
+			"listElement": "ul",
+			"itemElement": "li",
+			"blockClass": "renderer-catalogo-individuais"
+		}
+	}
+}

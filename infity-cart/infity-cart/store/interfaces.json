@@ -1,0 +1,8 @@
+{
+  "app--client-last-cart": {
+    "component": "ClientLastCart"
+  },
+  "app--clear-client-last-cart": {
+    "component": "ClearLastCart"
+  }
+}

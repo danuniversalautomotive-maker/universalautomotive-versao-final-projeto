@@ -1,0 +1,25 @@
+query getSkuFromRefIds(
+  $refids: [String]
+  $orderFormId: String
+  $refIdSellerMap: RefIdSellerMap
+  $refIdQuantityMap: RefIdQuantityMap
+) {
+  skuFromRefIds(
+    refids: $refids
+    orderFormId: $orderFormId
+    refIdSellerMap: $refIdSellerMap
+    refIdQuantityMap: $refIdQuantityMap
+  ) @context(provider: "vtex.quickorder") {
+    items {
+      sku
+      refid
+      sellers {
+        id
+        name
+        availability
+        unitMultiplier
+        availableQuantity
+      }
+    }
+  }
+}

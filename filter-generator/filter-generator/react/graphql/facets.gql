@@ -1,0 +1,19 @@
+query facets($fullText: String) {
+  facets(fullText: $fullText) @context(provider: "vtex.search-graphql") {
+    facets {
+      name
+      values {
+        name
+        key
+      }
+    }
+    specificationFilters {
+      name
+      facets {
+        name
+        map
+        value
+      }
+    }
+  }
+}

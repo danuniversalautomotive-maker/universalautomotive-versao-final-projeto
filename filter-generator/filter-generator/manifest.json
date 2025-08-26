@@ -1,0 +1,30 @@
+{
+  "vendor": "universalautomotive",
+  "name": "filter-generator",
+  "version": "0.0.5",
+  "title": "Filter Generator",
+  "description": "App to construct url using filters",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "store": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.store-components": "3.x",
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.render-runtime": "8.x",
+    "vtex.catalog-graphql": "1.x",
+    "vtex.search-graphql": "0.x",
+    "universalautomotive.filter-generator-api-category-tree": "0.x",
+    "vtex.visibility-layout": "0.x",
+    "vtex.device-detector": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

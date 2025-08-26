@@ -1,0 +1,20 @@
+.CustomSkuSelector_Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.CustomSkuSelector_Container button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #979899;
+  background-color: #f2f4f5;
+}
+
+.CustomSkuSelector_Container button {
+  height: 32px;
+  width: 28px;
+  font-size: .875rem;
+  font-weight: 700;
+  color: #4a596b;
+}

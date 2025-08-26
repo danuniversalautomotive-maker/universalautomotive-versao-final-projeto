@@ -1,0 +1,90 @@
+/* pdp styles */
+.CustomPriceClusters_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-price-box)
+.CustomPriceClusters_Price,
+:global(.vtex-flex-layout-0-x-flexRowContent--right-col-boxes)
+.CustomPriceClusters_Price {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #30312f;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-price-box)
+.CustomPriceClusters_PriceInfo,
+:global(.vtex-flex-layout-0-x-flexRowContent--right-col-boxes)
+.CustomPriceClusters_PriceInfo {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #4a596b;
+  margin-top: 8px;
+}
+
+/* hide pdp native prices */
+:global(.vtex-flex-layout-0-x-flexRowContent--right-col-boxes)
+:global(.vtex-flex-layout-0-x-flexCol--listAndSellingPrice),
+:global(.vtex-flex-layout-0-x-flexRowContent--right-col-boxes)
+:global(.vtex-product-price-1-x-installments) {
+  display: none !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-price-box)
+:global(.vtex-flex-layout-0-x-flexCol--listAndSellingPrice),
+:global(.vtex-flex-layout-0-x-flexRow--product-price-box)
+:global(.vtex-product-price-1-x-installments) {
+  display: none !important;
+}
+
+/* hide home native prices */
+:global(.vtex-slider-layout-0-x-slide--shelfTrending)
+:global(.vtex-flex-layout-0-x-flexCol--listAndSellingPrice) {
+  display: none !important;
+}
+
+/* hide shelf native prices */
+:global(.vtex-shelf-1-x-slide)
+:global(.vtex-flex-layout-0-x-flexRowContent--prices-and-discount-box)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child,
+:global(.vtex-search-result-3-x-gallery)
+:global(.vtex-flex-layout-0-x-flexRowContent--prices-and-discount-box)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child,
+:global(.vtex-shelf-1-x-slide)
+.CustomPriceClusters_PriceInfo:last-child,
+:global(.vtex-search-result-3-x-gallery)
+.CustomPriceClusters_PriceInfo:last-child {
+  display: none !important;
+}
+
+/* shelf and gallery styles */
+:global(.vtex-slider-layout-0-x-slide--shelfTrending)
+.CustomPriceClusters_Price,
+:global(.vtex-search-result-3-x-gallery)
+.CustomPriceClusters_Price,
+:global(.vtex-shelf-1-x-slide)
+.CustomPriceClusters_Price {
+  font-size: 25px;
+  font-weight: 600;
+  color: #30312f;
+}
+
+:global(.vtex-slider-layout-0-x-slide--shelfTrending)
+.CustomPriceClusters_PriceInfo,
+:global(.vtex-search-result-3-x-gallery)
+.CustomPriceClusters_PriceInfo,
+:global(.vtex-shelf-1-x-slide)
+.CustomPriceClusters_PriceInfo {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #4a596b;
+  margin-top: 8px;
+}
+
+:global(.vtex-slider-layout-0-x-slide--shelfTrending)
+.CustomPriceClusters_PriceInfo:last-child {
+  display: none !important;
+}

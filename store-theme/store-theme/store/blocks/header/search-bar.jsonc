@@ -1,0 +1,45 @@
+{
+  "search-bar": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary.shelf#searchBar"
+    ],
+    "props": {
+      "simulationBehavior": "default",
+      "maxSuggestedProducts": 6,
+      "customBreakpoints": {
+        "md": {
+          "width": 100
+        }
+      }
+    }
+  },
+  "autocomplete-result-list.v2#mobile": {
+    "blocks": [
+      "product-summary.shelf#searchBarMobile"
+    ],
+    "props": {
+      "simulationBehavior": "default",
+      "maxSuggestedProducts": 6,
+      "autocompleteWidth": 92,
+      "HorizontalProductSummary": "product-summary.shelf#searchBarMobile"
+    }
+  }
+//   "autocomplete-result-list.v2#mobile": {
+//     "blocks": [
+//       "product-summary.shelf#searchBarMobile"
+//     ],
+//     "props": {
+//       "simulationBehavior": "default",
+//       "maxSuggestedProducts": 1,
+//       "autocompleteWidth": 92
+//     }
+//   }
+}

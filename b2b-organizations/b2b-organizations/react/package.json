@@ -1,0 +1,50 @@
+{
+  "name": "vtex.b2b-organizations",
+  "version": "1.31.5",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "vtex-test-tools test --passWithNoTests"
+  },
+  "devDependencies": {
+    "@apollo/react-testing": "^3.1.3",
+    "@types/faker": "^5.5.7",
+    "@types/jest": "^25.1.4",
+    "@types/lodash": "^4.14.185",
+    "@types/node": "^13.9.8",
+    "@types/react": "^16.9.31",
+    "@types/react-router": "^5.1.11",
+    "@types/react-router-dom": "^5.1.11",
+    "@vtex/test-tools": "^3.3.2",
+    "@vtex/tsconfig": "^0.6.0",
+    "apollo-cache-inmemory": "^1.6.5",
+    "graphql": "^14.6.0",
+    "universalautomotive.b2b-organizations": "http://universalautomotive.vtexassets.com/_v/public/typings/v1/universalautomotive.b2b-organizations@0.0.3/public/@types/universalautomotive.b2b-organizations",
+    "vtex.address-form": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.address-form@4.24.3/public/@types/vtex.address-form",
+    "vtex.admin-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.admin-graphql@2.40.0/public/@types/vtex.admin-graphql",
+    "vtex.b2b-organizations-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.b2b-organizations-graphql@0.51.0/public/@types/vtex.b2b-organizations-graphql",
+    "vtex.catalog-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.catalog-graphql@1.103.1/public/@types/vtex.catalog-graphql",
+    "vtex.country-codes": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.country-codes@2.0.1/public/_types/react",
+    "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
+    "vtex.my-account": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.27.1/public/@types/vtex.my-account",
+    "vtex.my-account-commons": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account-commons@1.7.1/public/@types/vtex.my-account-commons",
+    "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.2/public/@types/vtex.render-runtime",
+    "vtex.store": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.136.0/public/@types/vtex.store",
+    "vtex.store-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.170.2/public/@types/vtex.store-graphql",
+    "vtex.storefront-permissions": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.storefront-permissions@1.40.7/public/@types/vtex.storefront-permissions",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.9/public/@types/vtex.styleguide"
+  },
+  "dependencies": {
+    "@vtex/admin-ui": "^0.136.1",
+    "@vtex/bulk-import-ui": "1.1.10",
+    "@vtex/css-handles": "^1.0.0",
+    "apollo-client": "^2.6.10",
+    "axios": "1.4.0",
+    "react": "^16.9.2",
+    "react-apollo": "^3.1.5",
+    "react-intl": "^5.13.4",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "swr": "^2.2.4"
+  }
+}

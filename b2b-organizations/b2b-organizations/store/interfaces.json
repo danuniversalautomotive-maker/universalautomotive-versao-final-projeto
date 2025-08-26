@@ -1,0 +1,34 @@
+{
+  "my-account-page.my-organization": {
+    "component": "MyOrganizationPage"
+  },
+  "my-account-link.my-organization": {
+    "component": "MyOrganizationLink"
+  },
+  "store.organization-request": {
+    "required": ["request-organization"]
+  },
+  "request-organization": {
+    "component": "RequestOrganizationForm"
+  },
+  "store.organization-details": {
+    "required": ["organization-details"]
+  },
+  "organization-details": {
+    "component": "StorefrontOrganizationDetails"
+  },
+  "store.costcenter-details": {
+    "required": ["costcenter-details"]
+  },
+  "costcenter-details": {
+    "component": "StorefrontCostCenterDetails"
+  },
+  "b2b-user-widget": {
+    "component": "StorefrontUserWidget"
+  },
+  "b2b-seller-wrapper": {
+    "component": "SellerWrapper",
+    "allowed": "*",
+    "composition": "children"
+  }
+}

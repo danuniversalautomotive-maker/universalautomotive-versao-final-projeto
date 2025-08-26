@@ -1,0 +1,18 @@
+{
+  "memory": 256,
+  "ttl": 50,
+  "timeout": 8,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "clientLastSessionCart": {
+      "path": "/_v/client-last-cart",
+      "public": true
+    },
+    "keepAlive": {
+      "path": "/_v/jobs/keep-alive",
+      "public": true
+    }
+  }
+}
