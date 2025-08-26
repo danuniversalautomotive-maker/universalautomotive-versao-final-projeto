@@ -1,0 +1,77 @@
+{
+	"flex-layout.row#alsoView": {
+		"title": "Vitrine de Produtos Relacionados",
+		"children": [
+			"flex-layout.col#alsoView"
+		],
+		"props": {
+			"marginBottom": 6,
+			"blockClass": [
+				"relative",
+				"bg-base",
+				"z-998"
+			]
+		}
+	},
+	"flex-layout.col#alsoView": {
+		"children": [
+			"rich-text#alsoViewTitle",
+			// "list-context.product-list#alsoView",
+			"shelf.relatedProducts"
+		]
+	},
+	"shelf.relatedProducts": {
+		"blocks": [
+			"product-summary.shelf#list"
+		],
+		"props": {
+			"recommendation": "view",
+			"productList": {
+				"showTitle": false,
+				"maxItems": 10,
+				"itemsPerPage": 4,
+				"scroll": "BY_PAGE",
+				"gap": "ph2"
+			}
+		}
+	},
+	"rich-text#alsoViewTitle": {
+		"title": "Título da Vitrine",
+		"props": {
+			"text": "### Produtos relacionados",
+			"blockClass": "alsoView"
+		}
+	},
+	"list-context.product-list#alsoView": {
+		"children": [
+			"slider-layout#alsoView"
+		],
+		"blocks": [
+			"product-summary.shelf#list"
+		],
+		"props": {
+			"orderBy": "OrderByTopSaleDESC",
+			"maxItems": 12,
+			"installmentCriteria": "MAX_WITH_INTEREST"
+		}
+	},
+	"slider-layout#alsoView": {
+		"title": "Configuração do Slider",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 4,
+				"tablet": 2,
+				"phone": 1
+			},
+			"centerMode": {
+				"desktop": "to-the-left",
+				"tablet": "to-the-left",
+				"phone": "disabled"
+			},
+			"infinite": true,
+			"fullWidth": true,
+			"blockClass": "shelfAlsoView",
+			"showNavigationArrows": "desktopOnly"
+		}
+	}
+}

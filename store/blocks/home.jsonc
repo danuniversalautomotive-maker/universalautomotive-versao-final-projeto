@@ -1,0 +1,371 @@
+{
+	"store.home": {
+		"children": [
+			"b2b-context#desktop"
+		]
+	},
+	"b2b-context#desktop": {
+		"title": "Componentes da home",
+		"children": [
+			"check-permission#representative-area",
+			"flex-layout.row#sales-channel-banner",
+			"flex-layout.row#shopByCategory",
+			"filter-generator",
+			"flex-layout.row#trending",
+			"flex-layout.row#full-banner-desktop1",
+			"flex-layout.row#popular",
+			"flex-layout.row#bannerCoupon",
+			"flex-layout.row#imageBanners",
+			"flex-layout.row#newsletter"
+		]
+	},
+	"flex-layout.row#sales-channel-banner": {
+		"title": "Seção de banners do canal de vendas",
+		"props": {
+			"blockClass": "full-banner",
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.col#sales-channel-banner"
+		]
+	},
+	"flex-layout.col#sales-channel-banner": {
+		"children": [
+			"sales-channel-banner"
+		]
+	},
+	"sales-channel-banner": {
+		"title": "Lista de Banners",
+		"children": [
+			"slider-layout#sales-channel-banner"
+		],
+		"props": {
+			"height": 480,
+			"autoplay": 8000,
+			"images": [
+				{
+					"image": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/54c5ebb3-c4e2-4cf5-b666-3a040e3c85bf___4afe91f785d1ce0def95d22f19a13259.png",
+					"mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5487ac22-1ff1-4d58-9e30-a4a988c8b2f0___957589e6ef45be74833cf6635bd37416.jpg",
+					"title": "Uniflex",
+					"description": "Hammer Drill Precision Pro",
+					"link": {
+						"url": "/hammer-drill/p"
+					}
+				},
+				{
+					"image": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/d4a72ab6-29e2-4a64-80ea-316fdae2f669___484a00e7e6a9d807c429a190ba6bc917.jpg",
+					"mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/8b4eca92-5169-4f1f-8892-d8d901835db8___cda09b14331d9f5788718d072a4f45d4.jpg",
+					"title": "Portal do cliente",
+					"description": "Jigsaw Saw",
+					"link": {
+						"url": "/precision-pro-fspe-100-jigsaw/p"
+					}
+				},
+				{
+					"image": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/f84db4ef-f944-4cd0-ba22-d0f0c47af24b___50fb1e876ea8575ee1a9214c779380fb.jpg",
+					"mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5e4471a0-a66b-4a33-8c87-f1433e001031___7d249a9bcb02fa4519094717817733bc.jpg",
+					"title": "Comunicado importante",
+					"description": "All day work",
+					"link": {
+						"url": "/precision-pro-impact-drill/p"
+					}
+				},
+				{
+					"image": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/38ec6d85-2cf4-4c3e-9ff9-15affb7154e7___71b117a1108224bc0d26233d387fdae8.jpg",
+					"mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/e9cf961a-9170-4b19-993d-ba36f56f5a4b___42781a35b70ae82bbc13f9dc2ba7b439.jpg",
+					"title": "Sobre nós",
+					"description": "Cordless Saw",
+					"link": {
+						"url": "/-cordless-reciprocating-saw-precision-pro/p"
+					}
+				}
+			]
+		}
+	},
+	"slider-layout#sales-channel-banner": {
+		"title": "Configuração do slider",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "always"
+		}
+	},
+	"flex-layout.row#shopByCategory": {
+		"title": "Seção compre por categoria",
+		"props": {
+			"blockClass": "shopByCategorySection"
+		},
+		"children": [
+			"flex-layout.col#shopByCategory"
+		]
+	},
+	"flex-layout.col#shopByCategory": {
+		"props": {
+			"blockClass": "shopByCategory"
+		},
+		"children": [
+			"rich-text#shopByTitle",
+			"slider-layout#home"
+		]
+	},
+	"rich-text#shopByTitle": {
+		"title": "Titulo - Compre por categoria",
+		"props": {
+			"text": "### Nossas Marcas",
+			"textPosition": "CENTER",
+			"blockClass": "shopByCategoryTitle"
+		}
+	},
+	"slider-layout#home": {
+		"title": "Configuração do slider de categorias",
+		"children": [
+			"info-card#1",
+			"info-card#2",
+			"info-card#3",
+			"info-card#4",
+			"info-card#6",
+			"info-card#7",
+			"info-card#8",
+			"info-card#9"
+		],
+		"props": {
+			"autoplay": {
+				"timeout": 5000,
+				"stopOnHover": false
+			}
+		}
+	},
+	"info-card#1": {
+		"title": "1º Card de categoria",
+		"props": {
+			"imageUrl": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/033394e0-2878-41de-99df-bf1427e67fa9___af131c90db38797692b07cff0bbc6fb8.svg",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"textPosition": "center"
+		}
+	},
+	"info-card#2": {
+		"title": "2º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"info-card#3": {
+		"title": "3º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"info-card#4": {
+		"title": "4º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"info-card#5": {
+		"title": "5º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"info-card#6": {
+		"title": "6º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"info-card#7": {
+		"title": "7º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"info-card#8": {
+		"title": "8º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"info-card#9": {
+		"title": "9º Card de categoria",
+		"props": {
+			"imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"isFullModeStyle": true,
+			"headline": "Black Friday",
+			"callToActionText": "visualizar",
+			"textPosition": "center"
+		}
+	},
+	"flex-layout.row#representative-area": {
+		"props": {
+			"blockClass": "representative-area"
+		},
+		"children": [
+			"flex-layout.col#representative-area"
+		]
+	},
+	"flex-layout.col#representative-area": {
+		"props": {
+			"blockClass": "representative-area"
+		},
+		"children": [
+			"b2b-representative-area"
+		]
+	},
+	"b2b-representative-area": {
+		"title": "Área do representante",
+		"props": {
+			"individualGoal": 0,
+			"reachedValue": 0,
+			"customersPortfolio": 0,
+			"customersOrdersMonth": 0
+		}
+	},
+	/* New categories section */
+	"flex-layout.row#full-banner-desktop1": {
+		"children": [
+			"image#full-banner-desktop1"
+		],
+		"props": {
+			"paddingTop": 8,
+			"paddingBottom": 8,
+			"fullWidth": true,
+			"horizontalAlign": "center"
+		},
+		"title": "Seção de banner 1"
+	},
+	"image#full-banner-desktop1": {
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/a3cd806f-8316-4484-8559-f406abdbd2ea___b03b24c32bce6fdda8449361dec78803.png",
+			"alt": "Tool Kits",
+			"title": "Uniflex",
+			"link": {
+				"url": "/kits"
+			}
+		},
+		"title": "Banner "
+	},
+	"flex-layout.row#imageBanners": {
+		"title": "Seção de lista de banners",
+		"props": {
+			"blockClass": "imageBanners",
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"flex-layout.col#banner1",
+			"flex-layout.col#banner2",
+			"flex-layout.col#banner3"
+		]
+	},
+	"flex-layout.col#banner1": {
+		"props": {
+			"preventVerticalStretch": true
+		},
+		"children": [
+			"image#banner-1"
+		]
+	},
+	"flex-layout.col#banner2": {
+		"props": {
+			"preventVerticalStretch": true
+		},
+		"children": [
+			"image#banner-2"
+		]
+	},
+	"flex-layout.col#banner3": {
+		"props": {
+			"preventVerticalStretch": true
+		},
+		"children": [
+			"image#banner-3"
+		]
+	},
+	"image#banner-1": {
+		"title": "Banner 1",
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/461a3d9c-9de8-497e-b463-bff36b35493e___a7535a1e90c4c82a13316c45b3466c74.png",
+			"maxHeight": 256,
+			"blockClass": "bannerThird",
+			"link": {
+				"url": "#"
+			}
+		}
+	},
+	"image#banner-2": {
+		"title": "Banner 2",
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/0563124a-acf9-4bb9-8614-b3cff932876a___f36443b70b54ea5fd0e0a625565e66c3.png",
+			"maxHeight": 256,
+			"blockClass": "bannerThird",
+			"link": {
+				"url": "#"
+			}
+		}
+	},
+	"image#banner-3": {
+		"title": "Banner 3",
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/a626d360-d4ea-4113-af9e-cb3d2e35411b___3fc1aa71a39001d56759a06dc4e76b4e.png",
+			"maxHeight": 256,
+			"blockClass": "bannerThird",
+			"link": {
+				"url": "#"
+			}
+		}
+	},
+	"flex-layout.row#bannerCoupon": {
+		"title": "Seção de banner 2",
+		"props": {
+			"blockClass": "full-banner",
+			"paddingTop": 8,
+			"fullWidth": true
+		},
+		"children": [
+			"image#full-banner-desktop2"
+		]
+	},
+	"image#full-banner-desktop2": {
+		"title": "banner",
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/aa269bfb-afa8-4774-9eb9-8ad94a3154bf___e8a7718c7fe067eedb62e30c26f20e32.jpg",
+			"alt": "10% OFF",
+			"title": "Portal do cliente",
+			"link": {
+				"url": "#"
+			}
+		}
+	}
+}

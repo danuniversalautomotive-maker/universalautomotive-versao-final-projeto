@@ -1,0 +1,70 @@
+{
+	"flex-layout.row#popular": {
+		"title": "Vitrine - Mais vendidos",
+		"children": [
+			"flex-layout.col#popular"
+		]
+	},
+	"flex-layout.col#popular": {
+		"children": [
+			"flex-layout.row#popularHead",
+			"list-context.product-list#popular"
+		]
+	},
+	"flex-layout.row#popularHead": {
+		"children": [
+			"rich-text#popularTitle" /* ,
+      "link#popularLink" */
+		],
+		"props": {
+			"blockClass": "trendingHead"
+		}
+	},
+	"rich-text#popularTitle": {
+		"title": "Titulo - Mais vendidos",
+		"props": {
+			"text": "### Mais vendido",
+			"blockClass": "trendingTitle"
+		}
+	},
+	// "link#popularLink": {
+	//   "props": {
+	//     "label": "Veja mais",
+	//     "href": "/popular",
+	//     "blockClass": "popularLink"
+	//   }
+	// },
+	"list-context.product-list#popular": {
+		"title": "Lista de produtos populares",
+		"blocks": [
+			"product-summary.shelf#list"
+		],
+		"children": [
+			"slider-layout#popularProducts"
+		],
+		"props": {
+			"orderBy": "OrderByPriceDESC",
+			"maxItems": 12,
+			"installmentCriteria": "MAX_WITH_INTEREST"
+		}
+	},
+	"slider-layout#popularProducts": {
+		"title": "Configuração do slider",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 4,
+				"tablet": 2,
+				"phone": 1
+			},
+			"centerMode": {
+				"desktop": "to-the-left",
+				"tablet": "to-the-left",
+				"phone": "disabled"
+			},
+			"infinite": true,
+			"fullWidth": true,
+			"blockClass": "shelfTrending",
+			"showNavigationArrows": "desktopOnly"
+		}
+	}
+}

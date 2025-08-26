@@ -1,0 +1,139 @@
+{
+	"store.custom#custom-search-page": {
+		"blocks": ["search-result-layout.customQuery#custom-search-page"]
+	},
+	"search-result-layout.customQuery#custom-search-page": {
+		"props": {
+			"querySchema": {
+				"orderByField": "OrderByBestDiscountDESC",
+				"hideUnavailableItems": true,
+				"maxItemsPerPage": 40,
+				"queryField": "156",
+				"mapField": "productClusterIds"
+			}
+		},
+		"blocks": [
+			"search-result-layout.desktop#custom-search-page",
+			"search-result-layout.mobile#custom-search-page",
+			"search-not-found-layout"
+		]
+	},
+	"search-result-layout.desktop#custom-search-page": {
+		"children": ["flex-layout.row#custom-search-page-content"]
+	},
+	"search-result-layout.mobile#custom-search-page": {
+		"children": ["flex-layout.row#custom-search-page-content"]
+	},
+	"flex-layout.row#custom-search-page-content": {
+		"title": "Conteúdo da Página",
+		"props": {
+			"fullWidth": true,
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"blockClass": "custom-search-page-content"
+		},
+		"children": ["flex-layout.col#custom-search-page-content"]
+	},
+	"flex-layout.col#custom-search-page-content": {
+		"title": "Conteúdo da Página",
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": "custom-search-page-content"
+		},
+		"children": [
+			"experimental__visibility-layout#custom-search-page-banner",
+			"experimental__visibility-layout#custom-search-page-seo-text",
+			"flex-layout.row#custom-seach-page-products-area"
+		]
+	},
+	"experimental__visibility-layout#custom-search-page-banner": {
+		"title": "Banner (On/Off)",
+		"props": {
+			"visible": true
+		},
+		"children": ["list-context.image-list#custom-search-page-banner-images"]
+	},
+	"list-context.image-list#custom-search-page-banner-images": {
+		"title": "Imagens do Banner",
+		"props": {
+			"preload": true,
+			"height": 400,
+			"images": [
+				{
+					"image": "https://placehold.co/1920x400",
+					"mobileImage": "https://placehold.co/1024x400",
+					"description": "",
+					"loading": "eager",
+					"link": {
+						"title": "Link do Banner",
+						"url": "",
+						"openNewTab": false
+					}
+				}
+			],
+			"blockClass": "custom-search-page-banner-images"
+		},
+		"children": [
+			"list-context-renderer#custom-search-page-banner-list-images"
+		]
+	},
+	"list-context-renderer#custom-search-page-banner-list-images": {
+		"title": "Lista de Imagens do Banner",
+		"props": {
+			"listElement": "div",
+			"itemElement": "div",
+			"blockClass": "custom-search-page-banner-list-images"
+		}
+	},
+	"experimental__visibility-layout#custom-search-page-seo-text": {
+		"title": "Texto de SEO (On/Off)",
+		"props": {
+			"visible": true
+		},
+		"children": ["rich-text#custom-search-page-seo-text"]
+	},
+	"rich-text#custom-search-page-seo-text": {
+		"title": "Texto de SEO",
+		"props": {
+			"text": "# Texto de SEO para a página de coleção customizada\n\nEsta é uma página de busca personalizada com um banner e texto de SEO.",
+			"blockClass": "custom-search-page-seo-text"
+		}
+	},
+	"flex-layout.row#custom-seach-page-products-area": {
+		"title": "Área de Produtos",
+		"props": {
+			"fullWidth": true,
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"blockClass": "custom-seach-page-products-area"
+		},
+		"children": [
+			"flex-layout.col#custom-search-page-filter",
+			"flex-layout.col#custom-search-page-products-area"
+		]
+	},
+	 "flex-layout.col#custom-search-page-filter": {
+	  "title": "Filtro de Busca",
+	   "props": {
+		"preventVerticalStretch": true,
+		"blockClass": "custom-search-page-filter"
+	  },
+		"children": ["filter-navigator.v3"]
+	 },
+	"flex-layout.col#custom-search-page-products-area": {
+		"title": "Área de Produtos",
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": "custom-search-page-products-area"
+		},
+		"children": [
+			"flex-layout.row#searchbread",
+			"flex-layout.row#searchinfo",
+			// "flex-layout.row#fetchprevious",
+			"flex-layout.row#products",
+			"flex-layout.row#fetchmore"
+		]
+	}
+}

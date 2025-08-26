@@ -1,0 +1,570 @@
+{{eval "Handlebars.registerHelper('registerHelper', function(block) {
+	eval('var customHelper =' + block.fn(this));
+	Handlebars.registerHelper(customHelper.name, customHelper);
+});"}}
+
+{{#registerHelper}} function getPaymentSystemName(paymentSystemName, customApps) {
+    const paymentInfos = customApps?.find((app)=>app.id == "mz-custom-options")?.fields
+    var systemName;
+    if(paymentSystemName.toLowerCase() == "customer credit") {
+        systemName = `Parcelado ${paymentInfos.descricao}`
+    }else if(paymentSystemName.toLowerCase() == "promissory") {
+        systemName = `Antecipado ${paymentInfos.descricao}`
+    } else {
+        systemName = paymentSystemName
+    }
+
+	return systemName;
+} {{/registerHelper}}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; width: 100%; height: 100%; margin: 0; padding: 0; background: #1e1e1e !important;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{_accountInfo.TradingName}}</title>
+<!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter: ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800 !important;1,900">
+    <style>
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+</style>
+    <style>
+@media (min-width: 480px) {
+  .b--neutral-800-light-ns {
+    border-color: #4c4a5e33 !important;
+  }
+}
+@media (max-width: 600px) {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 425px) {
+  .db-mob {
+    display: block !important;
+  }
+  .mb2-mob {
+    margin-bottom: .5rem !important;
+  }
+  .tracking-wrapper {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .tracking-item {
+    height: 48px !important;
+  }
+  .tracking-separator {
+    display: none !important;
+  }
+}
+</style>
+    <style>
+@media screen and (min-width: 30em) {
+  .ba-ns {
+    border-style: solid !important;
+    border-width: 1px !important;
+  }
+  .pb3-ns {
+    padding-bottom: 1rem !important;
+  }
+  .pt4-ns {
+    padding-top: 2rem !important;
+  }
+  .ph4-ns {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .mv1-ns {
+    margin-top: .25rem !important;
+    margin-bottom: .25rem !important;
+  }
+  .mv4-ns {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+</style>
+</head>
+    <body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; width: 100%; height: 100%; margin: 0; padding: 0; background: #1e1e1e !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; margin: 0; padding: 0; background: #1e1e1e; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; width: 100%; height: 100%; line-height: 100% !important;">
+            <tr style="box-sizing: border-box !important;">
+                <td align="left" valign="top" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+                    <table class="mv4-ns" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; max-width: 40rem; width: 100%; background-color: #fff; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" bgcolor="#fff">
+<tr style="box-sizing: border-box !important;">
+    <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; width: 100%; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+<div style="box-sizing: border-box; padding-top: 2rem; padding-bottom: 2rem !important;">
+    <img border="0" width="auto" alt="link_da_loja" src="https://universalautomotive.vteximg.com.br/arquivos/logo-email.jpg" style="vertical-align: top; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100% !important;">
+</div>
+    </td>
+</tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td style="box-sizing: border-box; border-collapse: collapse; font-weight: 600; line-height: 1; width: 100%; padding-top: .5rem; padding-bottom: .5rem; text-align: center; font-size: 1.5rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+{{#if orders}}
+    {{#if orders.0.clientProfileData.firstName}}
+        {{#compare orders.0.clientProfileData.firstName "!=" "isAnonymous"}}
+            Olá,
+            {{orders.0.clientProfileData.firstName}}!
+        {{/compare}}
+    {{/if}}
+{{else}}
+    {{#if clientProfileData.firstName}}
+        {{#compare clientProfileData.firstName "!=" "isAnonymous"}}
+            Olá,
+            {{clientProfileData.firstName}}!
+        {{/compare}}
+    {{/if}}
+    {{#if to.0.name}}
+        {{#compare to.0.name "!=" "isAnonymous"}}
+            Olá,
+            {{to.0.name}}!
+        {{/compare}}
+    {{/if}}
+{{/if}}
+                            </td>
+                        </tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td style="box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; line-height: 1.25; width: 100%; text-align: center; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+                                O pagamento do pedido
+                                <span style="color: #b31212; font-weight: 600 !important;">
+                                    #{{sequence}}
+                                </span>
+                                foi aprovado
+                            </td>
+                        </tr>
+<tr style="box-sizing: border-box !important;">
+    <td class="ph4-ns pb3-ns pt4-ns" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+        <div class="ba-ns b--neutral-800-light-ns" style="box-sizing: border-box; border-radius: .5rem; width: 100%; padding: 1rem; text-align: center !important;">
+            <table style="box-sizing: border-box; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+                <tr style="box-sizing: border-box; text-align: center !important;" align="center">
+                    <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; margin-left: .5rem; margin-right: .5rem; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+<div class="tracking-wrapper" style="box-sizing: border-box; background-color: #b31212; margin-left: auto; margin-right: auto; width: 60px; height: 60px; border-radius: 9999px !important;">
+    <table class="tracking-item" style="box-sizing: border-box; height: 60px; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+            <img border="0" width="auto" alt="link_da_loja" src="https://agenciamagma.vteximg.com.br/arquivos/email-tracking-cart.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; margin-right: 7px; vertical-align: middle !important;">
+        </td>
+    </table>
+</div>
+                        <p style="box-sizing: border-box; color: #b31212; font-weight: 600; margin-bottom: 0; text-align: center; font-size: .75rem !important;">Pedido</p>
+                    </td>
+<td class="tracking-separator" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 2rem; padding: 0 !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+    <div style="box-sizing: border-box; height: 2px; background-color: #b31212; border-radius: 9999px; width: 2rem; margin-bottom: 2rem !important;">
+    </div>
+</td>
+                    <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; margin-left: .5rem; margin-right: .5rem; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+<div class="tracking-wrapper" style="box-sizing: border-box; background-color: #b31212; margin-left: auto; margin-right: auto; width: 60px; height: 60px; border-radius: 9999px !important;">
+    <table class="tracking-item" style="box-sizing: border-box; height: 60px; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+            <img border="0" width="auto" alt="link_da_loja" src="https://agenciamagma.vteximg.com.br/arquivos/email-tracking-card.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; vertical-align: middle !important;">
+        </td>
+    </table>
+</div>
+                        <p style="box-sizing: border-box; color: #b31212; font-weight: 600; margin-bottom: 0; text-align: center; font-size: .75rem !important;">Pagamento</p>
+                    </td>
+<td class="tracking-separator" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 2rem; padding: 0 !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+    <div style="box-sizing: border-box; height: 2px; background-color: #b31212; border-radius: 9999px; width: 2rem; margin-bottom: 2rem !important;">
+    </div>
+</td>
+                    <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; margin-left: .5rem; margin-right: .5rem; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+                        {{#compare
+                            shippingData.logisticsInfo.0.selectedDeliveryChannel
+                            "=="
+                            "pickup-in-point"
+                        }}
+<div class="tracking-wrapper" style="box-sizing: border-box; background-color: #b7b7bf; margin-left: auto; margin-right: auto; width: 60px; height: 60px; border-radius: 9999px !important;">
+    <table class="tracking-item" style="box-sizing: border-box; height: 60px; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+            <img border="0" width="auto" alt="link_da_loja" src="https://agenciamagma.vteximg.com.br/arquivos/email-pickup-ready.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; vertical-align: middle !important;">
+        </td>
+    </table>
+</div>
+                            <p style="box-sizing: border-box; color: #4c4a5e; font-weight: 600; margin-bottom: 0; text-align: center; font-size: .75rem !important;">Retirada</p>
+                        {{else}}
+<div class="tracking-wrapper" style="box-sizing: border-box; background-color: #b7b7bf; margin-left: auto; margin-right: auto; width: 60px; height: 60px; border-radius: 9999px !important;">
+    <table class="tracking-item" style="box-sizing: border-box; height: 60px; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+            <img border="0" width="auto" alt="link_da_loja" src="https://agenciamagma.vteximg.com.br/arquivos/email-tracking-truck.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; vertical-align: middle !important;">
+        </td>
+    </table>
+</div>
+                            <p style="box-sizing: border-box; color: #4c4a5e; font-weight: 600; margin-bottom: 0; text-align: center; font-size: .75rem !important;">Em trânsito</p>
+                        {{/compare}}
+                    </td>
+                    <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; margin-left: .5rem; margin-right: .5rem; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+<div class="tracking-wrapper" style="box-sizing: border-box; background-color: #b7b7bf; margin-left: auto; margin-right: auto; width: 60px; height: 60px; border-radius: 9999px !important;">
+    <table class="tracking-item" style="box-sizing: border-box; height: 60px; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+            <img border="0" width="auto" alt="link_da_loja" src="https://agenciamagma.vteximg.com.br/arquivos/email-tracking-home.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; vertical-align: middle !important;">
+        </td>
+    </table>
+</div>
+                        <p style="box-sizing: border-box; color: #4c4a5e; font-weight: 600; margin-bottom: 0; text-align: center; font-size: .75rem !important;">Entregue</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+</tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td style="box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; line-height: 1.25; width: 100%; padding-bottom: 4rem; padding-top: 1rem; padding-left: 2rem; padding-right: 2rem; text-align: center; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+                                <span style="max-width: 444px; display: inline-block !important;">
+                                    Seu pagamento foi aprovado. Aguarde
+                                    {{#compare
+                                        shippingData.logisticsInfo.0.selectedDeliveryChannel
+                                        "=="
+                                        "pickup-in-point"
+                                    }}
+                                        o seu pedido estar pronto para ser
+                                        retirado.
+                                    {{else}}
+                                        o envio do seu pedido para as
+                                        localidades próximas a você.
+                                    {{/compare}}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 100%; padding-bottom: 2rem; padding-top: 1rem; padding-left: 2rem; padding-right: 2rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                                <h2 style="margin: 0; line-height: 24px; box-sizing: border-box; color: #060410; font-weight: 600; font-size: 1rem !important;">
+                                    Detalhes do pedido
+                                </h2>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+    <tbody>
+        {{#each items}}
+            <tr style="box-sizing: border-box !important;">
+                <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; border-color: #4c4a5e0a; border-bottom-style: solid; border-bottom-width: 1px; border-width: .125rem; width: 4rem; padding-top: 2rem; padding-bottom: 2rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                    <img src="{{imageUrl}}" alt style="vertical-align: top; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100% !important;">
+                </td>
+                <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; border-color: #4c4a5e0a; border-bottom-style: solid; border-bottom-width: 1px; border-width: .125rem; padding-left: .5rem; padding-top: 2rem; padding-bottom: 2rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                    <span style="color: #060410; font-weight: 600; line-height: 1.25; font-size: .75rem !important;">
+                        {{name}}
+                    </span>
+                    <div style="box-sizing: border-box; color: #4c4a5e; padding-top: .25rem; font-size: .75rem !important;">
+                        Quantidade:
+                        {{quantity}}
+                        <div style="box-sizing: border-box; color: #060410; float: right; _display: inline; font-weight: 600; font-size: .875rem !important;">
+                            {{#if sellingPrice}}
+                                R$
+                                {{formatCurrency sellingPrice}}
+                            {{else}}
+                                Grátis
+                            {{/if}}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            {{#each bundleItems}}
+                {{#if name}}
+                    <tr style="box-sizing: border-box !important;">
+                        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 4rem; padding-right: .5rem; padding-top: .5rem; padding-bottom: .5rem; vertical-align: top; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left" valign="top"><img alt src="{{imageUrl}} " style="vertical-align: top; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100% !important;"></td>
+                        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; padding-top: .5rem; padding-bottom: .5rem; vertical-align: top !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left" valign="top">
+                            <div class="mv1-ns" style="box-sizing: border-box; line-height: 1.25; font-size: 1rem !important;">{{name}}</div>
+                            <div style="box-sizing: border-box; color: #777 !important;">
+                                {{quantity}}
+                                un.
+                                {{#if price}}
+                                    R$
+                                    {{formatCurrency price}}
+                                {{else}}
+                                    Grátis
+                                {{/if}}
+                            </div>
+                        </td>
+                    </tr>
+                {{/if}}
+            {{/each}}
+        {{/each}}
+    </tbody>
+</table>
+<div style="box-sizing: border-box; width: 100% !important;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        {{#each totals}}
+            {{#if value}}
+                <tr style="box-sizing: border-box !important;">
+                    <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; color: #4c4a5e; padding-top: .25rem; padding-bottom: .25rem; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                        {{#eq id "Items"}}Subtotal{{/eq}}
+                        {{#eq id "Discounts"}}Cupom{{/eq}}
+                        {{#eq id "Shipping"}}Entrega{{/eq}}
+                        {{#eq id "Tax"}}Taxas{{/eq}}
+                    </td>
+                    <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; padding-top: .25rem; padding-bottom: .25rem; text-align: right; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="right">
+                        R$
+                        {{formatCurrency value}}
+                    </td>
+                </tr>
+            {{/if}}
+        {{/each}}
+        {{#if value}}
+            <tr style="box-sizing: border-box !important;">
+                <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; color: #060410; border-color: #4c4a5e0a; border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; border-width: .125rem; font-weight: 600; padding-top: 1rem; padding-bottom: 1rem; font-size: 1rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                    Total
+                </td>
+                <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; color: #060410; border-color: #4c4a5e0a; border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; border-width: .125rem; font-weight: 600; padding-top: 1rem; padding-bottom: 1rem; text-align: right; font-size: 1rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="right">
+                    R$
+                    {{formatCurrency value}}
+                </td>
+            </tr>
+        {{/if}}
+    </table>
+</div>
+                            </td>
+                        </tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; padding-left: 2rem; padding-right: 2rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                                {{#compare split "==" true}}
+                                    <h4 class="f5 fw6 c-neutral-100" style="margin: 0; line-height: 29px; box-sizing: border-box; color: #060410; font-weight: 600; font-size: 1rem !important;">
+                                        Formas de pagamento
+                                    </h4>
+                                    {{#each paymentData.transactions}}
+{{#each payments}}
+    <div style="box-sizing: border-box; color: #4c4a5e; line-height: 1.5; padding-bottom: 2rem; font-size: .875rem !important;">
+        <div style="box-sizing: border-box; padding-bottom: .5rem; text-align: right; font-size: .75rem !important;">
+			{{getPaymentSystemName paymentSystemName ../../customData.customApps}}
+        </div>
+        {{#if lastDigits}}
+            <div style="box-sizing: border-box; padding-bottom: .5rem; font-size: .75rem !important;">
+                <span>Cartão de crédito</span>
+                <span style="float: right; _display: inline !important;">
+                    **** **** ****
+                    {{lastDigits}}
+                </span>
+            </div>
+        {{/if}}
+        <div style="box-sizing: border-box !important;">
+            <span style="font-size: .75rem !important;">Parcelas</span>
+            <span style="float: right; _display: inline; font-size: .75rem !important;">
+                {{#eq installments 1}}
+                    à vista
+                {{else}}
+                    {{installments}}x sem juros
+                {{/eq}}
+            </span>
+        </div>
+        {{#compare paymentSystemName "==" "Boleto Bancário"}}
+            {{#compare url "!=" null}}
+                <div class="tc pv3" style="box-sizing: border-box; padding-top: 1rem; padding-bottom: 1rem; text-align: center !important;">
+                    <a href="{{url}}" style="box-sizing: border-box; background-color: #b31212; border-radius: .25rem; display: inline-block; text-decoration: none; transition: color .15s ease-in; color: #fff; padding: 1rem; font-size: .75rem !important;">
+                        Abrir boleto bancário
+                    </a>
+                </div>
+            {{/compare}}
+        {{/compare}}
+    </div>
+{{/each}}
+                                    {{/each}}
+                                {{/compare}}
+                                {{#compare split "!=" true}}
+                                    <h4 class="f5 fw6 c-neutral-100" style="margin: 0; line-height: 29px; box-sizing: border-box; color: #060410; font-weight: 600; font-size: 1rem !important;">
+                                        Formas de pagamento
+                                    </h4>
+                                    {{#each paymentData.transactions}}
+{{#each payments}}
+    <div style="box-sizing: border-box; color: #4c4a5e; line-height: 1.5; padding-bottom: 2rem; font-size: .875rem !important;">
+        <div style="box-sizing: border-box; padding-bottom: .5rem; text-align: right; font-size: .75rem !important;">
+            {{getPaymentSystemName paymentSystemName ../../customData.customApps}}
+        </div>
+        {{#if lastDigits}}
+            <div style="box-sizing: border-box; padding-bottom: .5rem; font-size: .75rem !important;">
+                <span>Cartão de crédito</span>
+                <span style="float: right; _display: inline !important;">
+                    **** **** ****
+                    {{lastDigits}}
+                </span>
+            </div>
+        {{/if}}
+        <div style="box-sizing: border-box !important;">
+            <span style="font-size: .75rem !important;">Parcelas</span>
+            <span style="float: right; _display: inline; font-size: .75rem !important;">
+                {{#eq installments 1}}
+                    à vista
+                {{else}}
+                    {{installments}}x sem juros
+                {{/eq}}
+            </span>
+        </div>
+        {{#compare paymentSystemName "==" "Boleto Bancário"}}
+            {{#compare url "!=" null}}
+                <div class="tc pv3" style="box-sizing: border-box; padding-top: 1rem; padding-bottom: 1rem; text-align: center !important;">
+                    <a href="{{url}}" style="box-sizing: border-box; background-color: #b31212; border-radius: .25rem; display: inline-block; text-decoration: none; transition: color .15s ease-in; color: #fff; padding: 1rem; font-size: .75rem !important;">
+                        Abrir boleto bancário
+                    </a>
+                </div>
+            {{/compare}}
+        {{/compare}}
+    </div>
+{{/each}}
+                                    {{/each}}
+                                {{/compare}}
+                            </td>
+                        </tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; padding-bottom: 2rem; padding-top: 1rem; padding-left: 2rem; padding-right: 2rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                                {{#richShippingData shippingData}}
+                                    {{#group logisticsInfo by="addressId"}}
+{{#eq items.0.selectedDeliveryChannel "delivery"}}
+    <div style="box-sizing: border-box !important;">
+        <h4 style="margin: 0; font-size: 16px; line-height: 29px; box-sizing: border-box; margin-bottom: 1rem !important;">Entrega</h4>
+        <table border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+            {{#each items.0.slas}}
+                {{#compare ../items.0.selectedSla '==' id}}
+                    <tr style="box-sizing: border-box !important;">
+                        <td class="f7 pb2 c-neutral-800" style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; color: #4c4a5e; padding-bottom: .5rem; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                            Tipo de entrega
+                        </td>
+                        <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; padding-bottom: .5rem; text-align: right; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="right">
+                            {{id}}
+                        </td>
+                    </tr>
+                    {{#if ../../../package.courier}}
+                        <tr style="box-sizing: border-box !important;">
+                            <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; color: #4c4a5e; padding-bottom: .5rem; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                                Frete
+                            </td>
+                            <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; padding-bottom: .5rem; text-align: right; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="right">
+                                {{../../../package.courier}}
+                            </td>
+                        </tr>
+                    {{/if}}
+                {{/compare}}
+            {{/each}}
+            {{#each ../../shippingData.availableAddresses}}
+                {{#eq ../addressId AddressId}}
+                    <tr style="box-sizing: border-box !important;">
+                        <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; color: #4c4a5e; padding-bottom: .5rem; font-size: .75rem; vertical-align: top !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left" valign="top">
+                            Endereço de entrega
+                        </td>
+                        <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; padding-bottom: .5rem; text-align: right; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="right">
+                            {{street}},
+                            {{number}}
+                            {{#if complement}} - {{complement}}{{/if}}
+                            <br>
+                            {{neighborhood}}
+                            -
+                            {{city}}
+                            -
+                            {{state}}
+                            -
+                            CEP
+                            {{postalCode}}
+                        </td>
+                    </tr>
+                {{/eq}}
+            {{/each}}
+        </table>
+    </div>
+{{/eq}}
+{{#eq items.0.selectedDeliveryChannel "pickup-in-point"}}
+    <div style="box-sizing: border-box !important;">
+        <h4 style="margin: 0; font-size: 16px; line-height: 29px; box-sizing: border-box; margin-bottom: 1rem !important;">Retirada</h4>
+        <table style="box-sizing: border-box; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+            {{#each items.0.slas}}
+                {{#compare ../items.0.selectedSla '==' id}}
+                    <tr style="box-sizing: border-box !important;">
+                        <td class="f7 pb2 c-neutral-800" style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; color: #4c4a5e; padding-bottom: .5rem; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left">
+                            Loja
+                        </td>
+                        <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; padding-bottom: .5rem; text-align: right; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="right">
+                            {{pickupStoreInfo.friendlyName}}
+                        </td>
+                    </tr>
+                {{/compare}}
+            {{/each}}
+            {{#each ../../shippingData.availableAddresses}}
+                {{#eq ../addressId AddressId}}
+                <tr style="box-sizing: border-box !important;">
+                    <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; color: #4c4a5e; padding-bottom: .5rem; font-size: .75rem; vertical-align: top !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left" valign="top">
+                        Endereço de retirada
+                    </td>
+                    <td style="line-height: 20px; box-sizing: border-box; border-collapse: collapse; color: #4c4a5e; padding-bottom: .5rem; text-align: right; font-size: .75rem !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="right">
+                        {{street}},
+                        {{number}}
+                        {{#if complement}} - {{complement}}{{/if}}
+                        <br>
+                        {{neighborhood}}
+                        -
+                        {{city}}
+                        -
+                        {{state}}
+                        -
+                        CEP
+                        {{postalCode}}
+                    </td>
+                </tr>
+                                  {{/eq}}
+            {{/each}}
+        </table>
+    </div>
+{{/eq}}
+                                    {{/group}}
+                                {{/richShippingData}}
+                            </td>
+                        </tr>
+<tr style="box-sizing: border-box !important;">
+    <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; padding-bottom: 4rem; padding-top: 1rem; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="center">
+        <a target="_blank" href="https://www.agenciamagma.com.br/account/#/orders/{{orderId}}" style="box-sizing: border-box; background-color: #b31212; border-radius: .25rem; font-weight: 600; text-decoration: none; transition: color .15s ease-in; color: #fff; padding-top: 1rem; padding-bottom: 1rem; padding-left: 2rem; padding-right: 2rem !important;">
+            Acompanhar Pedido
+        </a>
+    </td>
+</tr>
+<tr style="box-sizing: border-box !important;">
+    <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; background-color: #efefef; padding-bottom: 1rem; padding-top: 1rem; padding-left: 2rem; padding-right: 2rem; text-align: center !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" bgcolor="#efefef" align="center">
+        <div style="box-sizing: border-box; max-width: 420px; display: inline-block !important;">
+            <div style="box-sizing: border-box !important;">
+                <table style="box-sizing: border-box; width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+                    <tr style="box-sizing: border-box !important;">
+                        <td class="db-mob mb2-mob" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; vertical-align: top !important; font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" align="left" valign="top">
+                            <p style="box-sizing: border-box; color: #060410; font-size: .625rem; font-weight: 600; margin-top: 0; margin-bottom: 0 !important;">
+                                Siga nossas redes sociais:
+                            </p>
+                            <ul style="margin: 0; box-sizing: border-box; list-style-type: none; padding-left: 0; margin-top: .25rem !important;">
+                                <li style="box-sizing: border-box; display: inline-block; margin-left: 0; margin-right: .5rem !important;">
+                                    <a href="https://www.facebook.com/grupouniversalautomotive/" style="box-sizing: border-box; width: 20px; height: 20px; border-radius: 9999px; display: table-cell; background-color: #fff; text-align: center; vertical-align: middle !important;">
+                                        <img src="https://universalautomotive.vteximg.com.br/arquivos/facebook-email.png" alt style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; border: none; vertical-align: middle !important;">
+                                    </a>
+                                </li>
+                                <li style="box-sizing: border-box; display: inline-block; margin-left: 0; margin-right: .5rem !important;">
+                                    <a href="https://www.instagram.com/grupouniversalautomotive/" style="box-sizing: border-box; width: 20px; height: 20px; border-radius: 9999px; display: table-cell; background-color: #fff; text-align: center; vertical-align: middle !important;">
+                                        <img src="https://universalautomotive.vteximg.com.br/arquivos/instagram-email.png" alt style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; border: none; vertical-align: middle !important;">
+                                    </a>
+                                </li>
+                                <li style="box-sizing: border-box; display: inline-block; margin-left: 0; margin-right: .5rem !important;">
+                                    <a href="https://www.youtube.com/user/universalautsys" style="box-sizing: border-box; width: 20px; height: 20px; border-radius: 9999px; display: table-cell; background-color: #fff; text-align: center; vertical-align: middle !important;">
+                                        <img src="https://universalautomotive.vteximg.com.br/arquivos/youtube-email.png" alt style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; border: none; vertical-align: middle !important;">
+                                    </a>
+                                </li>
+                                <li style="box-sizing: border-box; display: inline-block; margin-left: 0 !important;">
+                                    <a href="https://twitter.com/UniversalUnivel" style="box-sizing: border-box; width: 20px; height: 20px; border-radius: 9999px; display: table-cell; background-color: #fff; text-align: center; vertical-align: middle !important;">
+                                        <img src="https://universalautomotive.vteximg.com.br/arquivos/twitter-email.png" alt style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; border: none; vertical-align: middle !important;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p style="box-sizing: border-box; color: #4c4a5e; font-size: .5rem; line-height: 1.25; margin-bottom: 0; margin-top: 1rem !important;">
+                © 2023 Universal Automotive
+            </p>
+        </div>
+    </td>
+</tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
