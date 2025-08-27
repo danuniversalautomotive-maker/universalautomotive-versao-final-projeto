@@ -32,9 +32,3 @@
   outline: none;
   padding: 0;
 }
-
-@media (max-width: 1410px) {
-  .ChooseLanguageWrapper {
-    padding: 8px;
-  }
-}

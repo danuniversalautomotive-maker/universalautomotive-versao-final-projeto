@@ -1,36 +1,161 @@
-import React from 'react'
-import styles from './style.css';
+import React, { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import styles from './style.css'
+import { GoogleTranslate } from '../GoogleTranslate'
+import { useRuntime } from 'vtex.render-runtime'
 
-export const TopBar = () => {
-  
+interface SliderItem {
+  message: string
+  image: string
+}
+
+interface TopBarProps {
+  sliderItems?: SliderItem[]
+}
+
+export const TopBar = ({ sliderItems = [] }: TopBarProps) => {
+  const { deviceInfo } = useRuntime()
+  const [current, setCurrent] = useState(0)
+
+  // Passa o slide automaticamente se houver mais de 1 item
+  useEffect(() => {
+    if (sliderItems.length <= 1) return
+
+    const interval = setInterval(() => {
+      setCurrent(prev => (prev + 1) % sliderItems.length)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [sliderItems.length])
+
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.content}>
-            <span>
-                Portal
-            </span>
-            <span>
-                |
-            </span>
-            <span>
-                Cadastre-se
-            </span>
-            <span>
-                |
-            </span>
-            <span>
-                Pedido Rápido
-            </span>
+      {deviceInfo.isMobile ? (
+        <div className={styles.container}>
+          <div className={styles.content}>
+            {/* Google Translate */}
             <div className={styles.flags}>
-                aa
+              <GoogleTranslate />
             </div>
+
+            {/* Só renderiza o slider se houver itens */}
+            {sliderItems.length > 0 && (
+              <div className={styles.carouselWrapper}>
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={current}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.5 }}
+                    className={styles.carouselItem}
+                  >
+                    {sliderItems[current]?.image && (
+                      <img
+                        src={sliderItems[current].image}
+                        alt={sliderItems[current].message}
+                        className={styles.sliderImage}
+                      />
+                    )}
+                    <span>{sliderItems[current]?.message}</span>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className={styles.container}>
+          <div className={styles.content}>
+            {/* Links rápidos */}
+            <div className={styles.linksRapidos}>
+              <span className={styles.portal}>
+                <a href="https://www.universalautomotive.com.br/portal-do-cliente">
+                  <img
+                    src="https://universalautomotive.vteximg.com.br/arquivos/icon-portal-topbar.png"
+                    width={15}
+                    height={15}
+                    alt="Portal do Cliente"
+                  />
+                  Portal
+                </a>
+              </span>
+              <span>|</span>
+              <span>
+                <a href="https://www.universalautomotive.com.br/organization-request">
+                  Cadastre-se
+                </a>
+              </span>
+              <span>|</span>
+              <span>
+                <a href="https://www.universalautomotive.com.br/quickorder">
+                  Pedido Rápido
+                </a>
+              </span>
+            </div>
+
+            {/* Só renderiza o slider se houver itens */}
+            {sliderItems.length > 0 && (
+              <div className={styles.carouselWrapper}>
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={current}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.5 }}
+                    className={styles.carouselItem}
+                  >
+                    {sliderItems[current]?.image && (
+                      <img
+                        src={sliderItems[current].image}
+                        alt={sliderItems[current].message}
+                        className={styles.sliderImage}
+                      />
+                    )}
+                    <span>{sliderItems[current]?.message}</span>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            )}
+
+            {/* Google Translate */}
+            <div className={styles.flags}>
+              <GoogleTranslate />
+            </div>
+          </div>
+        </div>
+      )}
     </>
   )
 }
 
 TopBar.schema = {
   title: 'TopBar',
+  description: 'Componente de barra superior com slider dinâmico vindo do Site Editor',
+  type: 'object',
+  properties: {
+    sliderItems: {
+      title: 'Itens do Slider',
+      type: 'array',
+      minItems: 0,
+      items: {
+        type: 'object',
+        title: 'Item do Slider',
+        properties: {
+          message: {
+            title: 'Mensagem do slider',
+            type: 'string'
+          },
+          image: {
+            title: 'Imagem do slider',
+            type: 'string',
+            widget: {
+              'ui:widget': 'image-uploader'
+            }
+          }
+        }
+      }
+    }
+  }
 }

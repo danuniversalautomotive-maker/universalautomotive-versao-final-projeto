@@ -10,7 +10,82 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    padding: 1rem;
+    padding: 1rem 5px;
+    height: 40px;
     margin: auto;
-    width: 1260px;    
+    width: 1260px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portal a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+    display: flex;
+    gap: 5px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.linksRapidos {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.linksRapidos span {
+    font-size: 14px;
+}
+
+.portal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.carouselItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sliderImage {
+    width: 17px;
+}
+
+@media(max-width: 600px){
+    .content {
+        width: 100%;
+        gap: 10px;
+        height: auto;
+        flex-direction: column;
+        padding: 0 0 0 0;
+    }   
+    .ChooseLanguageWrapper {
+        padding: 0.5rem 0 1rem;
+    }
+    .carouselWrapper {
+        background-color: #707070;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .carouselItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .sliderImage {
+        width: 17px;
+    }
+    
 }

@@ -55,5 +55,6 @@
   "intl-equalizer": {
     "referenceLocale": "en",
     "localeDirectory": "messages"
-  }
+  },
+  "dependencies": {}
 }

@@ -19,7 +19,7 @@
 			"app--client-last-cart",
 			"header-helmet-custom",
 			"flex-layout.row#demo-store-warning",
-			"google-translate",
+			//"google-translate",
 			"flex-layout.row#b2b-user-widget",
 			"sticky-layout#desktop",
 			"experimental__visibility-layout#whatsapp-button"
@@ -269,7 +269,8 @@
 		"children": [
 			"app--client-last-cart",
 			"flex-layout.row#demo-store-warning",
-			"google-translate",
+			"top-bar",
+			//"google-translate",
 			"flex-layout.row#b2b-user-widget",
 			"sticky-layout#mobile",
 			"header-helmet-custom",
