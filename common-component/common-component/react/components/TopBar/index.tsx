@@ -32,5 +32,5 @@ export const TopBar = () => {
 }
 
 TopBar.schema = {
-  title: 'GoogleTranslate',
+  title: 'TopBar',
 }

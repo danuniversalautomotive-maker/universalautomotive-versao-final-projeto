@@ -21,6 +21,7 @@
     "universalautomotive.quickorder": "3.x"
   },
   "dependencies": {
+    "universalautomotive.common-components": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
@@ -89,7 +90,6 @@
     "ssesandbox04.reviews-and-ratings-extensions": "2.x",
     "universalautomotive.custom-payment-infos": "0.x",
     "universalautomotive.availability-notify-custom": "0.x",
-    "universalautomotive.common-components": "0.x",
     "universalautomotive.custom-menu": "0.x",
     "vtex.info-card-list": "0.x",
     "vtex.list-context": "0.x",
