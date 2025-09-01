@@ -1,0 +1,822 @@
+{
+	"header": {
+		"blocks": [
+			"header-layout.desktop",
+			"header-layout.mobile"
+		]
+	},
+	"header.full": {
+		"blocks": [
+			"header-layout.desktop",
+			"header-layout.mobile"
+		]
+	},
+	"header-layout.desktop": {
+		"title": "Header - Desktop",
+		"props": {
+			"blockClass": "header-custom"
+		},
+		"children": [
+			"top-bar",
+			"flex-layout.row#header__content"
+			//"header-top",
+			//"flex-layout.row#header-top"
+			//"header-helmet-custom",
+			//"flex-layout.row#demo-store-warning",
+			//"google-translate",
+			//"flex-layout.row#b2b-user-widget",
+			//"sticky-layout#desktop",
+			//"experimental__visibility-layout#whatsapp-button"
+		]
+	},
+	"flex-layout.row#header__content" : {
+		"props": {
+			"blockClass": "contentHeader",
+			"preventHorizontalStretch": true
+		},
+		"children" : [
+			"flex-layout.row#logoMenu",
+			"search-bar",
+			"flex-layout.row#iconsRight__header"
+		]
+	},
+	"flex-layout.row#logoMenu" : {
+		"props" : {
+			"blockClass" : "logoMenu__Header",
+			"preventHorizontalStretch": true
+		},
+		"children" : [
+			"image#logo-topbar",
+			//"vtex.menu@2.x:menu#novoMenu"
+			"menu-custom-desktop#v-01"
+		]
+	},
+	"image#logo-topbar": {
+		"props": {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/logo-versao-final.png",
+			"alt": "Logo Top Bar",
+			"maxWidth": "200px",
+			"height": "45px",
+			"preventHorizontalStretch": true
+
+		}
+	},
+	"search-bar": {
+		"block" : ["autocomplete-result-list.v2"],
+		"props" : {
+			"openAutocompleteOnFocus": true,
+			"productLayout" : "VERTICAL",
+			"blockClass": "search-bar__Header",
+			"preventHorizontalStretch": true,
+			"placeholder" : "O que você procura?",
+			"blurOnSubmit": true,
+			"submitOnIconClick": true,
+			"showClearByUserIcon": true
+		}
+	},
+	/*"vtex.menu@2.x:menu#novoMenu": {
+		"props": {
+			"items": [
+				{
+					"id": "hpa-cart",
+					"iconPosition": "left",
+					"type": "custom",
+					"highlight": false,
+					"iconProps": {
+						"id": "hpa-hamburguer-menu",
+						"size" : 16,
+						"activeClassName": "c-on-base",
+          				"mutedClassName": "c-on-base"
+					},
+					"itemProps": {
+						"type": "internal",
+						"href": "#",
+						"noFollow": false,
+						"tagTitle": "Menu",
+						"text": "Menu"
+					}
+				}
+			]
+		}
+	},*/
+	"login": {
+		"props": {
+			"emailAndPasswordTitle": "LOG-IN",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "password",
+			"showPasswordVerificationIntoTooltip": false,
+			"showIconProfile": false,
+			"blockClass" : "login__header",
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.row#sac" : {
+		"children" : [
+			"image#sac-header",
+			"rich-text#sac-text"
+		],
+		"props" : {
+			"blockClass": "sac-row",
+			"preventHorizontalStretch": true
+		}
+		
+	},
+	"image#sac-header": {
+		"props": {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/sac-header-icon.png",
+			"alt": "ícone carrinho",
+			"height": "24px"
+		}
+	},
+	"rich-text#sac-text": {
+		"props" : {
+			"text" : "SAC",
+			"blockClass" : "sac-label-text"
+		}
+	},
+	"flex-layout.row#iconsRight__header" : {
+		"props" : {
+			"blockClass" : "iconsRight"
+		},
+		"children" : [
+			"login",
+			"flex-layout.row#sac",
+			"minicart.v2"
+		]
+	},
+
+	/*"flex-layout.row#header-top": {
+		"children": [
+			"app--client-last-cart",
+			"menu-custom-desktop#v-01",
+			"minicart.v2"
+		]
+			//"app--client-last-cart"
+			//"menu-custom-desktop#v-01",
+			//"flex-layout.col#search-bar",
+			
+		
+	},*/
+	
+	"experimental__visibility-layout#whatsapp-button": {
+		"title": "Imagem para Whatsapp (On/Off)",
+		"children": [
+			"flex-layout.row#whatsapp-button"
+		],
+		"props": {
+			"visible": true
+		}
+	},
+	"flex-layout.row#whatsapp-button": {
+		"children": [
+			"image#whatsapp-button"
+		],
+		"props": {
+			"blockClass": "whatsapp-button",
+			"fullWidth": true
+		}
+	},
+	"image#whatsapp-button": {
+		"title": "Imagem para Whatsapp",
+		"props": {
+			"blockClass": "whatsapp-button",
+			"src": "assets/icons/whatsapp.svg",
+			"link": {
+				"url": "https://wa.me/1122487777",
+				"openNewTab": true
+			}
+		}
+	},
+	"flex-layout.row#demo-store-warning": {
+		"props": {
+			"blockClass": "demo-store-warning",
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.col#demo-store-warning"
+		]
+	},
+	"flex-layout.col#demo-store-warning": {
+		"children": [
+			"rich-text#demo-store-warning"
+		]
+	},
+	"rich-text#demo-store-warning": {
+		"title": "Texto de aviso da loja de demonstração",
+		"props": {
+			"text": "Loja em desenvolvimento",
+			"textPosition": "CENTER",
+			"textColor": "c-action-primary",
+			"blockClass": "demo-store-warning"
+		}
+	},
+	"sticky-layout#desktop": {
+		"props": {
+			"blockClass": "sticky-header"
+		},
+		"children": [
+			"flex-layout.row#telemarketing",
+			"flex-layout.row#desktop",
+			"flex-layout.row#headerStripe"
+		]
+	},
+	"flex-layout.row#telemarketing": {
+		"title": "Seção Telemarketing",
+		"children": [
+			"telemarketing"
+		],
+		"props": {
+			"blockClass": [
+				"telemarketing"
+			],
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#desktop": {
+		"props": {
+			"verticalAlign": "center",
+			"blockClass": "header",
+			"colGap": 7,
+			"colSizing": "auto"
+		},
+		"children": [
+			"flex-layout.col#logo-desktop",
+			"menu-custom-desktop#v-01",
+			//"flex-layout.col#search-bar",
+			"link#quickOrder",
+			"login#head",
+			"minicart.v2"
+		]
+	},
+	"flex-layout.col#permission-description": {
+		"props": {
+			"blockClass": "permission-description"
+		},
+		"children": [
+			"check-permission#store-admin",
+			"check-permission#sales-admin",
+			"check-permission#sales-manager",
+			"check-permission#sales-representative",
+			"check-permission#customer-admin",
+			"check-permission#customer-approver",
+			"check-permission#customer-buyer"
+		]
+	},
+	/*"flex-layout.col#search-bar": {
+		"children": [
+			"search-bar"
+		],
+		"props": {
+			"width": "grow"
+		}
+	},*/
+	"flex-layout.row#headerStripe": {
+		"title": "NavBar - Desktop",
+		"props": {
+			"blockClass": "headerStripe",
+			"horizontalAlign": "left",
+			"verticalAlign": "center",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true
+		},
+		"children": [
+			// "shopper-location",
+			"check-permission#reseller-overlay-trigger",
+			"flex-layout.col#spacer",
+			"rich-text#headStripe1",
+			"rich-text#headStripe2",
+			"rich-text#headStripe3",
+			"rich-text#headStripe4",
+			"rich-text#headStripe5",
+			"flex-layout.col#spacer"
+		]
+	},
+	"flex-layout.row#b2b-user-widget": {
+		"children": [
+			"flex-layout.col#b2b-user-widget"
+		],
+		"props": {
+			"blockClass": "b2b-user-widget"
+		}
+	},
+	"flex-layout.col#b2b-user-widget": {
+		"children": [
+			"b2b-user-widget",
+			"personification"
+			// "b2b-switch-organizations",
+			// "flex-layout.col#permission-description",
+			// "link#b2b-user-widget-link-1",
+			// "link#b2b-user-widget-link-2"
+		],
+		"props": {
+			"blockClass": "b2b-user-widget"
+		}
+	},
+	"b2b-user-widget": {
+		"props": {
+			"showLoadingIndicator": true
+		}
+	},
+	"link#b2b-user-widget-link-1": {
+		"props": {
+			"label": "Gerenciar organização",
+			"href": "/account#/organization"
+		}
+	},
+	"link#b2b-user-widget-link-2": {
+		"props": {
+			"label": "Minhas cotações",
+			"href": "/b2b-quotes"
+		}
+	},
+	"rich-text#b2b-user-widget-link-1": {
+		"props": {
+			"text": "Gerenciar organização",
+			"textPosition": "CENTER",
+			"link": {
+				"url": "/account#/organization"
+			}
+		}
+	},
+	"rich-text#b2b-user-widget-link-2": {
+		"props": {
+			"text": "Minhas cotações",
+			"textPosition": "CENTER",
+			"link": {
+				"url": "/b2b-quotes"
+			}
+		}
+	},
+	"rich-text#headStripe1": {
+		"title": "1º item da NavBar",
+		"props": {
+			"blockClass": "HeaderStripeText",
+			"text": "[Lançamentos](/releases)"
+		}
+	},
+	"rich-text#headStripe2": {
+		"title": "2º item da NavBar",
+		"props": {
+			"blockClass": "HeaderStripeText",
+			"text": "[Ofertas](/deals)"
+		}
+	},
+	"rich-text#headStripe3": {
+		"title": "3º item da NavBar",
+		"props": {
+			"blockClass": "HeaderStripeText",
+			"text": "[Blog](/top-sales)"
+		}
+	},
+	"rich-text#headStripe4": {
+		"title": "4º item da NavBar",
+		"props": {
+			"blockClass": "HeaderStripeText",
+			"text": "[Como comprar](/services)"
+		}
+	},
+	"rich-text#headStripe5": {
+		"title": "5º item da NavBar",
+		"props": {
+			"blockClass": "HeaderStripeText",
+			"text": "[Sobre nós](/gift-cards)"
+		}
+	},
+	"flex-layout.col#logo-desktop": {
+		"props": {
+			"verticalAlign": "middle"
+		},
+		"children": [
+			"logo"
+		]
+	},
+	"logo": {
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/60520aec-d524-444a-80c2-4a570c7a68fb___5fb98fa55f69f381e28235e715521f46.png"
+		}
+	},
+	/* trabalhando no mobile aqui */
+	"header-layout.mobile": {
+		"title": "Header - Mobile",
+		"children": [
+			//"app--client-last-cart",
+			//"flex-layout.row#demo-store-warning",
+			"top-bar",
+			"flex-layout.row#mobile__header"
+			
+			//"google-translate",
+			//"flex-layout.row#b2b-user-widget",
+			//"sticky-layout#mobile",
+			//"header-helmet-custom",
+			//"experimental__visibility-layout#whatsapp-button"
+		]
+	},
+	"flex-layout.row#mobile__header": {
+		"props": {
+			"blockClass": "mobile-header",
+			"rich-text": "teste teste",
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"drawer#menu-mobile",
+			"image#logoMenuMobile",
+			"flex-layout.row#iconsRightMobile"
+		]
+	},
+	"image#logoMenuMobile": {
+		"props" : {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/logo-versao-final.png",
+			"alt": "Logo Top Bar",
+			"maxWidth": "140px",
+			"height": "32px",
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.row#iconsRightMobile": {
+		"props": {
+			"blockClass" : "sac-mobile",
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"flex-layout.row#sac-container-mobile",
+			"flex-layout.row#cotainer-login-header-mobile",
+			"minicart.v2#header"
+		]
+	},
+	"minicart.v2#header": { 
+		"porps": {
+			"blockClass" : "icon-carrinho-mobile"
+		}
+	},
+	"flex-layout.row#cotainer-login-header-mobile": { 
+		"props": {
+			"preventHorizontalStretch": true,
+			"blockClass": "containerLoginMobile"
+		},
+		"children": [
+			"login#mobile-header"
+			//"rich-text#login-text-mobile"
+		]
+	},
+	"login#mobile-header": {
+		"props": {
+			"emailAndPasswordTitle": "LOG-IN",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "password",
+			"showPasswordVerificationIntoTooltip": false,
+			"showIconProfile": false,
+			"blockClass" : "login__header-mobile",
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.row#sac-container-mobile": {
+		"children": [
+			"image#sac-header-mobile"
+		]
+	},
+	"image#sac-header-mobile": {
+		"props": {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/sac-header-icon.png",
+			"alt": "ícone carrinho",
+			"height": "24px",
+			"preventHorizontalStretch": true
+			
+		}
+	},
+	"sticky-layout#mobile": {
+		"children": [
+			"flex-layout.row#mobileHeader",
+			"allowed-content#cache",
+			"check-permission#menuLinks"
+		],
+		"props": {
+			"blockClass": "headerMobile"
+		}
+	},
+	"flex-layout.row#mobileHeader": {
+		"children": [
+			"flex-layout.col#mobileHeader"
+		]
+	},
+	"slider-layout#menuLinksLogged": {
+		"props": {
+			"itemsPerPage": {
+				"phone": 2,
+				"tablet": 4
+			},
+			"centerMode": {
+				"desktop": "to-the-left",
+				"tablet": "to-the-left",
+				"phone": "disabled"
+			},
+			"infinite": false,
+			"showNavigationArrows": "always",
+			"showPaginationDots": "never",
+			"blockClass": "stripeSlider",
+			"navigationStep": 1,
+			"fullWidth": true
+		},
+		"children": [
+			// "check-permission#reseller-b2b-user-widget",
+			// "check-permission#reseller",
+			// "check-permission#orderQuote",
+			"rich-text#headStripe1",
+			"rich-text#headStripe2",
+			"rich-text#headStripe3",
+			"rich-text#headStripe4",
+			"rich-text#headStripe5"
+		]
+	},
+	"slider-layout#menuLinksNotLogged": {
+		"props": {
+			"itemsPerPage": {
+				"phone": 2,
+				"tablet": 4
+			},
+			"centerMode": {
+				"desktop": "to-the-left",
+				"tablet": "to-the-left",
+				"phone": "disabled"
+			},
+			"infinite": false,
+			"showNavigationArrows": "always",
+			"showPaginationDots": "never",
+			"blockClass": "stripeSlider",
+			"navigationStep": 1,
+			"fullWidth": true
+		},
+		"children": [
+			"check-permission#reseller-b2b-user-widget",
+			"rich-text#headStripe1",
+			"rich-text#headStripe2",
+			"rich-text#headStripe3",
+			"rich-text#headStripe4",
+			"rich-text#headStripe5"
+		]
+	},
+	"flex-layout.col#mobileHeader": {
+		"children": [
+			"flex-layout.row#mobile",
+			"flex-layout.row#mobileSearch"
+		],
+		"props": {
+			"blockClass": "main-header-mobile"
+		}
+	},
+	"flex-layout.row#mobile": {
+		"children": [
+			"drawer#menu-mobile",
+			"logo",
+			"flex-layout.col#spacer",
+			/* "check-permission#login", */
+			"login",
+			"minicart.v2"
+		],
+		"props": {
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"fullWidth": true,
+			"experimentalHideEmptyCols": true
+		}
+	},
+	"drawer#menu-mobile": {
+		"children": [
+			"menu-custom-mobile"
+		],
+		"blocks": [
+			"drawer-header#menu-mobile",
+			"drawer-trigger#menu-mobile"
+		],
+		"props": {
+			"blockClass": "drawer-menu-mobile"
+		}
+	},
+	"drawer-trigger#menu-mobile": {
+		"children": [
+			"image#open-drawer-menu-mobile"
+		]
+	},
+	"image#open-drawer-menu-mobile": {
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/arquivos/menu-icon-header.png",
+			"maxWidth": "20px"
+		}
+	},
+	"flex-layout.row#drawer-menu-footer": {
+		"children": [
+			"image#drawer-footer-youtube",
+			"image#drawer-footer-instagram",
+			"image#drawer-footer-linkedin",
+			"image#drawer-footer-facebook"
+		],
+		"props": {
+			"blockClass": "drawer-menu-footer",
+			"fullWidth": true,
+			"colSizing": "auto",
+			"experimentalHideEmptyCols": true,
+			"colJustify": "left",
+			"horizontalAlign": "left",
+			"colGap": 5,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"image#drawer-footer-youtube": {
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/71b41630-f02c-476d-b364-7a55c1d7de20___eb65c325cf718978b8ebe18547cbaaaa.png",
+			"link": {
+				"url": "https://www.youtube.com/channel/UCeAM5_XUd1bhaY7SVeCcTsA",
+				"openNewTab": true
+			}
+		}
+	},
+	"image#drawer-footer-instagram": {
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/94c4f4af-d513-4fdf-aa6f-c894c11ccf95___47227e33993f4af71fc6fcd724451ec8.svg",
+			"link": {
+				"url": "https://www.instagram.com/universalsolucoesautomotivas/",
+				"openNewTab": true
+			}
+		}
+	},
+	"image#drawer-footer-linkedin": {
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/5eac2511-8d11-41ae-a957-99585471ded3___bbbe6d5fe09ee223188c4570498e79d3.svg",
+			"link": {
+				"url": "https://www.linkedin.com/company/universalsolucoesautomotivas/mycompany/?viewAsMember=true",
+				"openNewTab": true
+			}
+		}
+	},
+	"image#drawer-footer-facebook": {
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/6596839e-29ce-4dbd-bc96-cf5f9608fdd0___14e77797fe2b5646de162c502161776e.svg",
+			"link": {
+				"url": "https://www.facebook.com/universalsolucoesautomotivas/?locale=pt_BR",
+				"openNewTab": true
+			}
+		}
+	},
+	"drawer-header#menu-mobile": {
+		"children": [
+			"flex-layout.row#drawer-header"
+		],
+		"props": {
+			"blockClass": "drawer-menu-mobile"
+		}
+	},
+	"flex-layout.row#drawer-header": {
+		"children": [
+			"flex-layout.col#drawer-header"
+		],
+		"props": {
+			"blockClass": "drawer-menu-mobile",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"flex-layout.col#drawer-header": {
+		"children": [
+			"flex-layout.row#drawer-close",
+			"flex-layout.row#drawer-header-my-account"
+		]
+	},
+	"flex-layout.row#drawer-header-my-account": {
+		"children": [
+			"login#drawer-menu"
+		],
+		"props": {
+			"fullWidth": true,
+			"blockClass": "drawer-menu-account",
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"login#drawer-menu": {
+		"props": {
+			"logInButtonBehavior": "link",
+			"iconLabel": "Minha Conta"
+		}
+	},
+	"flex-layout.row#drawer-close": {
+		"children": [
+			"flex-layout.row#drawer-portal-client",
+			"drawer-close-button"
+		],
+		"props": {
+			"blockClass": "drawer-menu-mobile-close",
+			"fullWidth": true,
+			"colSizing": "auto",
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"flex-layout.row#drawer-portal-client": {
+		"children": [
+			"image#drawer-portal-client",
+			"rich-text#drawer-header-menu"
+		],
+		"props": {
+			"colSizing": "auto",
+			"colGap": 4,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"image#drawer-portal-client": {
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/8993a4f6-a911-4c00-a0ce-0324097dbd2a___3e859370cad52188e8f61c96d1f16f2a.svg",
+			"alt": "Portal do Cliente",
+			"maxWidth": "16px"
+		}
+	},
+	"rich-text#drawer-header-menu": {
+		"props": {
+			"blockClass": "drawer-menu-header",
+			"text": "Portal do Cliente"
+		}
+	},
+	"link#orderQuote": {
+		"props": {
+			"label": "Minhas cotações",
+			"href": "/b2b-quotes",
+			"blockClass": "orderQuote"
+		}
+	},
+	"link#organization": {
+		"props": {
+			"label": "Gerenciar organização",
+			"href": "/account#/organization",
+			"blockClass": "orderQuote"
+		}
+	},
+	"link#profile": {
+		"children": [
+			"icon-profile"
+		],
+		"props": {
+			"href": "/account",
+			"blockClass": "accountLink"
+		}
+	},
+	"flex-layout.row#mobileSearch": {
+		"children": [
+			"flex-layout.col#mobileSearch",
+			"flex-layout.col#quickOrder"
+		],
+		"props": {
+			"blockClass": "searchBarMobile",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"fullWidth": true,
+			"colGap": 4
+		}
+	},
+	"flex-layout.col#mobileSearch": {
+		"children": [
+			"search-bar#mobile"
+		],
+		"props": {
+			"blockClass": "searchBarMobile",
+			"width": "grow"
+		}
+	},
+	"flex-layout.col#quickOrder": {
+		"children": [
+			"link#quickOrder"
+		],
+		"props": {
+			"verticalAlign": "middle"
+		}
+	},
+	"search-bar#mobile": {
+		"blocks": [
+			"autocomplete-result-list.v2#mobile"
+		],
+		"props": {
+			"openAutocompleteOnFocus": true,
+			"blockClass": "searchMobile"
+		}
+	},
+	"login#head": {
+		"title": "Login - Desktop",
+		"props": {
+			"blockClass": "loginDrawer",
+			"iconLabel": "Login",
+			"accountOptionLinks": [
+				{
+					"label": "Minha Conta",
+					"path": "/account",
+					"cssClass": "accountOptionButton"
+				}
+			]
+		}
+	},
+	"login#mobile": {
+		"title": "Login - Mobile",
+		"props": {
+			"iconLabel": "Login"
+		}
+	}
+}
+

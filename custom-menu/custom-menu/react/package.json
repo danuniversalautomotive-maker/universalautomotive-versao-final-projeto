@@ -1,8 +1,9 @@
 {
   "name": "custom-menu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
-    "test": "vtex-test-tools test"
+    "test": "vtex-test-tools test",
+    "prepare": "husky install"
   },
   "dependencies": {
     "apollo-client": "^2.6.8",
@@ -21,11 +22,11 @@
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
     "typescript": "3.9.7",
-    "universalautomotive.custom-menu": "https://cla2950--universalautomotive.myvtex.com/_v/private/typings/linked/v1/universalautomotive.custom-menu@0.0.1+build1734100405/public/@types/universalautomotive.custom-menu",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.1/public/@types/vtex.css-handles",
     "vtex.device-detector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.0/public/@types/vtex.render-runtime",
     "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.6/public/@types/vtex.slider-layout",
-    "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.22.3/public/@types/vtex.store-image"
+    "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.22.3/public/@types/vtex.store-image",
+    "husky": "^9.0.1"
   }
 }

@@ -1,0 +1,389 @@
+.menuLinks > div > div:nth-child(10) {
+	display: none;
+}
+
+:global(.vtex-pageHeader__children) {
+	display: none;
+}
+
+:global(.vtex-my-account-1-x-menuLinks) > div > div:nth-child(3) {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	:global(.vtex-search-result-3-x-searchResultContainer)
+		:global(.vtex-flex-layout-0-x-flexRowContent--items-baseline) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	:global(.vtex-search-result-3-x-searchResultContainer)
+		:global(.vtex-flex-layout-0-x-flexCol--listAndSellingPrice) {
+		align-items: flex-start;
+	}
+}
+
+:global(.universalautomotive-quickorder-3-x-uploadBlock) {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+:global(.universalautomotive-quickorder-3-x-textContainerDescription) {
+	margin: 0;
+	width: 100%;
+	height: 40px;
+	padding: 8px 16px 8px 16px;
+	background: rgba(48, 49, 47, 1);
+	color: #ffffff;
+	border-radius: 8px;
+	gap: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s ease;
+}
+
+:global(.universalautomotive-quickorder-3-x-textContainerDescription):hover {
+	background: rgb(62, 63, 61);
+}
+
+:global(.universalautomotive-quickorder-3-x-downloadLink) {
+	font-family: "Fabriga", sans-serif;
+	font-size: 14px;
+	line-height: 18.69px;
+	color: white;
+	padding: 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-downloadLink):hover {
+	color: white;
+	text-decoration: none;
+}
+:global(.universalautomotive-quickorder-3-x-componentContainer) :global(.pt7) {
+	padding: 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-componentContainer)
+	:global(
+		.flex.flex-column.items-center.justify-center.b--light-blue.ba.br2.bw1.b--dashed.pa8
+	) {
+	border: 1px solid rgba(227, 228, 230, 1);
+	border-radius: 8px;
+	padding: 24px;
+	background: white;
+}
+
+:global(.universalautomotive-quickorder-3-x-componentContainer)
+	:global(.upload-block-texts) {
+	font-family: "Fabriga", sans-serif;
+	font-size: 16px;
+	line-height: 21.36px;
+	color: rgba(21, 32, 50, 1);
+	padding: 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-componentContainer)
+	:global(.selectFileText) {
+	text-decoration: underline;
+	margin-right: 3px;
+}
+
+:global(.universalautomotive-quickorder-3-x-dropzoneContainer) {
+	padding: 0;
+}
+
+@media (max-width: 1024px) {
+	:global(.universalautomotive-quickorder-3-x-dropzoneContainer) {
+		padding: 0;
+	}
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryProductItem) {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryProductItem)
+	:global(.vtex-styleguide-9-x-jsFocusVisible) {
+	padding: 16px;
+	border: 1px solid rgba(227, 228, 230, 1);
+	border-radius: 8px;
+	background: white;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryInputQuantity) {
+	min-width: 85px;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryProductItem)
+	:global(.vtex-styleguide-9-x-jsFocusVisible)
+	:global(.flex.flex-row.items-center.pointer) {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryLoadingProducts) {
+	padding: 16px 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryContainer)
+	:global(.vtex-styleguide-9-x-jsFocusVisible)
+	:global(.vtex__icon-caret-down) {
+	background-image: url("https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/e7717c6b-2a5e-4ba3-b312-d1520bf7ee4a___25fecfb06135eb0e176a96c5853e40b0.png");
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryContainer)
+	:global(.vtex-styleguide-9-x-jsFocusVisible)
+	:global(.vtex__icon-caret-up) {
+	background-image: url("https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/9bc202d9-b7a1-4834-8766-68473c9288e1___cfdb961ad663074f01c703f049843b41.png");
+}
+
+:global(.universalautomotive-quickorder-3-x-refIdAndQuantityWrapper) {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	min-width: 90px;
+	max-width: 90px;
+	margin-left: 12px;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryProductLabel) {
+	margin: 16px 0;
+	width: 100%;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryProductTitle) {
+	font-size: 12px;
+	line-height: 16px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+:global(.universalautomotive-quickorder-3-x-componentContainer) input {
+	border: 0;
+	padding: 0 16px;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryButtonAdd) {
+	margin: 24px 0 0;
+	padding: 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryButtonAdd)
+	:global(.vtex-button) {
+	width: 100%;
+	max-width: 300px;
+	height: 40px;
+	padding: 8px 16px 8px 16px;
+	background: rgba(48, 49, 47, 1);
+	color: #ffffff;
+	border-radius: 8px;
+	gap: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s ease;
+}
+
+:global(.universalautomotive-quickorder-3-x-categoryButtonAdd)
+	:global(.vtex-button):hover {
+	background: rgb(62, 63, 61);
+}
+
+:global(.universalautomotive-quickorder-3-x-textAreaBlock)
+	:global(.vtex-textarea)
+	textarea {
+	border: 1px solid rgba(227, 228, 230, 1);
+	border-radius: 8px;
+	padding: 26px 16px;
+	resize: none !important;
+	overflow: hidden !important;
+	-webkit-appearance: none;
+	font-family: "Fabriga", sans-serif;
+	font-size: 14px;
+	line-height: 18.69px;
+	background: white;
+}
+
+:global(.universalautomotive-quickorder-3-x-textAreaBlock)
+	:global(.vtex-textarea)
+	textarea::placeholder {
+	font-family: "Fabriga", sans-serif;
+	font-size: 14px;
+	line-height: 18.69px;
+	color: rgba(185, 185, 185, 1);
+}
+
+:global(.universalautomotive-quickorder-3-x-buttonValidate)
+	:global(.vtex-button) {
+	height: 37px;
+	width: 100%;
+	border-radius: 8px;
+	background: rgba(48, 49, 47, 1);
+	color: #ffffff;
+	border: 0;
+	outline: none;
+}
+
+:global(.universalautomotive-quickorder-3-x-buttonValidate)
+	:global(.vtex-button):hover {
+	background: rgb(62, 63, 61);
+}
+
+:global(.universalautomotive-quickorder-3-x-buttonValidate)
+	:global(.vtex-button__label) {
+	text-transform: capitalize;
+	font-family: "Fabriga", sans-serif;
+	font-size: 16px;
+	line-height: 21.36px;
+}
+
+:global(.universalautomotive-quickorder-3-x-buttonValidate) {
+	margin: 16px 0 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-autoCompleteBlock)
+	> div
+	> div
+	> div
+	> div
+	> div
+	> label
+	> div {
+	border: 0 !important;
+}
+
+:global(.universalautomotive-quickorder-3-x-autoCompleteBlock)
+	> div
+	> div
+	> div
+	> div
+	> :global(.flex.flex-row) {
+	border: 1px solid rgba(227, 228, 230, 1) !important;
+	border-radius: 8px;
+	background: white;
+}
+
+:global(.universalautomotive-quickorder-3-x-componentContainer)
+	:global(.vtex-styleguide-9-x-scroll) {
+	z-index: 9999;
+	border-radius: 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-componentContainer)
+	:global(.flex.flex-row)
+	button {
+	border: 0;
+}
+
+:global(.universalautomotive-quickorder-3-x-quantityAddToCartRemoveWrapper) {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 12px;
+}
+
+:global(.universalautomotive-quickorder-3-x-quantityAddToCartRemoveWrapper)
+	div {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+}
+
+:global(.universalautomotive-quickorder-3-x-quantityAddToCartRemoveWrapper)
+	button {
+	height: 37px;
+	width: 100%;
+	border-radius: 8px;
+	background: rgba(48, 49, 47, 1);
+	color: #ffffff;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+:global(.universalautomotive-quickorder-3-x-quantityAddToCartRemoveWrapper)
+	button:hover {
+	background: rgb(62, 63, 61);
+}
+
+:global(.universalautomotive-quickorder-3-x-quantityAddToCartRemoveWrapper)
+	input {
+	width: 100%;
+	min-width: 100px;
+	max-width: 100px;
+	height: 37px;
+	border: 1px solid rgba(208, 208, 208, 1);
+	outline: none;
+	border-radius: 8px;
+}
+
+:global(.universalautomotive-quickorder-3-x-productLabel) {
+	max-width: 50%;
+}
+
+@media (max-width: 740px) {
+	:global(
+			.universalautomotive-quickorder-3-x-quantityAddToCartRemoveWrapper
+		) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+}
+
+@media (max-width: 430px) {
+	:global(.universalautomotive-quickorder-3-x-productInfoContainer) {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	:global(
+			.universalautomotive-quickorder-3-x-quantityAddToCartRemoveWrapper
+		) {
+		margin: 16px 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecificationGroup)
+	> div
+	> div
+	> :nth-child(2)
+	> :nth-child(1n) {
+	background: #f4f4f4;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecificationGroup)
+	> div
+	> div
+	> :nth-child(2)
+	> :nth-child(2n) {
+	background: #ebebeb;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification)
+	> :first-child {
+	width: 90px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification)
+	> :nth-child(2) {
+	width: 100% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--brand-and-rating-wrap) {
+	flex-wrap: wrap !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--brand-and-rating-wrap) :global(.universalautomotive-common-components-0-x-flag-wrapper) {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}

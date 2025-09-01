@@ -1,0 +1,33 @@
+{
+  "condition-layout.product#sku-selector-or-list": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": { "id": 1 }
+        }
+      ],
+      "Then": "flex-layout.row#sku-list",
+      "Else": "flex-layout.row#sku-selector"
+    }
+  },
+
+  "flex-layout.row#sku-selector": {
+    "props": {
+      "marginTop": 7
+    },
+    "children": ["sku-selector#desktop"]
+  },
+
+  "sku-selector#desktop": {
+    "props": {
+      "blockClass": ["desktop", "color-round"],
+      "variationsSpacing": 0,
+      "showValueForVariation": "all",
+      "hideImpossibleCombinations": false,
+      "initialSelection": "image",
+      "thumbnailImage": "skuselector",
+      "visibleVariations": ["Color" /* , "Size", "Drill Bit Size" */]
+    }
+  }
+}

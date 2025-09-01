@@ -125,13 +125,21 @@
 		"props": {
 			"src": "https://universalautomotive.vteximg.com.br/arquivos/sac-header-icon.png",
 			"alt": "ícone carrinho",
-			"height": "24px"
+			"height": "24px",
+			"link": {
+      			"url": "https://www.universalautomotive.com.br/sac",
+      			"target": "_self"
+    		}
 		}
 	},
 	"rich-text#sac-text": {
 		"props" : {
 			"text" : "SAC",
-			"blockClass" : "sac-label-text"
+			"blockClass" : "sac-label-text",
+				"link": {
+					"url": "https://www.universalautomotive.com.br/sac",
+					"target": "_self"
+    			}
 		}
 	},
 	"flex-layout.row#iconsRight__header" : {
@@ -442,14 +450,14 @@
 		"children": [
 			"flex-layout.row#sac-container-mobile",
 			"flex-layout.row#cotainer-login-header-mobile",
-			"minicart.v2#header"
+			"minicart.v2"
 		]
 	},
-	"minicart.v2#header": { 
+	/*"minicart.v2": { 
 		"porps": {
 			"blockClass" : "icon-carrinho-mobile"
 		}
-	},
+	},*/
 	"flex-layout.row#cotainer-login-header-mobile": { 
 		"props": {
 			"preventHorizontalStretch": true,
@@ -481,8 +489,11 @@
 			"src": "https://universalautomotive.vteximg.com.br/arquivos/sac-header-icon.png",
 			"alt": "ícone carrinho",
 			"height": "24px",
-			"preventHorizontalStretch": true
-			
+			"preventHorizontalStretch": true,
+			"link": {
+      			"url": "https://www.universalautomotive.com.br/sac",
+      			"target": "_self"
+    		}
 		}
 	},
 	"sticky-layout#mobile": {

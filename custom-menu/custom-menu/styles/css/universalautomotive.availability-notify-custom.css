@@ -1,0 +1,87 @@
+.notifyWrapper {
+	border-radius: 4px;
+    border: 1px solid #DEE7EF;
+    padding: 24px;
+}
+
+.notifyHeader .title {
+	color: #3C4043;
+	font-family: "Fabriga", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.notifyHeader .description {
+	color: #777;
+	font-family: "Fabriga", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	margin-bottom: 8px;
+}
+
+.formGroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.input {
+	margin-right: 0;
+	margin-bottom: 1rem;
+	border-radius: 2px 0px 0px 2px;
+	border: 1px solid #CCC;
+	margin-bottom: 0;
+	padding: 10px 16px;
+}
+
+.input.error {
+	border-color: #FF7070;
+}
+
+.formGroup .errorMessage {
+	color: #FF7070;
+
+	font-family: "Fabriga", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 125%;
+}
+
+
+.submitButton :global(.vtex-button){
+	width: 100%;
+	border-radius: 9999px;
+	background: #142032;
+	height: 40px;
+	transition: .5s all;
+}
+
+.submitButton :global(.vtex-button__label) {
+	color: #FFF;
+	font-family: "Fabriga", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	text-transform: none;
+}
+
+.submitButton.isSubmitted :global(.vtex-button){
+	background: #63AD50;
+	border: none;
+	transition: .5s all;
+}
+
+.submitButton.isSubmitted :global(.vtex-button__label)::before{
+	content: url('https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/9dfd35eb-5b3b-4ce7-95ce-ea4852195b66___7712f7f76ab7c5db365842f6cabb4a62.png');
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}

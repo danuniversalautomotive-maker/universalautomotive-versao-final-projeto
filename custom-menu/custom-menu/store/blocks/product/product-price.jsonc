@@ -1,0 +1,173 @@
+{
+  "flex-layout.row#product-price": {
+    "children": ["flex-layout.col#product-price"],
+    "props": {
+      "blockClass": "product-price"
+    }
+  },
+  "flex-layout.row#product-price-box": {
+    "children": ["flex-layout.col#product-price-box"],
+    "props": {
+      "blockClass": "product-price-box"
+    }
+  },
+  "flex-layout.col#product-price": {
+    "children": [
+      "flex-layout.row#prices-and-discount"
+      // "product-list-price#desktop",
+      // "flex-layout.row#price",
+      // "product-installments"
+      // "has-different-prices#installments"
+      // "flex-layout.row#priceSavings"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": ["box", "product-price"]
+    }
+  },
+  "flex-layout.col#product-price-box": {
+    "children": [
+      "flex-layout.row#prices-and-discount",
+      // "product-installments",
+      "has-different-prices#installments-box",
+      "flex-layout.row#paymentCards",
+      "benefits-condition#add-to-cart-button"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": ["box", "product-price"]
+    }
+  },
+  "has-different-prices#installments": {
+    "props": {
+      "Then": "flex-layout.row#spacer",
+      "Else": "product-installments"
+    }
+  },
+  "has-different-prices#installments-box": {
+    "props": {
+      "Else": "product-installments"
+    }
+  },
+  "flex-layout.row#spacer": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 2
+    }
+  },
+  "flex-layout.row#prices-and-discount": {
+    "props": {
+      "colGap": 4,
+      "blockClass": "prices-and-discount-box",
+      "horizontalAlign": "center",
+      "colSizing": "auto",
+      "paddingBottom": 2
+    },
+    "children": [
+      "condition-layout.product#product",
+      "custom-price-clusters"
+    ]
+  },
+  "condition-layout.product#product": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.col#list-and-selling-price",
+      "Else": "rich-text#remind"
+    }
+  },
+
+  "rich-text#remind": {
+    "props": {
+      "blockClass": ["product-remind"],
+      "text": "Avise-me quando chegar"
+    }
+  },
+  "flex-layout.col#list-and-selling-price": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "listAndSellingPrice"
+    },
+    "children": [
+      "flex-layout.row#price",
+      "flex-layout.col#discount"
+    ]
+  },
+  "flex-layout.col#discount": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["rich-text#discount"]
+  },
+  "rich-text#discount": {
+    "props": {
+      "blockClass": "discount",
+      "text": "Antecipado(3% desconto)"
+    }
+  },
+  "product-installments": {
+    "props": {
+      "installmentsCriteria": "max-quantity"
+    }
+  },
+  "flex-layout.row#priceSavings": {
+    "children": [
+      "product-price-savings#desktop",
+      "product-price-savings#percentage"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "priceSavings"
+    }
+  },
+  "flex-layout.row#price": {
+    "children": ["product-selling-price"],
+    "props": {
+      "blockClass": ["items-baseline"],
+      "colSizing": "auto",
+      "colGap": 3,
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "current-price": {
+    "props": {
+      "showMinPrice": true,
+      "LoadingContent": "product-selling-price#desktop"
+    }
+  },
+  "product-selling-price#desktop": {
+    "props": {
+      "blockClass": ["desktop"],
+      "message": "{sellingPriceWithTax}"
+    }
+  },
+  "product-list-price#desktop": {
+    "props": {
+      "blockClass": ["desktop"]
+    }
+  },
+  "product-price-savings#desktop": {
+    "props": {
+      "blockClass": ["desktop"]
+    }
+  },
+  "product-price-savings#percentage": {
+    "props": {
+      "message": "{savingsPercentage}",
+      "blockClass": ["desktop"]
+    }
+  },
+  "product-price-savings#shelf": {
+    "props": {
+      "message": "-{savingsPercentage}",
+      "blockClass": "savings-flag"
+    }
+  }
+}

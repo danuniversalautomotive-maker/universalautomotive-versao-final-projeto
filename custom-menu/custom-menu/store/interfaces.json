@@ -1,20 +1,11 @@
 {
-  "menu-custom-index": {
-    "component": "MenuIndex"
+  "store.search.product-comparison": {
+    "around": ["comparison-context-wrapper"]
   },
-  "menu-custom-desktop": {
-    "component": "MenuHeader"
+  "store.custom.product-comparison": {
+    "around": ["comparison-context-wrapper"]
   },
-  "menu-custom-mobile": {
-    "component": "MenuHeaderM"
-  },
-  "menu-custom-header": {
-    "component": "MenuHeaderDesktop"
-  },
-  "menu-custom-header-mobile": {
-    "component": "MenuHeaderMobile"
-  },
-  "menu-custom-header-items-bottom": {
-    "component": "MenuItemBottomMobile"
+  "search-result-layout.desktop.product-comparison": {
+    "allowed": ["product-comparison-drawer"]
   }
 }

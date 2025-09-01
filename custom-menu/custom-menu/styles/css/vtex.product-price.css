@@ -1,0 +1,121 @@
+.sellingPrice--desktop, .sellingPriceRangeMinWithTax, .sellingPriceRangeUniqueValue {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--black-dark);
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-price-box)
+  .sellingPrice--desktop,
+:global(.vtex-flex-layout-0-x-flexRow--product-price-box) .sellingPriceRange {
+  font-size: 2.5rem;
+}
+
+.sellingPrice .sellingPriceValue--desktop {
+  display: none;
+}
+
+.listPrice--desktop {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  color: var(--black-medium);
+}
+
+.installments {
+  font-size: 0.75rem;
+  color: var(--black-medium);
+}
+
+.installmentsTotalValue {
+  font-weight: 600;
+}
+
+.savings--desktop {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--black-medium);
+}
+
+.savingsValue--desktop {
+  color: #468a2e;
+  font-weight: 500;
+}
+
+.savings--savingSummary {
+  display: block;
+  background: #e5f1e1;
+  color: #468a2e;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 0px 8px;
+  border-radius: 10px;
+}
+
+.savings--savingPercentage {
+  display: block;
+  color: var(--base);
+  text-transform: uppercase;
+  font-size: 0px;
+  line-height: 0px;
+  font-weight: 700;
+  padding: 0px 0px;
+  border: var(--base) solid 1px;
+  border-radius: 6px;
+}
+
+
+.savings--savingPercent {
+  margin-left: 4px;
+  color: #468a2e;
+  font-weight: 500;
+}
+
+@media (max-width: 64rem) {
+  .savings--savingPercent {
+    color: #000;
+  }
+
+  .currencyContainer--sticky {
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    font-weight: bold;
+    font-family: Roboto;
+  }
+}
+
+/* Seller Name */
+
+.sellerNameContainer--default {
+  font-size: 0.875rem;
+  color: var(--black-medium);
+  margin-bottom: 0.5rem;
+}
+
+.sellerName--default {
+  color: var(--black-dark);
+  font-weight: 500;
+}
+
+
+.savings--savings-flag .savingsPercentage--savings-flag {
+	color: #fff;
+	background-color: #3C4043;
+	border-radius: 999px;
+	display: flex;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 17px;
+	padding: 2px 8px;
+}
+.savings--savings-flag .savingsPercentage--savings-flag::before {
+	content: '-';
+	display: flex;
+}
+
+.savings--savings-flag {
+	font-size: 0px;
+}

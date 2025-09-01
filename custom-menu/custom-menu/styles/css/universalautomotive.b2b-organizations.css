@@ -1,0 +1,126 @@
+.userWidgetContainer {
+  margin: 0;
+  justify-content: center;
+  height: 100%;
+  background: transparent;
+}
+.userWidgetRow {
+  flex-direction: column;
+  background-color: var(--serious-black);
+  padding: 0;
+}
+.userWidgetLoading {
+  padding: 2.5rem 0;
+}
+.userWidgetContainer :global(.vtex-button) {
+  border-width: 1px;
+}
+.userWidgetContainer :global(.vtex-button):local(:not([disabled])):hover,
+.userWidgetContainer :global(.vtex-button):local(:not([disabled])):focus,
+.userWidgetContainer :global(.vtex-button):local(:not([disabled])):active {
+  background-color: var(--fresh-blue-darkest);
+  border-color: var(--fresh-blue-darkest);
+  color: #fff;
+}
+
+.newOrganizationRow {
+	display: flex;
+	flex-direction: row;
+}
+
+.newOrganizationTitle {
+	margin: 0;
+	font-family: Fabriga, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 25.2px;
+	text-align: left;
+	padding-bottom: .5rem;
+	color: #474747;
+}
+
+.newOrganizationSubTitle {
+	display: block;
+	font-family: Fabriga, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14.7px;
+	text-align: left;
+	color: #727273;
+	margin-bottom: 1rem;
+}
+
+.newOrganizationContainer :global(.vtex-input),
+.newOrganizationContainer :global(.vtex-dropdown) {
+	margin-bottom: 1rem;
+	display: block;
+}
+
+.newOrganizationContainer :global(.vtex-checkbox__line-container) {
+	align-items: center;
+}
+
+.newOrganizationContainer :global(.vtex-input__label),
+.newOrganizationContainer :global(.vtex-dropdown__label) {
+	font-family: Fabriga, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16.8px;
+	text-align: left;
+	display: block;
+	margin-bottom: .5rem;
+}
+
+.newOrganizationContainer :global(.vtex-pageHeader__title) {
+	font-family: Fabriga, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 42px;
+	text-align: left;
+	color: #142032;
+	margin-bottom: 24px;
+}
+
+.newOrganizationContainer :global(.vtex-pageHeader__subtitle) {
+	margin: 0;
+	font-family: Fabriga, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16.8px;
+	text-align: left;
+	color: #727273;
+}
+
+.newOrganizationRequired :global(.vtex-input__label)::after,
+.newOrganizationContainer :global(.vtex-dropdown__label)::after {
+	content: '*';
+	color: red;
+	font-size: 16px;
+}
+
+.newOrganizationContainer :global(.vtex-input-prefix__group),
+.newOrganizationContainer :global(.vtex-dropdown__container) {
+	height: 2rem;
+}
+
+.newOrganizationContainer .textArea :global(.vtex-input-prefix__group) {
+	height: 130px;
+	border-radius: 8px;
+}
+
+.newOrganizationContainer .textArea :global(.vtex-styleguide-9-x-input)::placeholder {
+	position: absolute;
+    top: 10px;
+}
+
+@media (max-width: 690px) {
+	.userWidgetItem {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.newOrganizationRow {
+		flex-direction: column;
+	}
+}

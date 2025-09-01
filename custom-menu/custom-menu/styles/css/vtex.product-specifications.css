@@ -1,0 +1,41 @@
+.specificationValue:not(:last-child)::after {
+	content: "-";
+	margin: 0 5px;
+}
+
+.groupName {
+	margin: 0 0 16px;
+	font-family: "Fabriga", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 33.6px;
+	color: #000;
+}
+
+.specificationName {
+	margin: 0;
+	font-family: "Fabriga", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 19.6px;
+	color: #000;
+}
+
+.specificationName::after {
+	content: ":";
+}
+
+.specificationValue {
+	margin: 0;
+	font-family: "Fabriga", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19.6px;
+	color: #3c4043;
+}
+
+@media (max-width: 1024px) {
+	.groupName {
+		padding-top: 8px;
+	}
+}

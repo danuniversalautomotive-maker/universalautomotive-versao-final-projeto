@@ -1,0 +1,13 @@
+.caretIcon--fresh-blue {
+  color: var(--fresh-blue);
+}
+
+.caretIcon--lines-darker {
+  color: var(--lines-darker);
+}
+
+.cartIcon {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+}

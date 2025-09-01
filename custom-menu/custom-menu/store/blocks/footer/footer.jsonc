@@ -1,0 +1,274 @@
+{
+	"footer": {
+		"blocks": [
+			"footer-layout.desktop",
+			"footer-layout.mobile"
+		]
+	},
+	"footer-layout.desktop": {
+		"title": "Footer Desktop",
+		"children": [
+			"flex-layout.row#payments",
+			"flex-layout.row#footer-menu",
+			"flex-layout.row#copyright"
+		],
+		"props": {
+			"blockClass": [
+				"relative",
+				"z-998"
+			]
+		}
+	},
+	"footer-layout.mobile": {
+		"title": "Footer Mobile",
+		"children": [
+			"flex-layout.row#payments",
+			"flex-layout.row#footer-menu",
+			"flex-layout.row#copyright"
+		]
+	},
+	"flex-layout.row#payments": {
+		"title": "Seção Pagamentos",
+		"props": {
+			"blockClass": "footer-row-1"
+		},
+		"children": [
+			"flex-layout.col#footer-4-desktop"
+		]
+	},
+	"flex-layout.row#footer-menu": {
+		"title": "Seção Menu",
+		"props": {
+			"blockClass": "footer-row-1",
+			"colSizing": "auto"
+		},
+		"children": [
+			"flex-layout.col#footer-policy",
+			"flex-layout.col#spacer",
+			"flex-layout.col#footer-institutional",
+			"flex-layout.col#spacer",
+			"flex-layout.col#footer-help",
+			"flex-layout.col#spacer",
+			"flex-layout.col#social-media"
+		]
+	},
+	"flex-layout.col#footer-4-desktop": {
+		"children": [
+			"flex-layout.row#paymentImagesDesktop"
+		],
+		"props": {
+			"preventVerticalStretch": true,
+			"preventHorizontalStretch": true,
+			"horizontalAlign": "right",
+			"verticalAlign": "middle"
+		}
+	},
+	"flex-layout.col#footer-policy": {
+		"title": "Menu de Políticas",
+		"children": [
+			"rich-text#footer-policy",
+			"vtex.menu@2.x:menu#policy"
+		]
+	},
+	"flex-layout.col#footer-institutional": {
+		"title": "Menu Institucional",
+		"children": [
+			"rich-text#footer-institutional",
+			"vtex.menu@2.x:menu#institutional"
+		]
+	},
+	"flex-layout.col#footer-help": {
+		"title": "Menu de Ajuda",
+		"children": [
+			"rich-text#footer-help",
+			"vtex.menu@2.x:menu#help"
+		]
+	},
+	"flex-layout.col#social-media": {
+		"title": "Menu de Redes Sociais",
+		"children": [
+			"rich-text#social-media",
+			"flex-layout.row#social-media-links"
+		]
+	},
+	"flex-layout.row#social-media-links": {
+		"title": "Links de Redes Sociais",
+		"props": {
+			"blockClass": "social-media-links",
+			"colSizing": "auto",
+			"colGap": 6,
+			"preserveLayoutOnMobile": true
+		},
+		"children": [
+			"flex-layout.col#facebook",
+			"flex-layout.col#instagram",
+			"flex-layout.col#linkedin",
+			"flex-layout.col#youtube"
+		]
+	},
+	"flex-layout.col#facebook": {
+		"children": [
+			"link#facebook"
+		]
+	},
+	"flex-layout.col#instagram": {
+		"children": [
+			"link#instagram"
+		]
+	},
+	"flex-layout.col#linkedin": {
+		"children": [
+			"link#linkedin"
+		]
+	},
+	"flex-layout.col#youtube": {
+		"children": [
+			"link#youtube"
+		]
+	},
+	"rich-text#footer-policy": {
+		"title": "Título Políticas",
+		"props": {
+			"text": "Institucional",
+			"blockClass": "footerMenuTitle"
+		}
+	},
+	"rich-text#footer-institutional": {
+		"title": "Título Institucional",
+		"props": {
+			"text": "Dúvidas",
+			"blockClass": "footerMenuTitle"
+		}
+	},
+	"rich-text#footer-help": {
+		"title": "Título Ajuda",
+		"props": {
+			"text": "Portal do Cliente",
+			"blockClass": "footerMenuTitle"
+		}
+	},
+	"rich-text#social-media": {
+		"title": "Título Redes Sociais",
+		"props": {
+			"text": "Redes Sociais",
+			"blockClass": "footerMenuTitle"
+		}
+	},
+	"flex-layout.row#copyright": {
+		"title": "Seção Direitos Autorais",
+		"props": {
+			"colSizing": "auto",
+			"blockClass": "copyrightContainer"
+		},
+		"children": [
+			"flex-layout.col#copyright"
+		]
+	},
+	"flex-layout.col#copyright": {
+		"props": {
+			"horizontalAlign": "center",
+			"width": "100%"
+		},
+		"children": [
+			"flex-layout.row#vtexLogo"
+		]
+	},
+	"flex-layout.row#vtexLogo": {
+		"props": {
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"rich-text#rights"
+		]
+	},
+	"rich-text#rights": {
+		"title": "Texto Direitos Autorais",
+		"props": {
+			"text": "Universal Soluções Automotivas 2024 @ All rights reserved",
+			"blockClass": "footerRights"
+		}
+	},
+	"flex-layout.row#paymentImagesDesktop": {
+		"children": [
+			"image#all-cards"
+		]
+	},
+	"image#all-cards": {
+		"title": "Imagem de Cartões",
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/0d50c1f3-5dd6-4b68-a94f-2603cfc89c70___8a38b2e841a8d691d4c85223b1d38bb8.png"
+		}
+	},
+	"link#facebook": {
+		"title": "Link Facebook",
+		"children": [
+			"image#facebook"
+		],
+		"props": {
+			"href": "https://www.facebook.com/universalsolucoesautomotivas/?locale=pt_BR",
+			"target": "_blank",
+			"blockClass": "networkLink"
+		}
+	},
+	"link#instagram": {
+		"title": "Link Instagram",
+		"children": [
+			"image#instagram"
+		],
+		"props": {
+			"href": "https://www.instagram.com/universalsolucoesautomotivas/",
+			"target": "_blank",
+			"blockClass": "networkLink"
+		}
+	},
+	"link#linkedin": {
+		"title": "Link LinkedIn",
+		"children": [
+			"image#linkedin"
+		],
+		"props": {
+			"href": "https://www.linkedin.com/company/universalsolucoesautomotivas/mycompany/?viewAsMember=true",
+			"target": "_blank",
+			"blockClass": "networkLink"
+		}
+	},
+	"link#youtube": {
+		"title": "Link YouTube",
+		"children": [
+			"image#youtube"
+		],
+		"props": {
+			"href": "https://www.youtube.com/channel/UCeAM5_XUd1bhaY7SVeCcTsA",
+			"target": "_blank",
+			"blockClass": "networkLink"
+		}
+	},
+	"image#facebook": {
+		"title": "Icone Facebook",
+		"props": {
+			"src": "assets/icons/facebook-inverted.svg",
+			"blockClass": "networkImage"
+		}
+	},
+	"image#instagram": {
+		"title": "Icone Instagram",
+		"props": {
+			"src": "assets/icons/instagram-inverted.svg",
+			"blockClass": "networkImage"
+		}
+	},
+	"image#linkedin": {
+		"title": "Icone LinkedIn",
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/a1f49ff6-b350-4cef-8984-d8d68d80770a___e5943ae20d47a6e2ae5db5bd5e95b4b5.svg",
+			"blockClass": "networkImage"
+		}
+	},
+	"image#youtube": {
+		"title": "Icone YouTube",
+		"props": {
+			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/5485aa9f-14e8-4ea8-a27f-bb78db001adf___f5b5a47a2d9eb4fbc0fada82b62b880f.svg",
+			"blockClass": "networkImage"
+		}
+	}
+}

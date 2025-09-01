@@ -1,0 +1,20 @@
+.sellerTextContainer {
+  margin: 0 0 20px;
+}
+
+.sellerLink {
+  color: var(--black-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sellerLink:hover,
+.sellerLink:focus :global(.vtex-seller-selector-0-x-sellerName),
+.sellerLink:hover :global(.vtex-seller-selector-0-x-sellerName) {
+  color: var(--serious-black);
+  text-decoration: underline;
+}
+
+.priceContainer {
+  padding: 1rem 0;
+}

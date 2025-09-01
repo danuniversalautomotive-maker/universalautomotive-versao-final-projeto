@@ -1,0 +1,26 @@
+{
+	"has-reviews-condition": {
+		"props": {
+			"Then": "flex-layout.row#reviews-and-ratings"
+		}
+	},
+	"flex-layout.row#reviews-and-ratings": {
+		"children": [
+			"flex-layout.col#reviews-only"
+		],
+		"props": {
+			"marginTop": 7,
+			"blockClass": "reviews-and-ratings"
+		}
+	},
+	"flex-layout.col#reviews-only": {
+		"children": [
+			"product-reviews"
+		],
+		"props": {
+			"blockClass": [
+				"reviews-only"
+			]
+		}
+	}
+}
