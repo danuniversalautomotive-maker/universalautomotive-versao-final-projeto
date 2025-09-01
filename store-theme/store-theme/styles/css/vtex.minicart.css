@@ -7,7 +7,7 @@
 }
 
 .closeIconContainer::before {
-  content: "Cart";
+  content: "Seu carrinho";
   font-size: 24px;
   line-height: 32px;
   font-family: Roboto;
@@ -81,12 +81,27 @@
   color: var(--serious-black);
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (max-width: 600px){
+  .vtex-button__label.flex.items-center.justify-center.h-100.ph4  {
+    padding: 0 !important;
+  }
+  .minicartContainer :global(.vtex-button) { 
+    display: contents !important;
+  }
+  :global(.vtex-button__label) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 @media (min-width: 64rem) {
   .minicartContainer :global(.vtex-button)::after {
     content: "Carrinho";
-    font-size: 1rem;
+    font-size: 11px;
     text-transform: none;
   }
 

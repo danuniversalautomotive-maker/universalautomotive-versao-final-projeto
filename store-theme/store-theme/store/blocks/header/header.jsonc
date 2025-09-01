@@ -9,22 +9,155 @@
 		"blocks": [
 			"header-layout.desktop",
 			"header-layout.mobile"
-			
 		]
 	},
 	"header-layout.desktop": {
 		"title": "Header - Desktop",
+		"props": {
+			"blockClass": "header-custom"
+		},
 		"children": [
 			"top-bar",
-			"app--client-last-cart",
-			"header-helmet-custom",
-			"flex-layout.row#demo-store-warning",
+			"flex-layout.row#header__content"
+			//"header-top",
+			//"flex-layout.row#header-top"
+			//"header-helmet-custom",
+			//"flex-layout.row#demo-store-warning",
 			//"google-translate",
-			"flex-layout.row#b2b-user-widget",
-			"sticky-layout#desktop",
-			"experimental__visibility-layout#whatsapp-button"
+			//"flex-layout.row#b2b-user-widget",
+			//"sticky-layout#desktop",
+			//"experimental__visibility-layout#whatsapp-button"
 		]
 	},
+	"flex-layout.row#header__content" : {
+		"props": {
+			"blockClass": "contentHeader",
+			"preventHorizontalStretch": true
+		},
+		"children" : [
+			"flex-layout.row#logoMenu",
+			"search-bar",
+			"flex-layout.row#iconsRight__header"
+		]
+	},
+	"flex-layout.row#logoMenu" : {
+		"props" : {
+			"blockClass" : "logoMenu__Header",
+			"preventHorizontalStretch": true
+		},
+		"children" : [
+			"image#logo-topbar",
+			//"vtex.menu@2.x:menu#novoMenu"
+			"menu-custom-desktop#v-01"
+		]
+	},
+	"image#logo-topbar": {
+		"props": {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/logo-versao-final.png",
+			"alt": "Logo Top Bar",
+			"maxWidth": "200px",
+			"height": "45px",
+			"preventHorizontalStretch": true
+
+		}
+	},
+	"search-bar": {
+		"block" : ["autocomplete-result-list.v2"],
+		"props" : {
+			"openAutocompleteOnFocus": true,
+			"productLayout" : "VERTICAL",
+			"blockClass": "search-bar__Header",
+			"preventHorizontalStretch": true,
+			"placeholder" : "O que você procura?",
+			"blurOnSubmit": true,
+			"submitOnIconClick": true,
+			"showClearByUserIcon": true
+		}
+	},
+	/*"vtex.menu@2.x:menu#novoMenu": {
+		"props": {
+			"items": [
+				{
+					"id": "hpa-cart",
+					"iconPosition": "left",
+					"type": "custom",
+					"highlight": false,
+					"iconProps": {
+						"id": "hpa-hamburguer-menu",
+						"size" : 16,
+						"activeClassName": "c-on-base",
+          				"mutedClassName": "c-on-base"
+					},
+					"itemProps": {
+						"type": "internal",
+						"href": "#",
+						"noFollow": false,
+						"tagTitle": "Menu",
+						"text": "Menu"
+					}
+				}
+			]
+		}
+	},*/
+	"login": {
+		"props": {
+			"emailAndPasswordTitle": "LOG-IN",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "password",
+			"showPasswordVerificationIntoTooltip": false,
+			"showIconProfile": false,
+			"blockClass" : "login__header",
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.row#sac" : {
+		"children" : [
+			"image#sac-header",
+			"rich-text#sac-text"
+		],
+		"props" : {
+			"blockClass": "sac-row",
+			"preventHorizontalStretch": true
+		}
+		
+	},
+	"image#sac-header": {
+		"props": {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/sac-header-icon.png",
+			"alt": "ícone carrinho",
+			"height": "24px"
+		}
+	},
+	"rich-text#sac-text": {
+		"props" : {
+			"text" : "SAC",
+			"blockClass" : "sac-label-text"
+		}
+	},
+	"flex-layout.row#iconsRight__header" : {
+		"props" : {
+			"blockClass" : "iconsRight"
+		},
+		"children" : [
+			"login",
+			"flex-layout.row#sac",
+			"minicart.v2"
+		]
+	},
+
+	/*"flex-layout.row#header-top": {
+		"children": [
+			"app--client-last-cart",
+			"menu-custom-desktop#v-01",
+			"minicart.v2"
+		]
+			//"app--client-last-cart"
+			//"menu-custom-desktop#v-01",
+			//"flex-layout.col#search-bar",
+			
+		
+	},*/
+	
 	"experimental__visibility-layout#whatsapp-button": {
 		"title": "Imagem para Whatsapp (On/Off)",
 		"children": [
@@ -109,7 +242,7 @@
 		"children": [
 			"flex-layout.col#logo-desktop",
 			"menu-custom-desktop#v-01",
-			"flex-layout.col#search-bar",
+			//"flex-layout.col#search-bar",
 			"link#quickOrder",
 			"login#head",
 			"minicart.v2"
@@ -129,14 +262,14 @@
 			"check-permission#customer-buyer"
 		]
 	},
-	"flex-layout.col#search-bar": {
+	/*"flex-layout.col#search-bar": {
 		"children": [
 			"search-bar"
 		],
 		"props": {
 			"width": "grow"
 		}
-	},
+	},*/
 	"flex-layout.row#headerStripe": {
 		"title": "NavBar - Desktop",
 		"props": {
@@ -264,18 +397,93 @@
 			"url": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/60520aec-d524-444a-80c2-4a570c7a68fb___5fb98fa55f69f381e28235e715521f46.png"
 		}
 	},
+	/* trabalhando no mobile aqui */
 	"header-layout.mobile": {
 		"title": "Header - Mobile",
 		"children": [
-			"app--client-last-cart",
-			"flex-layout.row#demo-store-warning",
+			//"app--client-last-cart",
+			//"flex-layout.row#demo-store-warning",
 			"top-bar",
+			"flex-layout.row#mobile__header"
+			
 			//"google-translate",
-			"flex-layout.row#b2b-user-widget",
-			"sticky-layout#mobile",
-			"header-helmet-custom",
-			"experimental__visibility-layout#whatsapp-button"
+			//"flex-layout.row#b2b-user-widget",
+			//"sticky-layout#mobile",
+			//"header-helmet-custom",
+			//"experimental__visibility-layout#whatsapp-button"
 		]
+	},
+	"flex-layout.row#mobile__header": {
+		"props": {
+			"blockClass": "mobile-header",
+			"rich-text": "teste teste",
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"drawer#menu-mobile",
+			"image#logoMenuMobile",
+			"flex-layout.row#iconsRightMobile"
+		]
+	},
+	"image#logoMenuMobile": {
+		"props" : {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/logo-versao-final.png",
+			"alt": "Logo Top Bar",
+			"maxWidth": "140px",
+			"height": "32px",
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.row#iconsRightMobile": {
+		"props": {
+			"blockClass" : "sac-mobile",
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"flex-layout.row#sac-container-mobile",
+			"flex-layout.row#cotainer-login-header-mobile",
+			"minicart.v2#header"
+		]
+	},
+	"minicart.v2#header": { 
+		"porps": {
+			"blockClass" : "icon-carrinho-mobile"
+		}
+	},
+	"flex-layout.row#cotainer-login-header-mobile": { 
+		"props": {
+			"preventHorizontalStretch": true,
+			"blockClass": "containerLoginMobile"
+		},
+		"children": [
+			"login#mobile-header"
+			//"rich-text#login-text-mobile"
+		]
+	},
+	"login#mobile-header": {
+		"props": {
+			"emailAndPasswordTitle": "LOG-IN",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "password",
+			"showPasswordVerificationIntoTooltip": false,
+			"showIconProfile": false,
+			"blockClass" : "login__header-mobile",
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.row#sac-container-mobile": {
+		"children": [
+			"image#sac-header-mobile"
+		]
+	},
+	"image#sac-header-mobile": {
+		"props": {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/sac-header-icon.png",
+			"alt": "ícone carrinho",
+			"height": "24px",
+			"preventHorizontalStretch": true
+			
+		}
 	},
 	"sticky-layout#mobile": {
 		"children": [
@@ -362,7 +570,8 @@
 			"drawer#menu-mobile",
 			"logo",
 			"flex-layout.col#spacer",
-			/* "check-permission#login", */ "login",
+			/* "check-permission#login", */
+			"login",
 			"minicart.v2"
 		],
 		"props": {
@@ -375,8 +584,7 @@
 	},
 	"drawer#menu-mobile": {
 		"children": [
-			"menu-custom-mobile",
-			"flex-layout.row#drawer-menu-footer"
+			"menu-custom-mobile"
 		],
 		"blocks": [
 			"drawer-header#menu-mobile",
@@ -393,8 +601,8 @@
 	},
 	"image#open-drawer-menu-mobile": {
 		"props": {
-			"src": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/f4e51e4a-3d62-4c88-86e0-57ae6524c119___7ed5832ff0584d3e71dd61396228ba59.svg",
-			"maxWidth": "36px"
+			"src": "https://universalautomotive.vtexassets.com/arquivos/menu-icon-header.png",
+			"maxWidth": "20px"
 		}
 	},
 	"flex-layout.row#drawer-menu-footer": {
@@ -611,3 +819,4 @@
 		}
 	}
 }
+

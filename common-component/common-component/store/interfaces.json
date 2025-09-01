@@ -1,4 +1,8 @@
 {
+  "header-top": {
+    "component": "Header",
+    "composition": "children"
+  },
   "top-bar": {
     "component": "TopBar"
   },

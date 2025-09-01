@@ -1,6 +1,5 @@
 .container {
   max-width: 1440px;
-  width: 100%;
   padding: 0px 32px;
   margin: 0px auto;
 }
@@ -17,7 +16,20 @@
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
-  height: 48px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+    border-radius: 5rem;
+    border: 1px solid #ADADAD;
+    width: 440px;
+    height: 46px;
+}
+
+.searchIcon {
+  color: #DEE7EF;
 }
 
 .imageElement--vtexLogo {
@@ -125,7 +137,6 @@
 
 .searchBarContainer {
   width: 100%;
-  max-width: 856px;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {

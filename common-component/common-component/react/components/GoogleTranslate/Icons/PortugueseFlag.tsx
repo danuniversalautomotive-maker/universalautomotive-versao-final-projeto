@@ -8,8 +8,8 @@ export function PortugueseFlag() {
       {deviceInfo.isMobile ? (
         <img
           src="https://universalautomotive.vteximg.com.br/arquivos/pt-BR.png"
-          width={40}
-          height={40}
+          width={30}
+          height={30}
         />
       ) : (
         <img

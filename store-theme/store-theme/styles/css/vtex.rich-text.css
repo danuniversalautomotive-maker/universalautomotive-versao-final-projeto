@@ -1,3 +1,19 @@
+@media(max-width: 600px){
+	.paragraph--text-sac-mobile {
+		line-height: 0 !important;
+		font-size: 11px;
+	}
+	.paragraph--text-login-mobile {
+		line-height: 0 !important;
+		font-size: 11px;
+	}
+}
+
+.paragraph--sac-label-text {
+	line-height: 0 !important;
+	font-size: 11px;
+}
+
 /* BEGIN - Header */
 .container--HeaderStripeText {
 	margin-right: 24px;

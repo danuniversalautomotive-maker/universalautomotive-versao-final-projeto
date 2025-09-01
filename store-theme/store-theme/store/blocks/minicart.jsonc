@@ -10,7 +10,7 @@
 	},
 	"icon-cart#minicart-icon": {
 		"props": {
-			"size": 27,
+			"size": 24,
 			"viewBox": "0 0 27 27"
 		}
 	},

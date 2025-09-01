@@ -9,8 +9,8 @@ export function EnglishFlag() {
       {deviceInfo.isMobile ? (
         <img
           src="https://universalautomotive.vteximg.com.br/arquivos/en.png"
-          width={40}
-          height={40}
+          width={30}
+          height={30}
         />
       ) : (
         <img
