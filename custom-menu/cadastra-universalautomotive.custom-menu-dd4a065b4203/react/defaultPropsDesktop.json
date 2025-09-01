@@ -1,0 +1,272 @@
+{
+  "menuFirstLevel": [
+    {
+      "hasLevel": true,
+      "hasLevelBanners": true,
+      "__editorItemTitle": "Departamentos",
+      "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/fdf55b3c-0d4c-403a-b25d-fc031db9cff8___958ab3a2b251797810d873e21f225740.svg",
+      "menuLevel": [
+        {
+          "__editorItemTitle": "Ferragens Automotivas",
+          "botaoVerTodos": "/",
+          "href": "/",
+          "hasLevel": true,
+          "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/479c49ff-a774-4af0-8728-60ec30f1db46___812bb610a83720a34805ea945d094d28.png",
+          "hasLevelBanners": true,
+          "banner": "https://s3-alpha-sig.figma.com/img/660b/8202/0855bac2305ad8ae8d6ca3c35ec82410?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fZC6J~Gd~1DleMw53iOXDKy6GvvrHPjm64saovxxnzq6xjnd0uJk9k9VpiS9NPXGnCmDbexvkhig0oxi91~G1gGqXmK4KbbZ84pdnKVW2m9pnAE1SVSWRLK7cxPgyeo9e2BknYsRxEatLB-HADfy4oT726-5WvQgPhhsBbgy4mVqNlymHzPg3U9XTiiXMLYyoEOIzRfcZRCh8jgq6TWkNWKCGyZTCt7sq28mWMox89qC2w2FZASXhn3UFjfQxNiiiuB6Lil-W50EpPSXGpXG5zONJU2jWicyVdAKqD5W0SorloPThoKCc1M6QWM4LL1gUx~qSTbjkhr9yI5KNKKtwA__",
+          "menuLevel": [
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Máquinas e Componentes do Vidro",
+          "botaoVerTodos": "/",
+          "href": "/",
+          "hasLevel": true,
+          "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/e397a144-d683-4281-93c9-3efd4be96af7___0bce3e73a696d97ea2329a4b9525ee59.png",
+          "hasLevelBanners": true,
+          "banner": "https://s3-alpha-sig.figma.com/img/660b/8202/0855bac2305ad8ae8d6ca3c35ec82410?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fZC6J~Gd~1DleMw53iOXDKy6GvvrHPjm64saovxxnzq6xjnd0uJk9k9VpiS9NPXGnCmDbexvkhig0oxi91~G1gGqXmK4KbbZ84pdnKVW2m9pnAE1SVSWRLK7cxPgyeo9e2BknYsRxEatLB-HADfy4oT726-5WvQgPhhsBbgy4mVqNlymHzPg3U9XTiiXMLYyoEOIzRfcZRCh8jgq6TWkNWKCGyZTCt7sq28mWMox89qC2w2FZASXhn3UFjfQxNiiiuB6Lil-W50EpPSXGpXG5zONJU2jWicyVdAKqD5W0SorloPThoKCc1M6QWM4LL1gUx~qSTbjkhr9yI5KNKKtwA__",
+          "menuLevel": [
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Suspensão, Direção, Câmbio e Amortecedores",
+          "botaoVerTodos": "/",
+          "href": "/",
+          "hasLevel": true,
+          "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/8f0176b6-40aa-43c1-8ae8-61cc8b337743___e703cf9695ab4242faa3394c4e6349e4.png",
+          "hasLevelBanners": false,
+          "menuLevel": [
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            },
+            {
+              "__editorItemTitle": "Lorem",
+              "href": "/",
+              "hasLevel": false
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Tampas Automotivas",
+          "botaoVerTodos": "/",
+          "href": "/",
+          "hasLevel": false,
+          "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/04e33b69-acb5-476d-9d76-f45fb1f78840___933b5bd4b7f15440bd2623d7523f9ed3.png",
+          "hasLevelBanners": false
+        },
+        {
+          "__editorItemTitle": "Lâmpadas Automotivas",
+          "botaoVerTodos": "/",
+          "href": "/",
+          "hasLevel": false,
+          "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/617a6533-39d1-40a6-918c-d190301bc99f___1c5e9617f1f3b25f55057e9633f4f8f4.png",
+          "hasLevelBanners": false
+        },
+        {
+          "__editorItemTitle": "Químicos Automotivas",
+          "botaoVerTodos": "/",
+          "href": "/",
+          "hasLevel": false,
+          "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/41a695e7-1070-44bb-b42e-1225800f475a___d1a712a2b7aa8529f24d0a1e047e3c22.png",
+          "hasLevelBanners": false
+        },
+        {
+          "__editorItemTitle": "Tampas  Automotivas",
+          "botaoVerTodos": "/",
+          "href": "/",
+          "hasLevel": false,
+          "icon": "https://universalautomotive.vtexassets.com/assets/vtex.file-manager-graphql/images/642d1f0a-85ba-4535-9cf8-248e19ee9b45___7ad20ed5922b00065549b7f21332a126.png",
+          "hasLevelBanners": false
+        }
+      ]
+    }
+  ],
+  "menuItemsBottomVisible": false,
+  "menuItemsBottom": [
+    {
+      "__editorItemTitle": ""
+    }
+  ],
+  "__editorItemTitle": "",
+  "mobileHeader": [
+    {
+      "__editorItemTitle": "Entrar",
+      "icon": "https://cassol.vtexassets.com/assets/vtex.file-manager-graphql/images/0734bf3d-da74-4f75-919e-c3b17f8e14ff___083e33ef7e28de38a4c66283c308acd8.png",
+      "href": "/login"
+    },
+    {
+      "__editorItemTitle": "Criar Conta",
+      "href": "/login"
+    }
+  ],
+  "mobileFooter": [
+    {
+      "__editorItemTitle": "Contrate um Profissional",
+      "href": "https://orcamento.cassol.com.br/"
+    },
+    {
+      "__editorItemTitle": "Cartão Cassol",
+      "href": "/cartao-cassol"
+    },
+    {
+      "__editorItemTitle": "Meus Favoritos",
+      "href": "/account#/wishlist"
+    },
+    {
+      "__editorItemTitle": "Nossas Lojas",
+      "href": "/nossas-lojas"
+    },
+    {
+      "__editorItemTitle": "Fale Conosco",
+      "href": "/fale-conosco"
+    }
+  ],
+  "src": "",
+  "link": {
+    "attributeNofollow": false
+  },
+  "alt": "",
+  "title": "",
+  "loading": "eager",
+  "analyticsProperties": "none",
+  "additionalDef": "none",
+  "textType": "t-body",
+  "orientation": "horizontal"
+}
