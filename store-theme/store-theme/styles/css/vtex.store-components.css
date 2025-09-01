@@ -28,6 +28,20 @@
     height: 46px;
 }
 
+@media (max-width: 600px) {
+  .searchBarContainer :global(.vtex-input-prefix__group) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5rem;
+    border: 1px solid #ADADAD;
+    width: 90%;
+    height: 46px;
+    margin: 10px auto;
+}
+}
+
 .searchIcon {
   color: #DEE7EF;
 }

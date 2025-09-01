@@ -417,8 +417,8 @@
 			//"app--client-last-cart",
 			//"flex-layout.row#demo-store-warning",
 			"top-bar",
-			"flex-layout.row#mobile__header"
-			
+			"flex-layout.row#mobile__header",
+			"flex-layout.row#mobileSearch"
 			//"google-translate",
 			//"flex-layout.row#b2b-user-widget",
 			//"sticky-layout#mobile",
@@ -436,6 +436,7 @@
 			"drawer#menu-mobile",
 			"image#logoMenuMobile",
 			"flex-layout.row#iconsRightMobile"
+
 		]
 	},
 	"image#logoMenuMobile": {
@@ -780,8 +781,8 @@
 	},
 	"flex-layout.row#mobileSearch": {
 		"children": [
-			"flex-layout.col#mobileSearch",
-			"flex-layout.col#quickOrder"
+			"flex-layout.col#mobileSearch"
+			//"flex-layout.col#quickOrder"
 		],
 		"props": {
 			"blockClass": "searchBarMobile",
