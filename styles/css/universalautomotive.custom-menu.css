@@ -1156,7 +1156,11 @@
 }
 
 .newMenuCustomMobile .level-banner .level-banner-item .level-link .imageElement {
-	border-radius: 4px;
+	border-radius: 1px;
+}
+
+.icone-menu-header-hamburger {
+	width: 20px;
 }
 
 .level-item-0 {
@@ -1169,6 +1173,10 @@
 .level-item-0:hover {
 	background: #ECECEC;
 	transition: all .5ms;
+}
+
+.universalautomotive-custom-menu-0-x-iconImage-0 {
+	width: 20px;
 }
 
 .newMenuCustom .level-container-0 .level-0 .level-link {
@@ -1274,6 +1282,7 @@
 	display: flex;
 	align-items: center;
 	gap: 8px;
+	width: 20px;	
 }
 
 .iconImage-1 {
