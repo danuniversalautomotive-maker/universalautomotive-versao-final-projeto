@@ -442,13 +442,8 @@
 		"children": [
 			"flex-layout.row#sac-container-mobile",
 			"flex-layout.row#cotainer-login-header-mobile",
-			"minicart.v2#header"
+			"minicart.v2"
 		]
-	},
-	"minicart.v2#header": { 
-		"porps": {
-			"blockClass" : "icon-carrinho-mobile"
-		}
 	},
 	"flex-layout.row#cotainer-login-header-mobile": { 
 		"props": {
