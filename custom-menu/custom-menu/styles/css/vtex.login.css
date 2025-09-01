@@ -58,7 +58,7 @@
 	color: var(--serious-black);
 	max-width: 250px;
 	font-size: 11px;
-    line-height: 0;
+	line-height: 10px;
 }
 
 @media (max-width: 64rem) {

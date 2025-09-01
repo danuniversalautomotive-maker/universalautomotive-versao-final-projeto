@@ -18,13 +18,14 @@
 		},
 		"children": [
 			"top-bar",
+			"flex-layout.row#b2b-user-widget",
 			"flex-layout.row#header__content"
 			//"header-top",
 			//"flex-layout.row#header-top"
 			//"header-helmet-custom",
 			//"flex-layout.row#demo-store-warning",
 			//"google-translate",
-			//"flex-layout.row#b2b-user-widget",
+			
 			//"sticky-layout#desktop",
 			//"experimental__visibility-layout#whatsapp-button"
 		]
@@ -57,7 +58,11 @@
 			"alt": "Logo Top Bar",
 			"maxWidth": "200px",
 			"height": "45px",
-			"preventHorizontalStretch": true
+			"preventHorizontalStretch": true,
+			"link": {
+      			"url": "https://www.universalautomotive.com.br",
+      			"target": "_self"
+    		}
 
 		}
 	},
@@ -439,7 +444,11 @@
 			"alt": "Logo Top Bar",
 			"maxWidth": "140px",
 			"height": "32px",
-			"preventHorizontalStretch": true
+			"preventHorizontalStretch": true,
+			"link": {
+      			"url": "https://www.universalautomotive.com.br",
+      			"target": "_self"
+    		}
 		}
 	},
 	"flex-layout.row#iconsRightMobile": {
