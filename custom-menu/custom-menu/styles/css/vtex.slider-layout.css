@@ -1,3 +1,7 @@
+.containerSliderMarcas {
+  display: none !important;
+}
+
 .sliderLayoutContainer:not(.sliderLayoutContainer--dotsCustom) {
   padding-bottom: 26px;
 }

@@ -1,0 +1,80 @@
+.sliderWrapperNossasMarcas {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.sliderContainerNossasMarcas {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.sliderItemNossasMarcas {
+  flex: 0 0 20%; /* 100% / 5 itens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.sliderItemNossasMarcas img {
+    width: 150px;
+    height: 60px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.sliderDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.dot {
+    width: 5px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #bdc9d6;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.dot.active {
+  background-color: #454545;
+}
+.tituloNossasMarcas {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    align-items: center;
+    gap: 10px;
+}
+.iconNossasMarcas {
+    width: 40px;
+    height: auto;
+}
+@media (max-width: 600px) {
+  .sliderItemNossasMarcas {
+    flex: 0 0 40%; /* 1 por linha no mobile */
+  }
+  .sliderItemNossasMarcas img {
+    width: 150px;
+    height: 35px;
+  }
+  .sliderContainerNossasMarcas {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+}

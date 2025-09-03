@@ -31,16 +31,16 @@ export const TopBar = ({ sliderItems = [] }: TopBarProps) => {
   return (
     <>
       {deviceInfo.isMobile ? (
-        <div className={styles.container}>
-          <div className={styles.content}>
+        <div className={styles.containerTopBar}>
+          <div className={styles.contentTopBar}>
             {/* Google Translate */}
-            <div className={styles.flags}>
+            <div className={styles.flagsTopBar}>
               <GoogleTranslate />
             </div>
 
             {/* Só renderiza o slider se houver itens */}
             {sliderItems.length > 0 && (
-              <div className={styles.carouselWrapper}>
+              <div className={styles.carouselWrapperTopBar}>
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={current}
@@ -48,13 +48,13 @@ export const TopBar = ({ sliderItems = [] }: TopBarProps) => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.5 }}
-                    className={styles.carouselItem}
+                    className={styles.carouselItemTopBar}
                   >
                     {sliderItems[current]?.image && (
                       <img
                         src={sliderItems[current].image}
                         alt={sliderItems[current].message}
-                        className={styles.sliderImage}
+                        className={styles.sliderImageTopBar}
                       />
                     )}
                     <span>{sliderItems[current]?.message}</span>
@@ -65,11 +65,11 @@ export const TopBar = ({ sliderItems = [] }: TopBarProps) => {
           </div>
         </div>
       ) : (
-        <div className={styles.container}>
-          <div className={styles.content}>
+        <div className={styles.containerTopBar}>
+          <div className={styles.contentTopBar}>
             {/* Links rápidos */}
-            <div className={styles.linksRapidos}>
-              <span className={styles.portal}>
+            <div className={styles.linksRapidosTopBar}>
+              <span className={styles.portalTopBar}>
                 <a href="https://www.universalautomotive.com.br/portal-do-cliente">
                   <img
                     src="https://universalautomotive.vteximg.com.br/arquivos/icon-portal-topbar.png"
@@ -96,7 +96,7 @@ export const TopBar = ({ sliderItems = [] }: TopBarProps) => {
 
             {/* Só renderiza o slider se houver itens */}
             {sliderItems.length > 0 && (
-              <div className={styles.carouselWrapper}>
+              <div className={styles.carouselWrapperTopBar}>
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={current}
@@ -104,13 +104,13 @@ export const TopBar = ({ sliderItems = [] }: TopBarProps) => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.5 }}
-                    className={styles.carouselItem}
+                    className={styles.carouselItemTopBar}
                   >
                     {sliderItems[current]?.image && (
                       <img
                         src={sliderItems[current].image}
                         alt={sliderItems[current].message}
-                        className={styles.sliderImage}
+                        className={styles.sliderImageTopBar}
                       />
                     )}
                     <span>{sliderItems[current]?.message}</span>
@@ -120,7 +120,7 @@ export const TopBar = ({ sliderItems = [] }: TopBarProps) => {
             )}
 
             {/* Google Translate */}
-            <div className={styles.flags}>
+            <div className={styles.flagsTopBar}>
               <GoogleTranslate />
             </div>
           </div>

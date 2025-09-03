@@ -1,12 +1,17 @@
-.container {
+.containerTopBar {
     background-color: #000;
     color: #FFF;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    & a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #FFF;
+    }
 }
 
-.content {
+.contentTopBar {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -18,7 +23,7 @@
     align-items: center;
 }
 
-.portal a {
+.portalTopBar a {
     cursor: pointer;
     text-decoration: none;
     color: #FFF;
@@ -26,65 +31,59 @@
     gap: 5px;
 }
 
-a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #FFF;
-}
-
-.linksRapidos {
+.linksRapidosTopBar {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     align-items: center;
 }
 
-.linksRapidos span {
+.linksRapidosTopBar span {
     font-size: 14px;
 }
 
-.portal {
+.portalTopBar {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.carouselItem {
+.carouselItemTopBar {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.sliderImage {
+.sliderImageTopBar {
     width: 17px;
 }
 
 @media(max-width: 600px){
-    .content {
+    .contentTopBar {
         width: 100%;
         gap: 10px;
         height: auto;
         flex-direction: column;
         padding: 0 0 0 0;
     }   
-    .ChooseLanguageWrapper {
+    .ChooseLanguageWrapperTopBar {
         padding: 0.5rem 0 1rem;
     }
-    .carouselWrapper {
+    .carouselWrapperTopBar {
         background-color: #707070;
         padding: 10px;
         text-align: center;
         width: 100%;
     }
-    .carouselItem {
+    .carouselItemTopBar {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
     
-    .sliderImage {
+    .sliderImageTopBar {
         width: 17px;
     }
     

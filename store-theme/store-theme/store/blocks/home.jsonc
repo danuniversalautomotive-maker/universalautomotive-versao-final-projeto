@@ -108,19 +108,21 @@
 			"blockClass": "shopByCategory"
 		},
 		"children": [
-			"rich-text#shopByTitle",
-			"slider-layout#home"
+			//"rich-text#shopByTitle",
+			"slider-nossas-macas"
+			//"slider-layout#home" //nossas marcas 
 		]
 	},
-	"rich-text#shopByTitle": {
+	/*"rich-text#shopByTitle": {
 		"title": "Titulo - Compre por categoria",
 		"props": {
 			"text": "### Nossas Marcas",
 			"textPosition": "CENTER",
-			"blockClass": "shopByCategoryTitle"
+			"blockClass": "shopByCategoryTitle",
+			"preventHorizontalStretch": true
 		}
 	},
-	"slider-layout#home": {
+	/*"slider-layout#home": {
 		"title": "Configuração do slider de categorias",
 		"children": [
 			"info-card#1",
@@ -138,7 +140,7 @@
 				"stopOnHover": false
 			}
 		}
-	},
+	},*/
 	"info-card#1": {
 		"title": "1º Card de categoria",
 		"props": {

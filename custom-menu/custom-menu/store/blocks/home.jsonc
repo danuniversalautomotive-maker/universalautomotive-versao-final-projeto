@@ -115,7 +115,7 @@
 	"rich-text#shopByTitle": {
 		"title": "Titulo - Compre por categoria",
 		"props": {
-			"text": "### Nossas Marcas",
+			"text": "## Nossas Marcas",
 			"textPosition": "CENTER",
 			"blockClass": "shopByCategoryTitle"
 		}

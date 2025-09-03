@@ -9,6 +9,9 @@
   "menu-horizontal": {
     "component": "MenuHorizontal"
   },
+  "slider-nossas-macas": {
+    "component": "SliderNossasMarcas"
+  },
   "google-translate": {
     "component": "GoogleTranslater"
   },

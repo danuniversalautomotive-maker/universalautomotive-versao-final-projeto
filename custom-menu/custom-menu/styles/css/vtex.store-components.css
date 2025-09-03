@@ -778,6 +778,9 @@
 }
 
 /* Página de Catálogo */
+.infoCardContainer {
+  display: none !important; 
+}
 .infoCardContainer--info-card-download {
   flex-direction: column-reverse;
   background: #F6F6F6;

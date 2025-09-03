@@ -1,7 +1,7 @@
 {
   "vendor": "universalautomotive",
   "name": "common-components",
-  "version": "0.1.60",
+  "version": "0.1.62",
   "title": "Universal Automotiva Common Custom Components",
   "description": "Universal Automotiva Common Custom Components",
   "builders": {
