@@ -19,7 +19,8 @@
 		"children": [
 			"top-bar",
 			"flex-layout.row#b2b-user-widget",
-			"flex-layout.row#header__content"
+			"flex-layout.row#header__content",
+			"menu-horizontal"
 			//"header-top",
 			//"flex-layout.row#header-top"
 			//"header-helmet-custom",

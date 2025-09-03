@@ -6,6 +6,9 @@
   "top-bar": {
     "component": "TopBar"
   },
+  "menu-horizontal": {
+    "component": "MenuHorizontal"
+  },
   "google-translate": {
     "component": "GoogleTranslater"
   },

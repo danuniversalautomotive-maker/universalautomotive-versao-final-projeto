@@ -1,0 +1,23 @@
+.containerMenuHorizontal {
+  background-color: #ae1f21;
+}
+.contentMenuHorizontal {
+  width: 1366px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0.8rem 0;
+  margin: auto;
+}
+.itensMenuHorizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #fff;
+  align-items: center;
+  font-size: 13px;
+}
+.hrMenuHorizontal {
+    border-left:1px solid #FFF;
+    height:10px;
+}

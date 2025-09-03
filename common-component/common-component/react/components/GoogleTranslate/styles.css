@@ -9,7 +9,7 @@
   display: flex;
   justify-content: flex-end;
   padding: 8px 0;
-  gap: 8px;
+  gap: 3rem;
 }
 
 .ChooseLanguageWrapper button {
