@@ -30,24 +30,7 @@ const Item = ({
 
   return (
     <>
-      <Link to={href} className={`${handles.level}-link`}>
-        {icon && (
-          <div className={`${handles.iconImage} ${handles.iconImage}-${level}`}>
-            <Image
-              src={icon}
-              loading={level === 0 ? 'eager' : 'lazy'}
-              fetchpriority={level === 0 ? 'high' : 'low'}
-              width={iconWidth || ''}
-            />
-          </div>
-        )}
-        <span className={handles.textFirstLevel}>
-          {__editorItemTitle}
-          {hasLevel && level > 0 && menuLevel && menuLevel.length > 0 && (
-            <div className={handles.arrowFirstLevel} />
-          )}
-        </span>
-      </Link>
+      Link>
       {hasLevel && menuLevel && menuLevel.length > 0 && (
         <div className={`${handles.level}-container-${level}`}>
           <div className={`${handles.level}-container-${level}--wrapper`}>
@@ -135,7 +118,7 @@ const MenuHeader = (props) => {
 MenuHeader.defaultProps = json
 
 MenuHeader.schema = {
-  title: 'Custom Menu Header',
+  title: 'Custom Menu',
   description: 'Gerenciador de Menu Header',
   type: 'object',
   properties: {

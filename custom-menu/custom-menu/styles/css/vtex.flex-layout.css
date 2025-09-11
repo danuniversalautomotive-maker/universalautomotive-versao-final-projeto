@@ -34,7 +34,7 @@
 .flexRowContent--iconsRight {
 	display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3.7rem;
 	align-items: center;
 }
 

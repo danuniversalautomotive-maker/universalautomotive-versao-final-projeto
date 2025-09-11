@@ -1,0 +1,245 @@
+.containerNovoMenu {
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  & ul li {
+    list-style: none;
+  }
+}
+.contentNovoMenu {
+  background-color: #fff;
+  width: 430px;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #e6e2e24f;
+  & li {
+    cursor: pointer;
+  }
+}
+.containerMenuItemArrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  & img.arrowRightItemHeaderMenu {
+    width: 14px;
+    height: 17px;
+    margin-right: 1rem;
+  }
+}
+img.logoMenuItem {
+  width: 100px;
+}
+
+.nameCategoryItemMenuHeader {
+  color: #304153;
+  font-weight: 200;
+}
+.containerMenuHeaderCategoryTwo {
+  width: 400px;
+  background-color: #fff;
+  padding: 0rem 1rem;
+  margin-left: 3px;
+  & .subcategory {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}
+.containerMenuHeaderCategoryTree {
+  width: 300px;
+  background-color: #fff;
+  padding: 1rem;
+  margin-left: 3px;
+  & ul li {
+    padding: 0;
+  }
+  & .currentNameHeader {
+    padding: 0 0 1rem 0;
+    font-weight: bolder;
+    color: #000;
+    & h3 {
+      font-size: 15px;
+    }
+  }
+}
+
+.hrMenuHeader {
+  margin-top: 1rem;
+  border: 1px solid #f3f3f3;
+}
+
+@media (max-width: 600px) {
+  /* === Overlay escuro com fade === */
+  .mobileOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+
+  .containerTextImageMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    & img {
+        width: 115px;
+        height: auto;
+    }
+    & span {
+        font-size: 17px;
+        font-weight: 100;
+        text-align: left;
+    }
+  }
+
+  .open ~ .mobileOverlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* === Drawer moderno === */
+  .mobileDrawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    max-width: 360px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease-in-out;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .open {
+    transform: translateX(0);
+    padding: 0;
+  }
+
+  .drawerHeader {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .drawerHeader button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  /* === Estilos base de listas === */
+  .mobileList,
+  .mobileSubList,
+  .mobileSubSubList {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .mobileImage {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+
+  .mobileLinkItem {
+    font-size: 0.95rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .mobileLinkItem:hover {
+    text-decoration: underline;
+  }
+
+  /* === Accordion base === */
+  .mobileAccordionItem {
+    border-bottom: 1px solid #eee;
+    padding: 0.25rem 1rem;
+  }
+
+  .mobileAccordionHeader,
+  .mobileSubHeader {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #222;
+    transition: background 0.2s;
+  }
+
+  .mobileAccordionHeader:hover,
+  .mobileSubHeader:hover {
+    background-color: #f8f8f8;
+  }
+
+  .mobileAccordionChevron {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    transform: rotate(0deg);
+  }
+
+  .chevronOpen {
+    transform: rotate(180deg);
+  }
+
+  /* === Painéis com transição de max-height e fade === */
+  .mobileAccordionPanel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .panelOpen {
+    max-height: 1000px; /* ajuste conforme necessário */
+    opacity: 1;
+  }
+
+  /* === Subcategorias (nível 2) === */
+  .mobileSubList {
+    padding-left: 1rem;
+    border-left: 2px solid #eee;
+    margin-top: 0.25rem;
+  }
+
+  .mobileAccordionSubItem {
+    padding: 0.5rem 0;
+  }
+
+  .mobileSubHeader {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .mobileSubSubList {
+    padding-left: 1.25rem;
+    margin: 0.25rem 0 0.75rem;
+  }
+
+  .mobileSubSubItem {
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

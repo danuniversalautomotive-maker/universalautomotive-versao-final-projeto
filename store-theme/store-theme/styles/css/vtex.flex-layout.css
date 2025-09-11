@@ -34,8 +34,19 @@
 .flexRowContent--iconsRight {
 	display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
 	align-items: center;
+}
+
+.flexRowContent--iconsRight .stretchChildrenWidth  {
+	width: 50px !important;
+}
+.flexRowContent--iconsRight .stretchChildrenWidth:last-child  { 
+	width: 140px !important;
+}
+
+.icone-univel-header {
+	width: 80% !important;
 }
 
 .flexRowContent--sac-row {

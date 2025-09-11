@@ -739,8 +739,11 @@
 }
 
 .newMenuCustom .level-index:hover .level-container-0 {
-	display: block;
 	z-index: 100000;
+    margin-top: -15px;
+    justify-content: center;
+    display: flex;
+    margin-left: -100px;
 }
 
 .newMenuCustom .level-index:hover .level-container-0 .level-item-0:hover .level-container-1 {

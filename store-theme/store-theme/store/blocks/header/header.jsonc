@@ -20,13 +20,12 @@
 			"top-bar",
 			"flex-layout.row#b2b-user-widget",
 			"flex-layout.row#header__content",
-			"menu-horizontal"
 			//"header-top",
 			//"flex-layout.row#header-top"
 			//"header-helmet-custom",
 			//"flex-layout.row#demo-store-warning",
 			//"google-translate",
-			
+			"menu-horizontal"
 			//"sticky-layout#desktop"
 			//"experimental__visibility-layout#whatsapp-button"
 		]
@@ -50,7 +49,8 @@
 		"children" : [
 			"image#logo-topbar",
 			//"vtex.menu@2.x:menu#novoMenu"
-			"menu-custom-desktop#v-01"
+			//"menu-custom-desktop#v-01"
+			"novo-menu-customizado"
 		]
 	},
 	"image#logo-topbar": {
@@ -155,7 +155,8 @@
 		"children" : [
 			"login",
 			"flex-layout.row#sac",
-			"minicart.v2"
+			"minicart.v2",
+			"image#logouniveal"
 		]
 	},
 
@@ -188,6 +189,12 @@
 		"props": {
 			"blockClass": "whatsapp-button",
 			"fullWidth": true
+		}
+	},
+	"image#logouniveal": {
+		"props": {
+			"src": "https://universalautomotive.vteximg.com.br/arquivos/univel-logo-header.png",
+			"blockClass": "icone-univel-header"
 		}
 	},
 	"image#whatsapp-button": {
@@ -434,7 +441,8 @@
 			"preventHorizontalStretch": true
 		},
 		"children": [
-			"drawer#menu-mobile",
+			//"drawer#menu-mobile",
+			"novo-menu-customizado",
 			"image#logoMenuMobile",
 			"flex-layout.row#iconsRightMobile"
 

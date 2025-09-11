@@ -42,12 +42,12 @@ const MenuHeaderDesktop = (props) => {
 MenuHeaderDesktop.defaultProps = json
 
 MenuHeaderDesktop.schema = {
-  title: 'Custom Menu Header',
+  title: 'Custom Menu Header....',
   description: 'Gerenciador de Menu Header',
   type: 'object',
   properties: {
     menuFirstLevel: {
-      title: 'Menu primeiro nível',
+      title: 'Menu primeiro nível....',
       type: 'array',
       items: {
         type: 'object',

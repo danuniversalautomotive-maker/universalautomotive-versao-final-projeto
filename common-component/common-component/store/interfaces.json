@@ -6,6 +6,9 @@
   "top-bar": {
     "component": "TopBar"
   },
+  "novo-menu-customizado": {
+    "component": "NovoMenuCustomizado"
+  },
   "menu-horizontal": {
     "component": "MenuHorizontal"
   },
