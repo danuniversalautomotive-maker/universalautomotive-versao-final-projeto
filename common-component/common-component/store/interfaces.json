@@ -6,6 +6,15 @@
   "top-bar": {
     "component": "TopBar"
   },
+  "slider-collection-img-left": {
+    "component": "SliderCollectionImgLeft"
+  },
+  "slider-collection-img-right": {
+    "component": "SliderCollectionImgRight"
+  },
+  "slider-collection-img-full": {
+    "component": "SliderCollectionImgFull"
+  },
   "novo-menu-customizado": {
     "component": "NovoMenuCustomizado"
   },

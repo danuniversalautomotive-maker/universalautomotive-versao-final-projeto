@@ -1,0 +1,182 @@
+@media (max-width: 600px) {
+    .imgLeft {
+        display: none !important;
+    }
+    .productCard {
+        min-width: calc(130% / 2) !important; /* 3 por vez */
+        box-sizing: border-box;
+        padding: 0 8px;
+        text-align: center;
+    }
+    .arrowLeft {
+        display: none;
+    }
+    .arrowRight {
+        display: none;
+    }
+    .sliderTrack {
+        overflow: scroll !important;
+    }
+    .containerCollectionBannerRight {
+        width: 100% !important;    
+    }
+    .containerCollectionBannerRight {
+        gap: inherit !important;
+    }
+    .dotsContainer {
+        background-color: #333;
+    }
+}
+
+.containerCollectionBannerRight {
+    width: 1260px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 2rem;
+    align-items: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    margin: auto;
+
+    & .imgLeft {
+        width: 287px;
+        height: auto;
+        border-radius: 1rem;
+    }
+    & .imgProductCardNotLogged {
+        width: 160px !important;
+    }
+    & .imgLeftNotLogged{
+        width: 245px;
+        height: auto;
+        border-radius: 1rem;
+    }
+    & .productCard {
+        background-color: #FFF;
+        padding: 0.8rem;
+        margin-left: 0px;
+        display: flex;
+        margin-right: 0px;
+        overflow: hidden;
+        border-radius: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        & .containerDiscountTag {
+            display: flex;
+            justify-content: start;
+
+        }
+        & .discountTag {
+            padding: 0.5rem;
+            background-color: #AE1F21;
+            color: #FFF;
+            width: 55px;
+            font-weight: normal;
+            font-size: 13px;
+            border-radius: 7px;
+        }
+        & img {
+            width: 125px;
+        }
+        & a {
+            text-decoration: none;
+        }
+        & h3 {
+            font-size: 14px;
+            height: 65px;
+            color: black;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        & .codRef {
+            text-align: right;
+        }
+        & .containerCtaLogin {
+            display: flex;
+            justify-content: center;
+        }
+        & .ctaLogin {
+            background-color: #AE1F21;
+            border: 0;
+            padding: 1rem 3rem;
+            align-items: center;
+            color: #FFF;
+            border-radius: 0.8rem;
+            cursor: pointer;
+        }
+        & .containerRef {
+            display: flex;
+            justify-content: flex-end;
+        }
+        & .price {
+            font-size: 37px;
+            color: #ae1f21;
+            font-weight: 700;
+        }
+        & .btnVerProduto {
+            background-color: #59BC4C;
+            padding: 0.7rem;
+            border-bottom-left-radius: 1rem;
+            color: #FFF;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom-right-radius: 1rem;
+        }
+    }
+    
+}
+
+.containerTitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    & img {
+        width: 50px;
+    }
+}
+
+.sliderWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  & img {
+    width: 200px;
+  }
+}
+
+.sliderViewport {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  gap: 11px;
+}
+
+.productCard {
+  min-width: calc(96.1% / 4); /* 3 por vez */
+  box-sizing: border-box;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.arrowLeft,
+.arrowRight {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 10px;
+  z-index: 10;
+  color: #333;
+}

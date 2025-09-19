@@ -49,8 +49,8 @@
 		"children" : [
 			"image#logo-topbar",
 			//"vtex.menu@2.x:menu#novoMenu"
-			//"menu-custom-desktop#v-01"
-			"novo-menu-customizado"
+			"menu-custom-desktop#v-01"
+			//"novo-menu-customizado"
 		]
 	},
 	"image#logo-topbar": {
@@ -441,11 +441,10 @@
 			"preventHorizontalStretch": true
 		},
 		"children": [
-			//"drawer#menu-mobile",
-			"novo-menu-customizado",
+			"drawer#menu-mobile",
+			//"novo-menu-customizado",
 			"image#logoMenuMobile",
 			"flex-layout.row#iconsRightMobile"
-
 		]
 	},
 	"image#logoMenuMobile": {

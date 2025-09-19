@@ -9,11 +9,16 @@
 		"children": [
 			"check-permission#representative-area",
 			"flex-layout.row#sales-channel-banner",
+			"slider-collection-img-left",
 			"flex-layout.row#shopByCategory",
-			"filter-generator",
-			"flex-layout.row#trending",
+			"slider-collection-img-right",
 			"flex-layout.row#full-banner-desktop1",
-			"flex-layout.row#popular",
+			//"slider-collection-img-full",
+			"slider-collection-img-left",
+			//"filter-generator",
+			//"flex-layout.row#trending",
+			
+			//"flex-layout.row#popular",
 			"flex-layout.row#bannerCoupon",
 			"flex-layout.row#imageBanners",
 			"flex-layout.row#newsletter"

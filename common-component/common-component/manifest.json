@@ -1,7 +1,7 @@
 {
   "vendor": "universalautomotive",
   "name": "common-components",
-  "version": "0.1.66",
+  "version": "0.1.77",
   "title": "Universal Automotiva Common Custom Components",
   "description": "Universal Automotiva Common Custom Components",
   "builders": {
@@ -23,6 +23,9 @@
     "vtex.styleguide": "9.x",
     "vtex.admin-graphql": "2.x",
     "vtex.store-graphql": "2.x",
+    "vtex.product-summary": "2.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.slider-layout": "0.x",
     "vtex.b2b-organizations-graphql": "0.x",
     "vtex.storefront-permissions": "1.x",
     "vtex.inventory-graphql": "0.x",

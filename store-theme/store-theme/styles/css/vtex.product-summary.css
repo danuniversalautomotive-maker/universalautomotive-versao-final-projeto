@@ -4,7 +4,8 @@
 
 .clearLink {
   padding: 1rem;
-  border: 2px solid var(--lines-light);
+  /*  border: 2px solid var(--lines-light);*/
+  background-color: #FFF;
   border-radius: 8px;
   transition: var(--default-transition);
 }

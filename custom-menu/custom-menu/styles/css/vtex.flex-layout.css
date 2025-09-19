@@ -54,6 +54,12 @@
 }
 
 
+.flexRowContent--silderImgLeft {
+	width: 1260px;
+	margin: auto;
+}
+
+
 @media (max-width: 600px){
 	.flexRowContent--mobile-header {
 		padding: 1rem;

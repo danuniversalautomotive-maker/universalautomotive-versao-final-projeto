@@ -1,3 +1,14 @@
+.flexRow--collection-slider-width-img-left {
+	width: 1260px;
+	display: flex;
+}
+
+.flexRowContent--collection-slider-width-img-left {
+	
+	display: flex;
+	margin: auto;
+}
+
 .flexRow--contentHeader {
 	display: flex;
     flex-direction: row;
