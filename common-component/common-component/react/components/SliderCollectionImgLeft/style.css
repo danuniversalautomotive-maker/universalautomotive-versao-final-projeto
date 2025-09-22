@@ -64,6 +64,7 @@
         border-radius: 1rem;
         flex-direction: column;
         gap: 1rem;
+        justify-content: end;
         & .containerDiscountTag {
             display: flex;
             justify-content: start;
@@ -79,7 +80,7 @@
             border-radius: 7px;
         }
         & img {
-            width: 125px;
+            width: 200px;
         }
         & a {
             text-decoration: none;
@@ -129,6 +130,15 @@
     }
     
 }
+
+
+.productCardLoggedIn {
+    justify-content: space-between;
+    & img {
+        width: 150px !important;
+        height: 100px !important;
+    }
+}   
 
 .containerTitle {
     display: flex;

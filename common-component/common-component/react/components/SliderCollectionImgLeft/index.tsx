@@ -13,18 +13,11 @@ interface Props {
 const SCROLL_STEP = 1
 
 // --- Utils de preço em centavos ---
-/**
- * Converte um valor decimal em centavos de forma estável:
- * 1) limita a 3 casas (para cortar "caudas" do JSON)
- * 2) converte para centavos e ARREDONDA PARA CIMA (ceil)
- */
 const toCentsUp = (value: number): number =>
   Math.ceil(Number((value ?? 0).toFixed(3)) * 100)
 
-/** Converte centavos para decimal */
 const fromCents = (cents: number): number => cents / 100
 
-/** Formata BRL a partir de centavos */
 const formatBRL = (cents: number): string =>
   fromCents(cents).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
@@ -104,6 +97,60 @@ const SliderCollectionImgLeft: React.FC<Props> = ({
 
   if (loading) return <div>Carregando…</div>
 
+  const renderDiscountBadge = (hasDiscount: boolean, discountPercent: number) => {
+    if (!isLoggedIn || !hasDiscount) return null
+    return (
+      <div className={styles.containerDiscountTag}>
+        <span className={styles.discountTag}>-{discountPercent}% OFF</span>
+      </div>
+    )
+  }
+
+  const renderProductImage = (imageUrl: string, alt: string) => (
+    <div className={isLoggedIn ? styles.containerLoggedIn : styles.containerCtaLogin}>
+      <img
+        src={imageUrl}
+        alt={alt}
+        className={isLoggedIn ? styles.imgProductCard : styles.imgProductCardNotLogged}
+      />
+    </div>
+  )
+
+  const renderPriceSection = (
+    hasDiscount: boolean,
+    listPriceCents: number,
+    priceCents: number
+  ) => {
+    if (!isLoggedIn) {
+      return (
+        <div className={styles.containerCtaLogin}>
+          <a href="https://www.universalautomotive.com.br/organization-request">
+            <button className={styles.ctaLogin}>
+              <strong>Cadastre-se</strong> <br />
+              e veja o preço
+            </button>
+          </a>
+        </div>
+      )
+    }
+
+    return (
+      <>
+        {hasDiscount && (
+          <span className={styles.discountValue}>
+            <del>{formatBRL(listPriceCents)}</del>
+          </span>
+        )}
+        <span className={styles.price}>{formatBRL(priceCents)}</span>
+        {hasDiscount && (
+          <span className={styles.saveValue}>
+            Você economiza {formatBRL(listPriceCents - priceCents)}
+          </span>
+        )}
+      </>
+    )
+  }
+
   return (
     <>
       <div className={styles.containerTitle}>
@@ -112,15 +159,15 @@ const SliderCollectionImgLeft: React.FC<Props> = ({
       </div>
 
       <div className={styles.containerCollectionBannerLeft}>
-        {!isLoggedIn ? (
-          <div className={styles.containerCtaLogin}>
-            {leftImage && <img src={leftImage} className={styles.imgLeftNotLogged} alt="" />}
-          </div>
-        ) : (
-          <div className={styles.containerLoggedIn}>
-            {leftImage && <img src={leftImage} className={styles.imgLeft} alt="" />}
-          </div>
-        )}
+        <div className={isLoggedIn ? styles.containerLoggedIn : styles.containerCtaLogin}>
+          {leftImage && (
+            <img
+              src={leftImage}
+              className={isLoggedIn ? styles.imgLeft : styles.imgLeftNotLogged}
+              alt=""
+            />
+          )}
+        </div>
 
         <div className={styles.sliderWrapper}>
           <button className={styles.arrowLeft} onClick={handlePrev}>‹</button>
@@ -130,21 +177,17 @@ const SliderCollectionImgLeft: React.FC<Props> = ({
               {products.length > 0 ? (
                 products.map((product: any) => {
                   const firstItem = product.items?.[0]
-
-                  // usa o mesmo seller da PDP
                   const seller =
                     firstItem?.sellers?.find((s: any) => s.sellerDefault) ||
                     firstItem?.sellers?.[0]
                   const offer = seller?.commertialOffer
 
-                  // centavos com ceil
                   const rawPrice = offer?.Price ?? 0
                   const rawListPrice = offer?.ListPrice ?? 0
 
                   let priceCents = toCentsUp(rawPrice)
                   const listPriceCents = toCentsUp(rawListPrice)
 
-                  // se o arredondado normal for maior, usa ele (evita +1 desnecessário)
                   const roundedCents = Math.round(Number((rawPrice ?? 0).toFixed(3)) * 100)
                   if (priceCents < roundedCents) {
                     priceCents = roundedCents
@@ -156,22 +199,16 @@ const SliderCollectionImgLeft: React.FC<Props> = ({
                     : 0
 
                   return (
-                    <div key={product.productId} className={styles.productCard}>
-                      {hasDiscount && (
-                        <div className={styles.containerDiscountTag}>
-                          <span className={styles.discountTag}>-{discountPercent}% OFF</span>
-                        </div>
-                      )}
+                    <div
+                      key={product.productId}
+                      className={`${styles.productCard} ${
+                        isLoggedIn ? styles.productCardLoggedIn : styles.productCardNotLoggedIn
+                      }`}
+                    >
+                      {renderDiscountBadge(hasDiscount, discountPercent)}
 
                       <a href={`/${product.linkText}/p`}>
-                        <div className={isLoggedIn ? styles.containerLoggedIn : styles.containerCtaLogin}>
-                          <img
-                            src={firstItem?.images?.[0]?.imageUrl}
-                            alt={product.productName}
-                            style={{ maxWidth: '100%', height: 'auto' }}
-                            className={isLoggedIn ? styles.imgProductCard : styles.imgProductCardNotLogged}
-                          />
-                        </div>
+                        {renderProductImage(firstItem?.images?.[0]?.imageUrl, product.productName)}
                       </a>
 
                       <div className={styles.containerRef}>
@@ -184,35 +221,12 @@ const SliderCollectionImgLeft: React.FC<Props> = ({
                         <h3>{product.productName}</h3>
                       </a>
 
-                      {!isLoggedIn ? (
-                        <div className={styles.containerCtaLogin}>
-                          <a href="https://www.universalautomotive.com.br/organization-request">
-                            <button className={styles.ctaLogin}>
-                              <strong>Cadastre-se</strong> <br />
-                              e veja o preço
-                            </button>
-                          </a>
-                        </div>
-                      ) : (
-                        <>
-                          {hasDiscount && (
-                            <span className={styles.discountValue}>
-                              <del>{formatBRL(listPriceCents)}</del>
-                            </span>
-                          )}
+                      {renderPriceSection(hasDiscount, listPriceCents, priceCents)}
 
-                          <span className={styles.price}>{formatBRL(priceCents)}</span>
-
-                          {hasDiscount && (
-                            <span className={styles.saveValue}>
-                              Você economiza {formatBRL(listPriceCents - priceCents)}
-                            </span>
-                          )}
-
-                          <a className={styles.btnVerProduto} href={`/${product.linkText}/p`}>
-                            <span> Ver produto </span>
-                          </a>
-                        </>
+                      {isLoggedIn && (
+                        <a className={styles.btnVerProduto} href={`/${product.linkText}/p`}>
+                          <span> Ver produto </span>
+                        </a>
                       )}
                     </div>
                   )

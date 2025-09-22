@@ -11,16 +11,17 @@
 			"flex-layout.row#sales-channel-banner",
 			"slider-collection-img-left",
 			"flex-layout.row#shopByCategory",
+			"compre-por-categoria",
 			"slider-collection-img-right",
 			"flex-layout.row#full-banner-desktop1",
 			//"slider-collection-img-full",
-			"slider-collection-img-left",
+			"slider-collection-img-left2",
 			//"filter-generator",
 			//"flex-layout.row#trending",
-			
 			//"flex-layout.row#popular",
 			"flex-layout.row#bannerCoupon",
-			"flex-layout.row#imageBanners",
+			//"flex-layout.row#imageBanners",
+			"banners-third",
 			"flex-layout.row#newsletter"
 		]
 	},
@@ -284,7 +285,7 @@
 		},
 		"title": "Banner "
 	},
-	"flex-layout.row#imageBanners": {
+	/*"flex-layout.row#imageBanners": {
 		"title": "Seção de lista de banners",
 		"props": {
 			"blockClass": "imageBanners",
@@ -309,17 +310,18 @@
 			"preventVerticalStretch": true
 		},
 		"children": [
-			"image#banner-2"
+			"image#banner-2",
+			"image#banner-3"
 		]
 	},
-	"flex-layout.col#banner3": {
+	/*"flex-layout.col#banner3": {
 		"props": {
 			"preventVerticalStretch": true
 		},
 		"children": [
-			"image#banner-3"
+			
 		]
-	},
+	}*/
 	"image#banner-1": {
 		"title": "Banner 1",
 		"props": {

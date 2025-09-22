@@ -12,7 +12,6 @@ interface Props {
 
 const SCROLL_STEP = 1
 
-// --- Ajuste: nunca deixa terminar com ,99 centavos ---
 const normalizeCents = (value: number): number => {
   return Math.round((value ?? 0) * 100)
 }
@@ -25,7 +24,7 @@ const formatBRL = (cents: number): string =>
     currency: 'BRL',
   })
 
-const SliderCollectionImgRight: React.FC<Props> = ({
+const SliderCollectionImgRight: StorefrontFunctionComponent<Props> = ({
   collectionId,
   title = 'Lançamentos',
   titleIcon = 'https://universalautomotive.vteximg.com.br/arquivos/icone-lancamentos-home-collection.png',
@@ -107,6 +106,7 @@ const SliderCollectionImgRight: React.FC<Props> = ({
         {titleIcon && <img className={styles.imgCollectionTitle} src={titleIcon} alt={title} />}
         <h2>{title}</h2>
       </div>
+
       <div className={styles.containerCollectionBannerRight}>
         <div className={styles.sliderWrapper}>
           <button className={styles.arrowLeft} onClick={handlePrev}>‹</button>
@@ -130,33 +130,26 @@ const SliderCollectionImgRight: React.FC<Props> = ({
                     : 0
 
                   return (
-                    <div key={product.productId} className={styles.productCard}>
-                      {hasDiscount && (
+                    <div
+                      key={product.productId}
+                      className={`${styles.productCard} ${
+                        isLoggedIn ? styles.productCardLoggedIn : styles.productCardNotLoggedIn
+                      }`}
+                    >
+                      {hasDiscount && isLoggedIn && (
                         <div className={styles.containerDiscountTag}>
                           <span className={styles.discountTag}>-{discountPercent}% OFF</span>
                         </div>
                       )}
 
                       <a href={`/${product.linkText}/p`}>
-                        {!isLoggedIn ? (
-                          <div className={styles.containerCtaLogin}>
-                            <img
-                              src={firstItem?.images?.[0]?.imageUrl}
-                              alt={product.productName}
-                              style={{ height: 'auto' }}
-                              className={styles.imgProductCardNotLogged}
-                            />
-                          </div>
-                        ) : (
-                          <div className={styles.containerLoggedIn}>
-                            <img
-                              src={firstItem?.images?.[0]?.imageUrl}
-                              alt={product.productName}
-                              style={{ maxWidth: '100%', height: 'auto' }}
-                              className={styles.imgProductCard}
-                            />
-                          </div>
-                        )}
+                        <div className={isLoggedIn ? styles.containerLoggedIn : styles.containerCtaLogin}>
+                          <img
+                            src={firstItem?.images?.[0]?.imageUrl}
+                            alt={product.productName}
+                            className={isLoggedIn ? styles.imgProductCard : styles.imgProductCardNotLogged}
+                          />
+                        </div>
                       </a>
 
                       <div className={styles.containerRef}>
@@ -219,18 +212,63 @@ const SliderCollectionImgRight: React.FC<Props> = ({
           )}
         </div>
 
-        {!isLoggedIn ? (
-          <div className={styles.containerCtaLogin}>
-            {leftImage && <img src={leftImage} className={styles.imgLeftNotLogged} alt="" />}
-          </div>
-        ) : (
-          <div className={styles.containerLoggedIn}>
-            {leftImage && <img src={leftImage} className={styles.imgLeft} alt="" />}
-          </div>
-        )}
+        <div className={isLoggedIn ? styles.containerLoggedIn : styles.containerCtaLogin}>
+          {leftImage && (
+            <img
+              src={leftImage}
+              className={isLoggedIn ? styles.imgLeft : styles.imgLeftNotLogged}
+              alt=""
+            />
+          )}
+        </div>
       </div>
     </>
   )
+}
+
+// --- VTEX Site Editor Config ---
+SliderCollectionImgRight.schema = {
+  title: 'Slider de Coleção com Imagem à Direita',
+  description: 'Exibe uma coleção de produtos com controle de layout',
+  type: 'object',
+  properties: {
+    collectionId: {
+      type: 'string',
+      title: 'ID da coleção (legacy)',
+      default: '156',
+    },
+    collectionQuery: {
+      type: 'string',
+      title: 'Filtro da coleção (fq)',
+      default: 'H:156',
+    },
+    title: {
+      type: 'string',
+      title: 'Título da coleção',
+      default: 'Lançamentos',
+    },
+    titleIcon: {
+      type: 'string',
+      title: 'Ícone da coleção',
+      widget: {
+        'ui:widget': 'image-uploader',
+      },
+      default: 'https://universalautomotive.vteximg.com.br/arquivos/icone-lancamentos-home-collection.png',
+    },
+    leftImage: {
+      type: 'string',
+      title: 'Imagem à esquerda (logado ou não)',
+      widget: {
+        'ui:widget': 'image-uploader',
+      },
+      default: 'https://universalautomotive.vteximg.com.br/arquivos/image-left-container-slider.png',
+    },
+    itemsPerViewDesktop: {
+      type: 'number',
+      title: 'Itens por vez (desktop)',
+      default: 3,
+    },
+  },
 }
 
 export default SliderCollectionImgRight

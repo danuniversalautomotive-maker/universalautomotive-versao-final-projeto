@@ -9,11 +9,20 @@
   "slider-collection-img-left": {
     "component": "SliderCollectionImgLeft"
   },
+  "slider-collection-img-left2": { 
+    "component": "SliderCollectionImgLeft"
+  },
+  "banners-third": {
+    "component": "BannersThird"
+  },
   "slider-collection-img-right": {
     "component": "SliderCollectionImgRight"
   },
   "slider-collection-img-full": {
     "component": "SliderCollectionImgFull"
+  },
+  "compre-por-categoria": {
+    "component": "ComprePorCategoria"
   },
   "novo-menu-customizado": {
     "component": "NovoMenuCustomizado"
