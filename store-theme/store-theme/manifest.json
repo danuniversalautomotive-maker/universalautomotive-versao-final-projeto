@@ -1,7 +1,7 @@
 {
   "vendor": "universalautomotive",
   "name": "universaltema",
-  "version": "3.0.96",
+  "version": "3.0.98",
   "defaultLocale": "en-US",
   "builders": {
     "assets": "0.x",
